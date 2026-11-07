@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2B2F33"><title>ProfitLane · TikTok studio</title>
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUiPjx0aXRsZSBpZD0idGl0bGUiPlByb2ZpdExhbmUg4oCUIFZlcnNpb24gMSBpY29uIChkZWZhdWx0KTwvdGl0bGU+PHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHJ4PSIxMiIgZmlsbD0iIzJCMkYzMyIvPjxwYXRoIGQ9Ik02NCAxMSAxMDkgMzd2NTRsLTQ1IDI2LTQ1LTI2VjM3Wm0wIDEyTDMwIDQzdjQybDM0IDIwIDM0LTIwVjQzWiIgZmlsbD0iI0Y1QTYyMyIvPjxwYXRoIGQ9Im00NCA4OSA5LTQ3aDhsLTQgNDdabTI3IDAtNC00N2g4bDkgNDdaIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0iTTYyIDQ4aDR2MTJoLTRabTAgMjJoNHYxMmgtNFoiIGZpbGw9IiNGRkZGRkYiLz48L3N2Zz4K" type="image/svg+xml">
+<style>
+/* VERSION 1 — default identity, using the original Concept B geometry and type. */
+:root {
+  /* Charcoal for the mark, headings and primary controls. */
+  --color-primary: #2B2F33;
+  /* Amber for supporting panels; pair with charcoal text. */
+  --color-secondary: #F5A623;
+  /* Amber for emphasis on charcoal; never small text on off-white. */
+  --color-accent: #F5A623;
+  /* Charcoal ink for everyday reading. */
+  --color-text: #2B2F33;
+  /* Off-white for the page and full-logo presentation surfaces. */
+  --color-background: #F7F5F0;
+  /* Retained positive status color; accompany it with a label. */
+  --color-success: #27653F;
+  /* Retained caution color; accompany it with a label. */
+  --color-warning: #875600;
+  /* Retained error color; accompany it with a label. */
+  --color-error: #AD3039;
+  /* Original Concept B heading family, with usable local fallbacks. */
+  --font-heading: "Barlow Condensed", "Arial Narrow", Impact, Arial, sans-serif;
+  /* Original Concept B body family, with usable local fallbacks. */
+  --font-body: "Barlow", "Segoe UI", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--color-background); color: var(--color-text); font: 1rem/1.65 var(--font-body); }
+html { scroll-behavior: smooth; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-underline-offset: .25em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 5px; }
+h1,h2,h3,h4 { font-family: var(--font-heading); line-height: 1.08; letter-spacing: -.025em; margin: 0; }
+p { margin: 0 0 1rem; }
+.wrap { width: min(1240px, calc(100% - 80px)); margin-inline: auto; }
+.eyebrow { text-transform: uppercase; letter-spacing: .13em; font: 700 .72rem/1.5 var(--font-body); }
+.skip-link { position: absolute; top: -100px; left: 20px; background: var(--color-background); padding: 12px; z-index: 10; }
+.skip-link:focus { top: 12px; }
+.site-header { min-height: 100px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid #2B2F3330; }
+.header-logo { width: 198px; }
+.site-header nav { display: flex; gap: 24px; flex-wrap: wrap; font-size: .85rem; }
+.site-header nav a { text-decoration: none; }
+.hero { display: grid; grid-template-columns: 1.3fr 1fr; gap: 65px; align-items: center; padding-block: 64px; }
+.hero .eyebrow { margin-bottom: 24px; }
+h1 { font-size: clamp(3rem, 5.5vw, 5.2rem); max-width: 720px; }
+.hero-copy { max-width: 520px; font-size: 1.1rem; margin-top: 26px; }
+.hero-art { background: var(--color-primary); color: var(--color-background); padding: 30px; min-height: 360px; border-radius: 12px; display: flex; flex-direction: column; justify-content: space-between; align-items: start; }
+.hero-art img { width: 192px; margin: 0 auto; }
+.hero-art p { margin: 0; }
+.hero-art strong { font: 700 1.6rem/1.2 var(--font-heading); }
+.hero-art .eyebrow { color: var(--color-accent); }
+.section { padding-block: 64px; scroll-margin-top: 20px; }
+.rule { border-top: 1px solid #2B2F3330; }
+.section-head { display: flex; align-items: end; justify-content: space-between; gap: 32px; margin-bottom: 30px; }
+.section-head .eyebrow { margin-bottom: 10px; }
+h2 { font-size: clamp(2rem, 3.7vw, 3.2rem); }
+.section-head > p { max-width: 410px; margin: 0; font-size: .95rem; }
+.comparison { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px; }
+.version { border: 1px solid #2B2F3345; border-radius: 10px; overflow: hidden; }
+.version.default { border: 2px solid var(--color-primary); }
+.version-header { padding: 26px; display: flex; align-items: start; justify-content: space-between; gap: 16px; border-bottom: 1px solid #2B2F3330; }
+.version-header h3 { font-size: 1.85rem; margin-top: 6px; }
+.version-header p { margin: 0; }
+.badge { background: var(--color-primary); color: var(--color-background); padding: 5px 10px; font-size: .72rem; font-weight: 700; border-radius: 3px; }
+.badge.amber { background: var(--color-secondary); color: var(--color-primary); }
+.full-logo { background: var(--color-background); padding: 36px 26px; min-height: 188px; display: flex; align-items: center; justify-content: center; }
+.full-logo img { width: 440px; }
+.icon-specimens { display: grid; grid-template-columns: minmax(128px,1fr) minmax(0,1fr); gap: 24px; padding: 28px 26px; border-block: 1px solid #2B2F3330; background: var(--color-background); }
+figure { margin: 0; }
+.icon-specimens figure { display: flex; flex-direction: column; align-items: start; justify-content: end; gap: 14px; }
+.icon-large { width: 160px; height: 160px; }
+/* Fixed CSS dimensions, independent of SVG intrinsic sizing. */
+.icon-48 { width: 48px; height: 48px; flex: 0 0 48px; }
+figcaption { font-size: .75rem; }
+.version-copy { padding: 26px; }
+.version-copy p { min-height: 80px; }
+.asset-links { display: flex; flex-wrap: wrap; gap: 14px 24px; font-size: .85rem; font-weight: 700; }
+.note { font-size: .85rem; margin-top: 22px; max-width: 800px; }
+.palette { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+.swatch { border: 1px solid #2B2F3345; border-radius: 6px; overflow: hidden; }
+.swatch-color { height: 110px; }
+.charcoal { background: var(--color-primary); }
+.amber { background: var(--color-secondary); }
+.paper { background: var(--color-background); }
+.swatch p { padding: 16px; margin: 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: .9rem; }
+.statuses { display: flex; flex-wrap: wrap; gap: 12px 26px; margin-top: 26px; font-size: .9rem; font-weight: 700; }
+.success { color: var(--color-success); }
+.warning { color: var(--color-warning); }
+.error { color: var(--color-error); }
+.details { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.type-heading { font: 700 2.7rem/1.1 var(--font-heading); margin: 18px 0; }
+.type-body { font-size: 1.1rem; margin-block: 18px 28px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.button { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 10px 18px; border: 1px solid var(--color-primary); background: var(--color-primary); color: var(--color-background); border-radius: 4px; font-weight: 700; font-size: .9rem; }
+.button.secondary { background: var(--color-secondary); color: var(--color-primary); }
+.card { padding: 28px; border: 1px solid #2B2F3345; border-radius: 6px; }
+.card h3 { font-size: 1.8rem; margin-top: 12px; }
+.score-row { display: flex; align-items: center; gap: 24px; margin-top: 28px; }
+.score { font: 700 4.5rem/1 var(--font-heading); white-space: nowrap; flex-shrink: 0; }
+.score span { font: 400 1rem var(--font-body); }
+.score-row p { font-size: .9rem; margin: 0; }
+.track { height: 9px; background: #2B2F3325; border-radius: 9px; margin: 24px 0 7px; overflow: hidden; }
+.track span { display: block; width: 76%; height: 100%; background: var(--color-primary); }
+.range { display: flex; justify-content: space-between; font-size: .75rem; }
+.factors { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 22px; padding: 18px 0 18px 18px; margin: 18px 0; border-block: 1px solid #2B2F3330; font-size: .85rem; }
+.card small { display: block; font-size: .8rem; }
+.mono-preview { padding: 30px; border: 1px solid #2B2F3345; border-radius: 6px; }
+.mono-preview img { width: 440px; margin: 20px auto; }
+.mono-preview figcaption { display: flex; justify-content: space-between; gap: 20px; }
+.guidance { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.guidance h3 { font-size: 1.9rem; margin-bottom: 18px; }
+.guidance ul { margin: 0; padding-left: 20px; }
+.guidance li { margin-bottom: 14px; }
+.taglines { list-style: none; padding: 0; margin: 25px 0 0; }
+.taglines li { border-top: 1px solid #2B2F3330; padding: 18px 0; font: 600 1.5rem/1.2 var(--font-heading); }
+.profile { display: flex; gap: 18px; align-items: center; padding: 24px; border: 1px solid #2B2F3345; border-radius: 6px; margin-top: 26px; }
+.avatar { background: var(--color-primary); border-radius: 50%; width: 88px; height: 88px; padding: 9px; flex-shrink: 0; }
+.profile p { margin: 0; font-size: .9rem; }
+.profile strong { font-size: 1.1rem; }
+.site-footer { border-top: 1px solid #2B2F3330; padding-block: 25px 35px; display: flex; justify-content: space-between; gap: 20px; font-size: .8rem; }
+@media (max-width: 900px) {
+ .wrap { width: calc(100% - 48px); }
+ .hero { gap: 30px; }
+ .hero-art { min-height: 330px; }
+ .icon-specimens { gap: 18px; }
+ .icon-large { width: 128px; height: 128px; }
+ .details,.guidance { gap: 28px; }
+ .score-row { gap: 16px; }
+ .score { font-size: 3.5rem; }
+}
+@media (max-width: 700px) {
+ .hero,.comparison,.details,.guidance { grid-template-columns: 1fr; }
+ .hero-art { min-height: 300px; }
+ .hero-art img { width: 160px; }
+ .section-head { flex-direction: column; align-items: start; gap: 18px; }
+ .version-copy p { min-height: 0; }
+ .site-header { flex-wrap: wrap; padding-block: 18px; gap: 10px; }
+ .site-header nav { gap: 18px; font-size: .8rem; }
+ .palette { gap: 12px; }
+ .swatch p { padding: 12px; font-size: .8rem; }
+}
+@media (max-width: 420px) {
+ .wrap { width: calc(100% - 36px); }
+ .hero { padding-block: 38px; }
+ h1 { font-size: 2.9rem; }
+ .section { padding-block: 42px; }
+ .version-header,.version-copy,.icon-specimens { padding: 22px; }
+ .full-logo { min-height: 140px; padding: 22px; }
+ .icon-large { width: 128px; height: 128px; }
+ .palette { grid-template-columns: 1fr; }
+ .swatch-color { height: 65px; }
+ .card { padding: 22px; }
+ .score { font-size: 3.1rem; }
+ .score-row { gap: 14px; }
+ .site-footer { flex-direction: column; gap: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+ .wrap { width: 100%; }
+ .site-header nav,.skip-link { display: none; }
+ .section { padding-block: 25px; }
+ .version { break-inside: avoid; }
+ * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}
+
+/* Brand tokens and typography are read from ../brand/brand.css, unchanged. */
+:root{--line:#2B2F3330;--soft:#2B2F3309}
+body{font-family:var(--font-body);font-size:16px;line-height:1.5}
+button,input,select,textarea{font:inherit;color:inherit}button,.file-label{cursor:pointer;border:1px solid var(--line);border-radius:6px;padding:10px 15px;background:var(--color-background);font-weight:600}button:hover,.file-label:hover{border-color:var(--color-primary);background:var(--soft)}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--color-primary);outline-offset:3px}.primary{background:var(--color-secondary);color:var(--color-primary);border-color:var(--color-secondary)}.primary:hover{background:var(--color-secondary);border-color:var(--color-primary)}button:disabled{opacity:.5;cursor:default}a{color:inherit}p{margin:0 0 14px}h1{font-size:clamp(2.2rem,3.1vw,3.3rem);letter-spacing:-.03em}h2{font-size:1.6rem;line-height:1.15}h3{font-size:1.25rem}small,.muted{font-size:.85rem}.muted{opacity:.8}.eyebrow{font-size:.67rem;letter-spacing:.13em;margin-bottom:10px}.sidebar{position:fixed;inset:0 auto 0 0;width:238px;border-right:1px solid var(--line);padding:30px 20px;display:flex;flex-direction:column;background:var(--color-background);z-index:3}.logo-link{display:block;padding:8px 0 25px}.logo-link img{width:198px}.workspace-label{font-size:.62rem;letter-spacing:.13em;margin:4px 10px 26px;opacity:.75}.sidebar nav{display:grid;gap:7px}.sidebar nav a{padding:13px 14px;text-decoration:none;border-radius:6px;font-size:.9rem;font-weight:600}.sidebar nav a span{font-size:1.1rem;margin-right:12px}.sidebar nav a[aria-current="page"]{background:var(--color-primary);color:var(--color-background)}.sidebar nav a:hover{box-shadow:inset 0 0 0 1px var(--line)}.sidebar-bottom{margin-top:auto;padding:26px 12px 0;border-top:1px solid var(--line)}.sidebar-bottom p:not(.eyebrow){font-family:var(--font-heading);font-size:1.45rem;line-height:1.15}.sidebar-bottom small{opacity:.75}.workspace{margin-left:238px}.topbar{height:76px;border-bottom:1px solid var(--line);padding:0 38px;display:flex;align-items:center;justify-content:space-between;font-size:.8rem}.divider{margin:0 12px;opacity:.5}.local-badge{border:1px solid var(--line);padding:5px 10px;border-radius:20px;font-size:.7rem}main{max-width:1540px;margin:auto;padding:35px 38px 0}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:24px}.page-heading p:last-child{margin:10px 0 0;font-size:.9rem;opacity:.8}.notice{font-size:.78rem;padding:13px 17px;border:1px solid var(--line);border-left:3px solid var(--color-secondary);border-radius:4px;margin-bottom:18px}.feedback{font-size:.85rem;color:var(--color-success);margin:0}.feedback:not(:empty){padding:10px 0 18px}.feedback.warning{color:var(--color-warning)}.hero-panel{display:grid;grid-template-columns:1.4fr 1fr;gap:30px;background:var(--color-primary);color:var(--color-background);border-radius:9px;padding:32px 35px;margin-bottom:24px}.hero-panel .eyebrow{color:var(--color-secondary)}.hero-panel h2{font-size:clamp(2rem,3vw,3.2rem);margin:12px 0 15px}.hero-panel p{font-size:.85rem;line-height:1.6;opacity:.9}.light-link{font-size:.8rem;font-weight:600}.light-link span{margin-left:20px}.hero-aside{border-left:1px solid #F7F5F040;padding:16px 0 16px 35px;align-self:center}.hero-aside p{font:1.5rem/1.3 var(--font-heading);margin:16px 0 20px}.hero-aside strong{color:var(--color-secondary)}.outlined-pill{border:1px solid #F7F5F050;padding:6px 10px;border-radius:20px;font-size:.63rem;display:inline-block}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}.stat{border:1px solid var(--line);border-radius:7px;padding:20px}.stat span{font-size:.73rem;display:block}.stat strong{font-family:var(--font-heading);font-size:2.25rem;line-height:1.2;display:block;margin:10px 0 4px}.stat small{font-size:.68rem;opacity:.75}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{border:1px solid var(--line);border-radius:8px;padding:25px;margin-bottom:24px}.panel-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px}.panel-heading a{font-size:.8rem}.panel-heading .muted{font-size:.69rem}.bar-chart{display:grid;gap:17px}.bar-label{display:flex;justify-content:space-between;font-size:.77rem;margin-bottom:7px}.bar-track{height:8px;border-radius:10px;background:var(--soft);overflow:hidden}.bar-fill{height:100%;background:var(--color-primary);border-radius:10px}.bar-fill.amber-fill{background:var(--color-secondary)}.up-item{display:flex;gap:16px;border-top:1px solid var(--line);padding:16px 0}.up-date{font-size:.65rem;min-width:50px;text-align:center;border:1px solid var(--line);border-radius:5px;padding:6px}.up-date b{display:block;font-size:1.4rem;font-family:var(--font-heading);line-height:1.1}.up-item button{display:block;text-align:left;border:0;padding:0;background:none;font-size:.9rem}.up-item small{font-size:.7rem}.note-panel{background:var(--soft)}.note-panel h2{font-size:2rem;margin:15px 0}.note-panel a{font-size:.8rem}.note-panel p{font-size:.85rem}.filters{display:grid;grid-template-columns:1.7fr 1fr 1.1fr 1fr 1fr auto;align-items:end;gap:12px;margin-bottom:20px}label{display:grid;gap:6px;font-size:.8rem;font-weight:600}input,select,textarea{background:var(--color-background);border:1px solid var(--line);border-radius:5px;padding:10px;min-width:0;width:100%;font-size:.88rem;font-weight:400}textarea{resize:vertical}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;text-align:left;font-size:.78rem;min-width:1050px}th{font-size:.65rem;text-transform:uppercase;letter-spacing:.04em;padding:13px 10px;border-block:1px solid var(--line);background:var(--soft)}td{padding:17px 10px;border-bottom:1px solid var(--line);vertical-align:top}td:first-child{min-width:240px;max-width:300px}td strong{display:block;font-size:.85rem}td p{font-size:.73rem;margin:7px 0;opacity:.8}td small{font-size:.68rem}td button{padding:5px 8px;font-size:.7rem;margin:0 5px 6px 0}.status{display:inline-block;font-size:.65rem;white-space:nowrap;border:1px solid var(--line);padding:4px 8px;border-radius:20px}.status-ready{background:var(--color-secondary)}.status-published{background:var(--color-primary);color:var(--color-background)}.danger{color:var(--color-error)}.table-wrap+p{margin-top:18px}.backup-panel{display:flex;gap:20px;align-items:center;justify-content:space-between}.backup-panel p{font-size:.8rem;max-width:560px;margin-top:12px}.file-label{font-size:.8rem;white-space:nowrap}.file-label input{font-size:.7rem;padding:0;border:0;max-width:180px}.calendar-key{display:flex;gap:25px;font-size:.75rem;margin:15px 0}.button-row{display:flex;gap:8px}.calendar-scroll{overflow-x:auto}.weekdays,.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));min-width:700px}.weekdays{font-size:.7rem;text-align:center;margin-bottom:8px}.calendar-grid{border-left:1px solid var(--line);border-top:1px solid var(--line)}.day-cell{min-height:125px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:8px}.day-cell.outside{background:var(--soft)}.day-number{font-size:.72rem;display:block;margin-bottom:8px}.calendar-post,.calendar-prompt{font-size:.67rem;text-align:left;padding:6px;border-radius:4px;display:block;width:100%;margin-bottom:5px;line-height:1.3;overflow-wrap:anywhere}.calendar-post{background:var(--color-secondary);border-color:var(--color-secondary)}.calendar-prompt{background:transparent;border-style:dashed}.daily-plan{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.plan-card{font-size:.8rem;text-align:left;padding:15px}.plan-card small{display:block;font-size:.66rem;margin-bottom:7px}.plan-card b{display:block;margin-bottom:7px}.plan-card span{font-size:.67rem}.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:24px}.resource{border:1px solid var(--line);padding:25px;border-radius:7px;text-decoration:none;display:flex;flex-direction:column}.resource:hover{background:var(--soft)}.resource h2{margin:14px 0}.resource p{font-size:.85rem}.resource>span:last-child{margin-top:auto;font-size:.8rem;text-decoration:underline}.bio{font-size:1.15rem;border-left:3px solid var(--color-secondary);padding:12px 20px;margin:24px 0}details{border-top:1px solid var(--line);padding:16px 0}summary{cursor:pointer;font-weight:600;font-size:.9rem}details p{font-size:.85rem;margin:15px 0}details .script-body{font-size:1rem;line-height:1.75;padding:18px;background:var(--soft)}footer{padding:25px 0;border-top:1px solid var(--line);font-size:.7rem;display:flex;justify-content:space-between;gap:15px;margin-top:5px;opacity:.8}dialog{border:1px solid var(--line);border-radius:10px;background:var(--color-background);color:var(--color-text);width:min(720px,calc(100% - 24px));max-height:90dvh;padding:28px}dialog::backdrop{background:#2B2F3399}.dialog-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:25px}.dialog-heading button{padding:6px 10px}#post-form>label{margin-bottom:18px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}.metrics-grid{grid-template-columns:repeat(4,1fr);margin:8px 0 15px}fieldset{border:1px solid var(--line);border-radius:6px;padding:15px;margin:0 0 18px}legend{font-size:.75rem;padding:0 5px}output{font-size:.8rem}.copy-details{margin:0 0 15px}.copy-details label{margin-top:15px}.dialog-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:20px}.form-error{color:var(--color-error);font-size:.85rem}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}#prompt-content p{font-size:.9rem}#prompt-content h3{margin:20px 0 10px}[hidden]{display:none!important}
+@media(min-width:1600px){main{padding-top:45px}.hero-panel{padding:40px}}
+@media(max-width:1150px){.sidebar{width:200px;padding:25px 14px}.logo-link img{width:170px}.workspace{margin-left:200px}main{padding:28px 24px 0}.topbar{padding:0 24px}.filters{grid-template-columns:repeat(3,1fr)}.hero-panel{padding:25px}.hero-aside{padding-left:24px}.stats{gap:10px}.stat{padding:15px}.backup-panel{flex-wrap:wrap}.daily-plan{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){.sidebar{position:static;width:auto;display:block;padding:15px 20px;border-right:0;border-bottom:1px solid var(--line)}.logo-link{padding:0 0 15px}.workspace-label,.sidebar-bottom{display:none}.sidebar nav{display:flex;gap:5px;flex-wrap:wrap}.sidebar nav a{padding:9px;font-size:.78rem}.sidebar nav a span{margin-right:5px}.workspace{margin-left:0}.topbar{height:55px;padding:0 20px}main{padding:24px 20px 0}.two-col{grid-template-columns:1fr;gap:0}.resource-grid{grid-template-columns:1fr}.hero-panel{grid-template-columns:1fr}.hero-aside{display:none}.stats{grid-template-columns:1fr 1fr}.page-heading{align-items:start}.page-heading button{font-size:.8rem;white-space:nowrap}.filters{grid-template-columns:1fr 1fr}.panel{padding:18px}.page-heading p:last-child{font-size:.8rem}.daily-plan{grid-template-columns:1fr 1fr}.panel-heading{flex-wrap:wrap}footer{flex-direction:column}.calendar-heading{align-items:start}}
+@media(max-width:440px){main{padding:20px 12px 0}.sidebar{padding:15px 12px}.page-heading{flex-direction:column}.page-heading button{align-self:stretch}.hero-panel{padding:22px}.stat strong{font-size:1.9rem}.filters,.daily-plan{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.metrics-grid{grid-template-columns:1fr 1fr}dialog{padding:20px}.backup-panel{display:block}.backup-panel>*{margin-bottom:15px}.notice{font-size:.75rem}.topbar{font-size:.68rem;padding:0 12px}}
+@media print{.sidebar,.topbar,.page-heading>button,.filters,.backup-panel,button{display:none!important}.workspace{margin:0}main{padding:0}.hero-panel{background:var(--color-background);color:var(--color-primary)}.stats{grid-template-columns:repeat(4,1fr)}}
+
+#document-dialog {width:min(900px,calc(100% - 24px))} #document-copy {white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;line-height:1.7;}
+
+</style>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to workspace</a>
+<aside class="sidebar">
+<a href="#overview" class="logo-link" aria-label="ProfitLane studio home"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDAgMTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUiPjx0aXRsZSBpZD0idGl0bGUiPlByb2ZpdExhbmUg4oCUIFZlcnNpb24gMSBmdWxsIGxvZ28gKGRlZmF1bHQpPC90aXRsZT48cmVjdCB3aWR0aD0iNDQwIiBoZWlnaHQ9IjExMiIgZmlsbD0iI0Y3RjVGMCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgOCkgc2NhbGUoLjc1KSI+PHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHJ4PSIxMiIgZmlsbD0iIzJCMkYzMyIvPjxwYXRoIGQ9Ik02NCAxMSAxMDkgMzd2NTRsLTQ1IDI2LTQ1LTI2VjM3Wm0wIDEyTDMwIDQzdjQybDM0IDIwIDM0LTIwVjQzWiIgZmlsbD0iI0Y1QTYyMyIvPjxwYXRoIGQ9Im00NCA4OSA5LTQ3aDhsLTQgNDdabTI3IDAtNC00N2g4bDkgNDdaIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0iTTYyIDQ4aDR2MTJoLTRabTAgMjJoNHYxMmgtNFoiIGZpbGw9IiNGRkZGRkYiLz48L2c+PHRleHQgeD0iMTE0IiB5PSI3MyIgZmlsbD0iIzJCMkYzMyIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNTAiIGZvbnQtd2VpZ2h0PSI3MDAiIGxldHRlci1zcGFjaW5nPSItMS41Ij5Qcm9maXRMYW5lPC90ZXh0Pjwvc3ZnPgo=" alt="ProfitLane" width="220" height="56"></a>
+<p class="workspace-label">TIKTOK / CONTENT STUDIO</p>
+<nav aria-label="Workspace"><a href="#overview" data-view="overview"><span aria-hidden="true">◫</span> Overview</a><a href="#calendar" data-view="calendar"><span aria-hidden="true">▦</span> Calendar</a><a href="#posts" data-view="posts"><span aria-hidden="true">≡</span> Post library</a><a href="#playbook" data-view="playbook"><span aria-hidden="true">↗</span> Launch playbook</a></nav>
+<div class="sidebar-bottom"><p class="eyebrow">THE PROFITLANE APPROACH</p><p>Made for dispatchers<br>by dispatchers.</p><small>AI assists.<br>Your judgment stays in control.</small></div>
+</aside>
+<div class="workspace">
+<header class="topbar"><span>Marketing workspace <span class="divider">/</span> <strong>TikTok</strong></span><span class="local-badge">● Local demo</span></header>
+<main id="main" tabindex="-1">
+<div class="page-heading"><div><p class="eyebrow">PROFITLANE / SOCIAL MARKETING</p><h1 id="page-title">Your content, in motion.</h1><p id="page-subtitle">A clear plan. Useful conversations. One post at a time.</p></div><button id="add-post" class="primary">+ New post</button></div>
+<div class="notice"><strong>Demonstration workspace.</strong> All seeded results are fictional. No TikTok connection or publishing. <span id="storage-state">Edits save in this browser.</span></div>
+<p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+<section id="overview-view" aria-label="Overview">
+<div class="hero-panel"><div><span class="eyebrow">LAUNCH PLAN / 09 NOV — 08 DEC 2026</span><h2>Support the person<br>making the call.</h2><p>13 planned posts. 30 days of thoughtful preparation.<br>Education first. Your dispatcher stays at the center.</p><a class="light-link" href="#calendar">Explore the calendar <span aria-hidden="true">→</span></a></div><div class="hero-aside"><span class="eyebrow">THE MESSAGE</span><p>AI should be an<br>assistant to dispatchers,<br><strong>not a replacement.</strong></p><span class="outlined-pill">ProfitLane · In development</span></div></div>
+<div id="stats" class="stats" aria-label="Workspace statistics"></div>
+<div class="two-col"><article class="panel"><div class="panel-heading"><h2>Production pipeline</h2><span class="muted">All posts</span></div><div id="status-chart" class="bar-chart"></div></article><article class="panel"><div class="panel-heading"><h2>Views by content pillar</h2><span class="muted">Published posts</span></div><div id="category-chart" class="bar-chart"></div></article></div>
+<div class="two-col"><article class="panel"><div class="panel-heading"><h2>Next in the plan</h2><a href="#posts">View library →</a></div><div id="up-next"></div></article><article class="panel note-panel"><p class="eyebrow">A BETTER MEASURE</p><h2>Useful beats noisy.</h2><p>Look for questions from dispatchers, shared checklists and clearer conversations. Views are a signal; they are not proof of customers.</p><p class="muted">Engagement = (likes + comments + shares) ÷ views × 100. Only Published posts with all four metrics and positive views enter the pooled rate.</p><a href="#document" data-document="profile-and-strategy.md">Read Angel’s measurement guide →</a></article></div>
+</section>
+<section id="calendar-view" aria-label="Content calendar" hidden>
+<div class="panel"><div class="panel-heading calendar-heading"><div><p class="eyebrow">PLAN THE WORK</p><h2 id="month-title"></h2></div><div class="button-row"><button id="prev-month" aria-label="Previous month">←</button><button id="launch-month">Launch month</button><button id="next-month" aria-label="Next month">→</button></div></div><p class="muted">Post dates follow your library edits. Production days are reference prompts from the original 30-day plan. Select a post to edit or a prompt for details.</p><div class="calendar-key"><span>● Scheduled post</span><span>○ Preparation / review</span></div><div class="calendar-scroll"><div class="weekdays" aria-hidden="true"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div><div id="calendar-grid" class="calendar-grid"></div></div></div>
+<article class="panel"><div class="panel-heading"><h2>30 days, with room to prepare.</h2><a href="data:text/csv;base64,ZGF5LGRhdGUsYWN0aXZpdHksdGl0bGUsY2F0ZWdvcnksaG9vayxmb3JtYXQsbWVzc2FnZSxjYXB0aW9uLGhhc2h0YWdzLGN0YQ0KMSwyMDI2LTExLTA5LFB1Ymxpc2gsQUkgYmVzaWRlIHRoZSBkaXNwYXRjaGVyLEJyYW5kIGF3YXJlbmVzcyxBSSBzaG91bGQgaGVscCB5b3VyIGRpc3BhdGNoIGRlc2vigJRub3QgdGFrZSBpdCBvdmVyLixGb3VuZGVyIHRvIGNhbWVyYSxQcm9maXRMYW5lIGlzIGluIGRldmVsb3BtZW50IHRvIHN1cHBvcnQgZGlzcGF0Y2hlciBqdWRnbWVudC4sWW91ciBleHBlcmllbmNlIHN0YXlzIGF0IHRoZSBjZW50ZXIuIE1lZXQgdGhlIGlkZWEgYmVoaW5kIFByb2ZpdExhbmUuLCNQcm9maXRMYW5lICNUcnVja0Rpc3BhdGNoICNTbWFsbEJ1c2luZXNzICNEaXNwYXRjaFRvb2xzLEZvbGxvdyBmb3IgcHJhY3RpY2FsIGxvYWQtcmV2aWV3IHRpcHMuDQoyLDIwMjYtMTEtMTAsUHJlcGFyZSAmIGVuZ2FnZSxZb3VyIGxvYWQtcmV2aWV3IHJvdXRpbmUsRW5nYWdlbWVudCxXaGF0IGRvIHlvdSBjaGVjayBiZWZvcmUgeW91IGV2ZW4gZGlzY3VzcyB0aGUgcmF0ZT8sUXVlc3Rpb24gY2FyZCArIHRhbGtpbmcgaGVhZCxMaXN0ZW4gdG8gcmVhbCB3b3JrZmxvd3MgYmVmb3JlIGNob29zaW5nIGZlYXR1cmVzLixFdmVyeSBkaXNwYXRjaGVyIGhhcyBhIGZpcnN0IGNoZWNrLiBXaGF0IGlzIHlvdXJzPywjUHJvZml0TGFuZSAjVHJ1Y2tEaXNwYXRjaCAjRGlzcGF0Y2hlckxpZmUsIkNvbW1lbnQgd2l0aCBvbmUgY2hlY2ssIHdpdGhvdXQgc2hhcmluZyBwcml2YXRlIGxvYWQgZGV0YWlscy4iDQozLDIwMjYtMTEtMTEsUHVibGlzaCxUaGUgbWlsZXMgYmVmb3JlIHRoZSBsb2FkLEVkdWNhdGlvbixUaGF0IGxvYWQgc3RhcnRzIGJlZm9yZSBwaWNrdXAuIENvdW50IHRob3NlIG1pbGVzLixXaGl0ZWJvYXJkIGV4YW1wbGUsQWRkIGRlYWRoZWFkIHRvIGxvYWRlZCBtaWxlcyBiZWZvcmUgY29tcGFyaW5nIHJldmVudWUgcGVyIG1pbGUuLFRoZSBlbXB0eSBtaWxlcyBiZWxvbmcgaW4gdGhlIGNvbnZlcnNhdGlvbiB0b28uIEZpY3Rpb25hbCBleGFtcGxlLiwjUHJvZml0TGFuZSAjVHJ1Y2tEaXNwYXRjaCAjT3duZXJPcGVyYXRvciAjTG9hZFBsYW5uaW5nLFNhdmUgdGhpcyB0b3RhbC1taWxlcyBjaGVjay4NCjQsMjAyNi0xMS0xMixQcmVwYXJlICYgZW5nYWdlLEEgYmV0dGVyIGZpbG1pbmcgY2hlY2tsaXN0LEluZHVzdHJ5IHRpcHMsQSB1c2VmdWwgbG9hZCB2aWRlbyBzdGFydHMgd2l0aCBjbGVhbiBpbnB1dHMuLERlc2sgY2hlY2tsaXN0LFVzZSBmaWN0aW9uYWwgbG9hZCBkYXRhIGFuZCBjbGVhciBsYWJlbHMgaW4gZWR1Y2F0aW9uYWwgY29udGVudC4sTm8gcHJpdmF0ZSByYXRlIGNvbmZpcm1hdGlvbnMgbmVlZGVkIHRvIHRlYWNoIHRoZSBiYXNpY3MuLCNQcm9maXRMYW5lICNEaXNwYXRjaFRpcHMgI1RydWNrRGlzcGF0Y2ggI0xvYWRQbGFubmluZyxXaGljaCBpbnB1dCB3b3VsZCB5b3UgZXhwbGFpbiBmaXJzdD8NCjUsMjAyNi0xMS0xMyxQdWJsaXNoLFJldmVudWUgaXMgbm90IHRha2UtaG9tZSBwYXksRWR1Y2F0aW9uLCJBICQxLDIwMCBsb2FkIGRvZXMgbm90IG1lYW4gJDEsMjAwIGluIHByb2ZpdC4iLENhbGN1bGF0b3IgY2xvc2UtdXAsU3VidHJhY3QgcmVsZXZhbnQgY29zdHM7IHJldmVudWUgcGVyIG1pbGUgYWxvbmUgaXMgaW5jb21wbGV0ZS4sUmV2ZW51ZSBmaXJzdC4gQ29zdHMgbmV4dC4gWW91ciBmaW5hbCBkZWNpc2lvbiBsYXN0LiBGaWN0aW9uYWwgZmlndXJlcy4sI1Byb2ZpdExhbmUgI1RydWNrRGlzcGF0Y2ggI093bmVyT3BlcmF0b3IgI0xvYWRQbGFubmluZyxTYXZlIHRoZSBjb3N0IGNoZWNrbGlzdC4NCjYsMjAyNi0xMS0xNCxSZXZpZXcgJiByZXNwb25kLEJ1aWxkIHRoZSBuZXh0IGNvc3QgY2hlY2tsaXN0LEluZHVzdHJ5IHRpcHMsV2hpY2ggY29zdCBpcyBlYXNpZXN0IHRvIGxlYXZlIG91dD8sQ2hlY2tsaXN0IGRyYWZ0LCJJbmNsdWRlIGZ1ZWwsIHRvbGxzLCB0aW1lIGFuZCBhbGxvY2F0ZWQgb3BlcmF0aW5nIGNvc3RzLiIsSGVscCB1cyBidWlsZCBhIG1vcmUgdXNlZnVsIHJldmlldyBjaGVja2xpc3QuLCNQcm9maXRMYW5lICNEaXNwYXRjaFRpcHMgI1RydWNrRGlzcGF0Y2ggI0xvYWRQbGFubmluZyxTdWdnZXN0IG9uZSBvdmVybG9va2VkIGNvc3QuDQo3LDIwMjYtMTEtMTUsUmV2aWV3ICYgcmVzcG9uZCxPbmUgd2VlayBvZiBxdWVzdGlvbnMsRW5nYWdlbWVudCxXaGF0IGRpZCB0aGlzIHdlZWsgbGVhdmUgdW5hbnN3ZXJlZD8sQ29tbWVudCByb3VuZHVwLFVzZSBhdWRpZW5jZSBxdWVzdGlvbnMgdG8gY2hvb3NlIHRoZSBuZXh0IGV4cGxhbmF0aW9uLixXZSBhcmUgbGlzdGVuaW5nIGJlZm9yZSBhZGRpbmcgbW9yZSBjb25jZXB0cy4sI1Byb2ZpdExhbmUgI1RydWNrRGlzcGF0Y2ggI0Rpc3BhdGNoZXJMaWZlLExlYXZlIGEgcXVlc3Rpb24gZm9yIG5leHQgd2Vlay4NCjgsMjAyNi0xMS0xNixQdWJsaXNoLEFuZ2VsIGFuZCB0aGUgbWlzc2lvbixCcmFuZCBhd2FyZW5lc3MsVGhlIHBlcnNvbiBhdCB0aGUgZGlzcGF0Y2ggZGVzayBzdGlsbCBtYWtlcyB0aGUgY2FsbC4sRm91bmRlciBpbnRlcnZpZXcsQW5nZWwgYnJpbmdzIGFwcHJveGltYXRlbHkgZWlnaHQgeWVhcnMgb2YgdHJ1Y2tpbmcgZXhwZXJpZW5jZTsgY29uZmlybSBiZWZvcmUgZmlsbWluZy4sTWVldCB0aGUgcHVycG9zZSBiZWhpbmQgUHJvZml0TGFuZTogc3VwcG9ydCB0aGUgcGVyc29uIG1ha2luZyB0aGUgY2FsbC4sI1Byb2ZpdExhbmUgI1RydWNrRGlzcGF0Y2ggI1NtYWxsQnVzaW5lc3MgI0Rpc3BhdGNoVG9vbHMsV2hhdCB3b3VsZCBoZWxwZnVsIEFJIHN1cHBvcnQgbG9vayBsaWtlIHRvIHlvdT8NCjksMjAyNi0xMS0xNyxQcmVwYXJlICYgZW5nYWdlLFByZXBhcmUgYSByYXRlIGNvbnZlcnNhdGlvbixJbmR1c3RyeSB0aXBzLCJCZWZvcmUgYXNraW5nIGZvciBtb3JlLCBvcmdhbml6ZSB0aGUgcmVhc29uLiIsUm9sZS1wbGF5IHJlaGVhcnNhbCwiVXNlIGFjY3VyYXRlIHJvdXRlLCB0aW1pbmcgYW5kIGNvc3QgZmFjdHM7IG5vIGd1YXJhbnRlZWQgbmVnb3RpYXRpb24gb3V0Y29tZS4iLEZhY3RzIG1ha2UgYSBjbGVhcmVyIGNvbnZlcnNhdGlvbiB0aGFuIGEgcmFuZG9tIGNvdW50ZXJvZmZlci4sI1Byb2ZpdExhbmUgI0Rpc3BhdGNoVGlwcyAjVHJ1Y2tEaXNwYXRjaCAjTG9hZFBsYW5uaW5nLFdyaXRlIGRvd24geW91ciB0aHJlZSBrZXkgZmFjdHMuDQoxMCwyMDI2LTExLTE4LFB1Ymxpc2gsRnVlbCBtYXRoIHlvdSBjYW4gY2hlY2ssRWR1Y2F0aW9uLEhvdyBtdWNoIGZ1ZWwgZG9lcyB0aGlzIGZpY3Rpb25hbCB0cmlwIGFjdHVhbGx5IG5lZWQ/LFdoaXRlYm9hcmQgY2FsY3VsYXRpb24sIlRvdGFsIG1pbGVzIGRpdmlkZWQgYnkgYXNzdW1lZCBNUEcsIG11bHRpcGxpZWQgYnkgZnVlbCBwcmljZSwgZXN0aW1hdGVzIGZ1ZWwgY29zdC4iLEEgZnVlbCBlc3RpbWF0ZSBpcyBvbmx5IGFzIGdvb2QgYXMgaXRzIGFzc3VtcHRpb25zLiBGaWN0aW9uYWwgaW5wdXRzLiwjUHJvZml0TGFuZSAjVHJ1Y2tEaXNwYXRjaCAjT3duZXJPcGVyYXRvciAjTG9hZFBsYW5uaW5nLENoZWNrIHlvdXIgb3duIGFzc3VtcHRpb25zIGJlZm9yZSB1c2luZyBhbiBlc3RpbWF0ZS4NCjExLDIwMjYtMTEtMTksUHJlcGFyZSAmIGVuZ2FnZSxXaGF0IGNoYW5nZXMgeW91ciBmdWVsIGVzdGltYXRlPyxFbmdhZ2VtZW50LFdvdWxkIHlvdSB1c2UgdGhlIHNhbWUgTVBHIGZvciBldmVyeSB0cmlwPyxRdWVzdGlvbiArIGlucHV0IGNhcmRzLFZlaGljbGUgYW5kIHJvdXRlIGFzc3VtcHRpb25zIG5lZWQgcmV2aWV3LixPbmUgZXN0aW1hdGUgY2Fubm90IGRlc2NyaWJlIGV2ZXJ5IHRydWNrIG9yIHJvdXRlLiwjUHJvZml0TGFuZSAjVHJ1Y2tEaXNwYXRjaCAjRGlzcGF0Y2hlckxpZmUsVGVsbCB1cyB3aGljaCBhc3N1bXB0aW9uIHlvdSByZXZpc2l0Lg0KMTIsMjAyNi0xMS0yMCxQdWJsaXNoLEEgc2NvcmUgaXMgYSBzdGFydGluZyBwb2ludCxQcm9kdWN0IGNvbmNlcHQsV291bGQgeW91IGFjY2VwdCBhIGxvYWQgYmVjYXVzZSBhIHNjcmVlbiBzYXlzIDc2PyxMYWJlbGVkIGNvbmNlcHQgbW9ja3VwLFByb3Bvc2VkIDHigJMxMDAgcmF0aW5nIGlzIHVudmFsaWRhdGVkIGFuZCBuZXZlciByZXBsYWNlcyBhIGZ1bGwgcmV2aWV3LiwiQ29uY2VwdCBvbmx5OiBhIHN1bW1hcnkgc2hvdWxkIGludml0ZSBxdWVzdGlvbnMsIG5vdCBtYWtlIHlvdXIgZGVjaXNpb24uIiwjUHJvZml0TGFuZSAjRGlzcGF0Y2hUb29scyAjQUlhc3Npc3RhbnQgI1RydWNrRGlzcGF0Y2gsV2hhdCB3b3VsZCB5b3UgbmVlZCB0byBzZWUgYmVoaW5kIGEgc2NvcmU/DQoxMywyMDI2LTExLTIxLFJldmlldyAmIHJlc3BvbmQsRGVzaWduIHRoZSBleHBsYW5hdGlvbixQcm9kdWN0IGNvbmNlcHQsIklmIGEgc2NvcmUgY2hhbmdlZCwgd291bGQgeW91IGtub3cgd2h5PyIsU2tldGNoIHJldmlldyxBIHByb3Bvc2VkIHNjb3JlIHNob3VsZCBleHBsYWluIGlucHV0cyBhbmQgbWlzc2luZyBpbmZvcm1hdGlvbi4sIldlIHdhbnQgdW5kZXJzdGFuZGFibGUgYXNzaXN0YW5jZSwgbm90IHVuZXhwbGFpbmVkIG51bWJlcnMuIENvbmNlcHQgaW4gZGV2ZWxvcG1lbnQuIiwjUHJvZml0TGFuZSAjRGlzcGF0Y2hUb29scyAjQUlhc3Npc3RhbnQgI1RydWNrRGlzcGF0Y2gsV2hpY2ggaW5wdXQgbmVlZHMgdGhlIGNsZWFyZXN0IGV4cGxhbmF0aW9uPw0KMTQsMjAyNi0xMS0yMixSZXZpZXcgJiByZXNwb25kLFlvdXIgdGhyZWUtcXVlc3Rpb24gcmV2aWV3LEVuZ2FnZW1lbnQsV2hpY2ggb2YgdGhlc2UgdGhyZWUgY2hlY2tzIGNvbWVzIGZpcnN0IGZvciB5b3U/LENvbW1lbnQtcmVzcG9uc2UgcGxhbixJbnZpdGUgYXVkaWVuY2UgcHJpb3JpdGllcyB3aXRob3V0IHByZXNlbnRpbmcgYW4gYWNjZXB0YW5jZSBydWxlLiwiTWlsZXMsIHRpbWUgb3IgY29zdHPigJR3aGVyZSBkbyB5b3Ugc3RhcnQ/IiwjUHJvZml0TGFuZSAjVHJ1Y2tEaXNwYXRjaCAjRGlzcGF0Y2hlckxpZmUsQ29tbWVudCB3aXRoIHlvdXIgb3JkZXIgYW5kIHdoeS4NCjE1LDIwMjYtMTEtMjMsUHVibGlzaCxBc2sgYmVmb3JlIHlvdSBjb3VudGVyLEluZHVzdHJ5IHRpcHMsIkJlZm9yZSB5b3UgY291bnRlciwgd2hhdCBkbyB5b3Ugc3RpbGwgbmVlZCB0byBrbm93PyIsVHdvLXBlcnNvbiBicm9rZXIgcm9sZS1wbGF5LCJDbGFyaWZ5IGFwcG9pbnRtZW50IHRpbWVzLCBhY2Nlc3NvcmlhbCB0ZXJtcyBhbmQgbG9hZCBkZXRhaWxzIGJlZm9yZSBuZWdvdGlhdGluZy4iLEEgY2xlYXJlciBxdWVzdGlvbiBjYW4gaW1wcm92ZSB5b3VyIGluZm9ybWF0aW9uLiBObyByYXRlIG91dGNvbWUgaXMgcHJvbWlzZWQuLCNQcm9maXRMYW5lICNEaXNwYXRjaFRpcHMgI1RydWNrRGlzcGF0Y2ggI0xvYWRQbGFubmluZyxTYXZlIHRoZXNlIHRocmVlIHF1ZXN0aW9ucy4NCjE2LDIwMjYtMTEtMjQsUHJlcGFyZSAmIGVuZ2FnZSxUaW1lIGJlbG9uZ3MgaW4gdGhlIHJldmlldyxFZHVjYXRpb24sVHdvIGxvYWRzLiBTYW1lIG1pbGVzLiBEaWZmZXJlbnQgdGltZSBjb21taXRtZW50cy4sU2lkZS1ieS1zaWRlIGNhcmRzLCJQaWNrdXAgd2luZG93cywgd2FpdGluZyBhbmQgZGVsaXZlcnkgdGltaW5nIGFmZmVjdCB0aGUgcmV2aWV3LiIsTWlsZWFnZSBkb2VzIG5vdCB0ZWxsIHRoZSB3aG9sZSBzY2hlZHVsZS4gRmljdGlvbmFsIGNvbXBhcmlzb24uLCNQcm9maXRMYW5lICNUcnVja0Rpc3BhdGNoICNPd25lck9wZXJhdG9yICNMb2FkUGxhbm5pbmcsV2hhdCB0aW1pbmcgZGV0YWlsIGRvIHlvdSBhbHdheXMgY29uZmlybT8NCjE3LDIwMjYtMTEtMjUsUHVibGlzaCwiVGhlIHNhbWUgcmF0ZSwgZGlmZmVyZW50IHRyaXAiLEVkdWNhdGlvbiwiQm90aCBsb2FkcyBwYXkgJDEsMjAwLiBXb3VsZCB5b3UgcmV2aWV3IHRoZW0gdGhlIHNhbWUgd2F5PyIsU3BsaXQtc2NyZWVuIGNhbGN1bGF0aW9uLENvbXBhcmUgcmV2ZW51ZSBhY3Jvc3MgdG90YWwgbWlsZXMgd2hpbGUgcmV2aWV3aW5nIGNvc3RzIGFuZCB0aW1lLixTYW1lIHJldmVudWUgY2FuIGhpZGUgdmVyeSBkaWZmZXJlbnQgdHJpcHMuIEZpY3Rpb25hbCBleGFtcGxlcy4sI1Byb2ZpdExhbmUgI1RydWNrRGlzcGF0Y2ggI093bmVyT3BlcmF0b3IgI0xvYWRQbGFubmluZyxTYXZlIHRoaXMgY29tcGFyaXNvbiBmb3IgeW91ciBuZXh0IHJldmlldyBjaGVja2xpc3QuDQoxOCwyMDI2LTExLTI2LFByZXBhcmUgJiBlbmdhZ2UsTWlzc2luZyBpbmZvcm1hdGlvbiBtYXR0ZXJzLFByb2R1Y3QgY29uY2VwdCxXaGF0IHNob3VsZCBhbiBhc3Npc3RhbnQgZG8gd2hlbiBhbiBpbnB1dCBpcyBtaXNzaW5nPyxNb2NrdXAgcXVlc3Rpb24sRmxhZyB1bmtub3duIGlucHV0cyBpbnN0ZWFkIG9mIHByZXNlbnRpbmcgY2VydGFpbnR5LixDb25jZXB0IGluIGRldmVsb3BtZW50OiB1bmtub3duIHNob3VsZCBzdGF5IHVua25vd24uLCNQcm9maXRMYW5lICNEaXNwYXRjaFRvb2xzICNBSWFzc2lzdGFudCAjVHJ1Y2tEaXNwYXRjaCxXaGljaCBtaXNzaW5nIGlucHV0IHNob3VsZCB0cmlnZ2VyIGEgZm9sbG93LXVwPw0KMTksMjAyNi0xMS0yNyxQdWJsaXNoLFdhbGsgdGhyb3VnaCB0aGUgcHJvcG9zZWQgYXNzaXN0YW50LFByb2R1Y3QgY29uY2VwdCxIZXJlIGlzIHRoZSBpZGVh4oCUbm90IGEgbGl2ZSBwcm9kdWN0IGRlbW8uLFBhcGVyIHByb3RvdHlwZSB3YWxrdGhyb3VnaCwiUHJvcG9zZWQgaW5wdXQsIHJldmlldyBhbmQgZXhwbGFuYXRpb24gd29ya2Zsb3c7IGZlYXR1cmVzIHVuY29uZmlybWVkLiIsQSBjb25jZXB0IHdhbGt0aHJvdWdoIG9mIHN1cHBvcnQgYXQgdGhlIGRpc3BhdGNoIGRlc2suIEluIGRldmVsb3BtZW50LiwjUHJvZml0TGFuZSAjRGlzcGF0Y2hUb29scyAjQUlhc3Npc3RhbnQgI1RydWNrRGlzcGF0Y2gsVGVsbCB1cyB3aGljaCBzdGVwIG5lZWRzIG1vcmUgY2xhcml0eS4NCjIwLDIwMjYtMTEtMjgsUmV2aWV3ICYgcmVzcG9uZCxNYWtlIGxhYmVscyByZWFkYWJsZSxJbmR1c3RyeSB0aXBzLENhbiB5b3UgcmVhZCB0aGUgaW1wb3J0YW50IHBhcnQgaW4gdHdvIHNlY29uZHM/LE92ZXJsYXkgcmVoZWFyc2FsLEtlZXAgY29uY2VwdCBsYWJlbHMgdmlzaWJsZSBhbmQgZXhwbGFpbiBhc3N1bXB0aW9ucyBpbiBjYXB0aW9ucy4sQ2xlYXIgd29yZGluZyBoZWxwcyBwZW9wbGUgdW5kZXJzdGFuZCB3aGF0IGlzIHJlYWwgYW5kIHdoYXQgaXMgcHJvcG9zZWQuLCNQcm9maXRMYW5lICNEaXNwYXRjaFRpcHMgI1RydWNrRGlzcGF0Y2ggI0xvYWRQbGFubmluZyxXaGljaCBwYXJ0IHdvdWxkIHlvdSBzaW1wbGlmeT8NCjIxLDIwMjYtMTEtMjksUmV2aWV3ICYgcmVzcG9uZCxMaXN0ZW4gYmVmb3JlIHRoZSBuZXh0IGJhdGNoLEVuZ2FnZW1lbnQsIldoYXQgc2hvdWxkIHdlIGV4cGxhaW4gbmV4dDogZnVlbCwgdGltZSBvciBkZWFkaGVhZD8iLFBvbGwtc3R5bGUgcXVlc3Rpb24sTGV0IHF1YWxpZmllZCBxdWVzdGlvbnMgc2hhcGUgZnV0dXJlIGVkdWNhdGlvbi4sQ2hvb3NlIGEgdG9waWMgZm9yIHRoZSBuZXh0IHJlY29yZGluZyBzZXNzaW9uLiwjUHJvZml0TGFuZSAjVHJ1Y2tEaXNwYXRjaCAjRGlzcGF0Y2hlckxpZmUsIkNvbW1lbnQgZnVlbCwgdGltZSBvciBkZWFkaGVhZC4iDQoyMiwyMDI2LTExLTMwLFB1Ymxpc2gsVGhlIGRpc3BhdGNoZXIgc3RheXMgaW4gY29udHJvbCxCcmFuZCBhd2FyZW5lc3MsV2hhdCBzaG91bGQgQUkgbGVhdmUgdG8gdGhlIGRpc3BhdGNoZXI/LEZvdW5kZXIgYW5zd2VyICsgY2hlY2tsaXN0LCJDb250ZXh0LCByZWxhdGlvbnNoaXBzIGFuZCBmaW5hbCBqdWRnbWVudCByZW1haW4gaHVtYW4gcmVzcG9uc2liaWxpdGllcy4iLE1hZGUgZm9yIGRpc3BhdGNoZXJzIGJ5IGRpc3BhdGNoZXJzLiBBSSBhc3Npc3RhbmNlIHN0YXlzIGluIGEgc3VwcG9ydGluZyByb2xlLiwjUHJvZml0TGFuZSAjVHJ1Y2tEaXNwYXRjaCAjU21hbGxCdXNpbmVzcyAjRGlzcGF0Y2hUb29scyxUZWxsIHVzIG9uZSBkZWNpc2lvbiB5b3Ugd291bGQgYWx3YXlzIHJldmlldyB5b3Vyc2VsZi4NCjIzLDIwMjYtMTItMDEsUHJlcGFyZSAmIGVuZ2FnZSxCdWlsZCBhIHVzZWZ1bCByZXBseSB2aWRlbyxFbmdhZ2VtZW50LEEgZ29vZCBxdWVzdGlvbiBkZXNlcnZlcyBtb3JlIHRoYW4gYSBxdWljayByZXBseS4sUmVwbHktdmlkZW8gc3Rvcnlib2FyZCxBbnN3ZXIgYSByZWFsIHF1ZXN0aW9uIGFjY3VyYXRlbHk7IGRvIG5vdCBpbnZlbnQgYSBjdXN0b21lciBjb21tZW50LixXZSBhcmUgY29sbGVjdGluZyBxdWVzdGlvbnMgZm9yIHRoZSBuZXh0IGV4cGxhbmF0aW9uLiwjUHJvZml0TGFuZSAjVHJ1Y2tEaXNwYXRjaCAjRGlzcGF0Y2hlckxpZmUsQXNrIG9uZSBzcGVjaWZpYyBsb2FkLXJldmlldyBxdWVzdGlvbi4NCjI0LDIwMjYtMTItMDIsUHVibGlzaCxUaHJlZSBpbnB1dHMgdG8gZG91YmxlLWNoZWNrLEluZHVzdHJ5IHRpcHMsIkJlZm9yZSB0cnVzdGluZyBhbnkgc3VtbWFyeSwgY2hlY2sgdGhlIGlucHV0cy4iLFRocmVlLWNhcmQgY2hlY2tsaXN0LCJWZXJpZnkgdG90YWwgbWlsZXMsIGZ1ZWwgYXNzdW1wdGlvbnMgYW5kIHNjaGVkdWxlOyB0aGlzIGlzIG5vdCBhIGNvbXBsZXRlIG9wZXJhdGluZyBjaGVja2xpc3QuIixCZXR0ZXIgaW5wdXRzIGhlbHAgeW91IGFzayBiZXR0ZXIgcXVlc3Rpb25zLiwjUHJvZml0TGFuZSAjRGlzcGF0Y2hUaXBzICNUcnVja0Rpc3BhdGNoICNMb2FkUGxhbm5pbmcsU2F2ZSB0aGVzZSBjaGVja3MgYW5kIGFkZCB5b3VyIG93bi4NCjI1LDIwMjYtMTItMDMsUHJlcGFyZSAmIGVuZ2FnZSxXaGF0IGEgZGVtbyByZXF1ZXN0IHNob3VsZCBleHBsYWluLFByb2R1Y3QgY29uY2VwdCwiQmVmb3JlIHlvdSByZXF1ZXN0IGEgZGVtbywgeW91IHNob3VsZCBrbm93IHdoYXQgaXMgYXZhaWxhYmxlLiIsRm91bmRlciB1cGRhdGUgZHJhZnQsU3RhdGUgYWN0dWFsIGRldmVsb3BtZW50IHN0YXR1cyBhbmQgYWNjZXNzIGxpbWl0cy4sUHJvZHVjdCB1cGRhdGVzIHNob3VsZCB0ZWxsIHlvdSB3aGF0IHlvdSBjYW4gcmVhbGx5IHRyeS4sI1Byb2ZpdExhbmUgI0Rpc3BhdGNoVG9vbHMgI0FJYXNzaXN0YW50ICNUcnVja0Rpc3BhdGNoLEZvbGxvdyBmb3IgY29uZmlybWVkIGRldmVsb3BtZW50IHVwZGF0ZXMuDQoyNiwyMDI2LTEyLTA0LFB1Ymxpc2gsQW5zd2VyIGEgcmVhbCBkaXNwYXRjaGVyIHF1ZXN0aW9uLEVuZ2FnZW1lbnQsTGV0IHVzIHdvcmsgdGhyb3VnaCBvbmUgcXVlc3Rpb24gZnJvbSB0aGUgZGlzcGF0Y2ggZGVzay4sQ29tbWVudCByZXBseTsgdXNlIGEgZ2VudWluZSBhcHByb3ZlZCBxdWVzdGlvbixVc2UgYSByZWFsIHF1ZXN0aW9uIHdpdGggY29uc2VudCBvciBsYWJlbCBpdCBhcyBhIHRlYW0gcHJvbXB0LixBIHByYWN0aWNhbCBleHBsYW5hdGlvbiBzdGFydHMgd2l0aCBhIHNwZWNpZmljIHF1ZXN0aW9uLiwjUHJvZml0TGFuZSAjVHJ1Y2tEaXNwYXRjaCAjRGlzcGF0Y2hlckxpZmUsV2hhdCB3b3VsZCB5b3UgbGlrZSB1cyB0byB3b3JrIHRocm91Z2ggbmV4dD8NCjI3LDIwMjYtMTItMDUsUmV2aWV3ICYgcmVzcG9uZCxSZXZpZXcgdXNlZnVsIHJlc3BvbnNlcyxFbmdhZ2VtZW50LFdoaWNoIGV4cGxhbmF0aW9uIGhlbHBlZCB5b3UgYXNrIGEgYmV0dGVyIHF1ZXN0aW9uPyxXZWVrbHkgcmVjYXAgcHJlcGFyYXRpb24sTWVhc3VyZSB1c2VmdWwgYXVkaWVuY2UgZmVlZGJhY2sgd2l0aG91dCBmYWJyaWNhdGluZyB0ZXN0aW1vbmlhbHMuLFlvdXIgZmVlZGJhY2sgaGVscHMgc2hhcGUgdGhlIG5leHQgbW9udGggb2YgZWR1Y2F0aW9uLiwjUHJvZml0TGFuZSAjVHJ1Y2tEaXNwYXRjaCAjRGlzcGF0Y2hlckxpZmUsTmFtZSBhIHRvcGljIHdlIHNob3VsZCByZXZpc2l0Lg0KMjgsMjAyNi0xMi0wNixSZXZpZXcgJiByZXNwb25kLFBsYW4gbmV4dCBtb250aCB0aG91Z2h0ZnVsbHksSW5kdXN0cnkgdGlwcyxEbyBtb3JlIHZpZXdzIGFsd2F5cyBtZWFuIGEgbW9yZSB1c2VmdWwgdmlkZW8/LEFuYWx5dGljcyB3b3Jrc2hlZXQsQ29tcGFyZSBlcXVhbCBvYnNlcnZhdGlvbiB3aW5kb3dzIGFuZCBxdWFsaWZpZWQgcmVzcG9uc2VzLixMb29rIGJleW9uZCByZWFjaCB3aGVuIHJldmlld2luZyB3aGF0IGhlbHBlZC4sI1Byb2ZpdExhbmUgI0Rpc3BhdGNoVGlwcyAjVHJ1Y2tEaXNwYXRjaCAjTG9hZFBsYW5uaW5nLENob29zZSBvbmUgcXVlc3Rpb24gdG8gdGVzdCBuZXh0IG1vbnRoLg0KMjksMjAyNi0xMi0wNyxQdWJsaXNoLFdoYXQgd2Ugd2FudCB0byBsZWFybiBuZXh0LEJyYW5kIGF3YXJlbmVzcyxXaGF0IHdvdWxkIG1ha2UgQUkgYXNzaXN0YW5jZSB3b3J0aCB0cnlpbmcgZm9yIHlvdT8sRm91bmRlciByZWNhcCwiSW52aXRlIG5lZWRzIGFuZCBjb25maXJtZWQgdXBkYXRlIGludGVyZXN0LCB3aXRob3V0IHByb21pc2luZyBwcm9kdWN0IGF2YWlsYWJpbGl0eS4iLFByb2ZpdExhbmUgaXMgaW4gZGV2ZWxvcG1lbnQuIFlvdXIganVkZ21lbnQgc3RheXMgYXQgdGhlIGNlbnRlci4sI1Byb2ZpdExhbmUgI1RydWNrRGlzcGF0Y2ggI1NtYWxsQnVzaW5lc3MgI0Rpc3BhdGNoVG9vbHMsRm9sbG93IGZvciB1cGRhdGVzIGFuZCB0ZWxsIHVzIHdoYXQgc3VwcG9ydCB5b3UgbmVlZC4NCjMwLDIwMjYtMTItMDgsUHJlcGFyZSAmIGVuZ2FnZSxBIG1vbnRoIG9mIGxlYXJuaW5nLEVuZ2FnZW1lbnQsV2hhdCBzaG91bGQgc3RheSBvbiB0aGUgY2FsZW5kYXIgbmV4dCBtb250aD8sTW9udGgtZW5kIHBsYW5uaW5nIGNhcmQsUmV2aWV3IGFjdHVhbCByZXN1bHRzIGFuZCBjaG9vc2UgdXNlZnVsIG5leHQgZXhwZXJpbWVudHMuLEEgdGhvdWdodGZ1bCBuZXh0IG1vbnRoIHN0YXJ0cyB3aXRoIHdoYXQgd2UgbGVhcm5lZC4sI1Byb2ZpdExhbmUgI1RydWNrRGlzcGF0Y2ggI0Rpc3BhdGNoZXJMaWZlLFN1Z2dlc3Qgb25lIHRvcGljIGZvciB0aGUgbmV4dCBjYWxlbmRhci4NCg==" download="content-calendar.csv">Download reference CSV ↓</a></div><p>13 publishing days and 17 production, engagement or review days. Reserve ideas are optional alternatives, not a daily posting requirement.</p><div id="daily-plan" class="daily-plan"></div></article>
+</section>
+<section id="posts-view" aria-label="Post library" hidden>
+<div class="panel"><div class="panel-heading"><h2>The post library</h2><button id="export">Export backup ↓</button></div><div class="filters"><label>Search<input id="search" type="search" placeholder="Title, description, notes…"></label><label>Status<select id="status-filter"><option value="">All statuses</option><option>Idea</option><option>Planned</option><option>Ready</option><option>Published</option></select></label><label>Category<select id="category-filter"><option value="">All categories</option></select></label><label>From<input id="date-from" type="date"></label><label>Through<input id="date-to" type="date"></label><button id="clear-filters">Clear</button></div><p id="result-count" class="muted" aria-live="polite"></p><div class="table-wrap"><table><caption class="sr-only">Posts and manually entered cumulative performance</caption><thead><tr><th scope="col">Video / description</th><th scope="col">Planned date</th><th scope="col">Category</th><th scope="col">Status</th><th scope="col">Views</th><th scope="col">Likes</th><th scope="col">Comments</th><th scope="col">Shares</th><th scope="col">Engagement</th><th scope="col">Actions</th></tr></thead><tbody id="post-rows"></tbody></table></div><p class="muted">— means unknown or not calculable. Counts are entered manually; blank and measured zero are different. Filters affect this table only. Charts summarize all saved posts.</p></div>
+<div class="panel backup-panel"><div><h2>Keep a copy of your work.</h2><p>Browser storage is local to this browser and address. Export regularly. Import replaces this workspace only after confirmation.</p></div><label class="file-label">Import JSON backup<input id="import" type="file" accept=".json,application/json"></label><button id="reset-demo" class="danger">Reset to sample data</button></div>
+</section>
+<section id="playbook-view" aria-label="Launch playbook" hidden>
+<div class="resource-grid"><a class="resource" href="#document" data-document="profile-and-strategy.md"><span class="eyebrow">01 / PROFILE + STRATEGY</span><h2>Start with the mission.</h2><p>Username ideas, bio, audience, content pillars and measurement.</p><span>Read the playbook →</span></a><a class="resource" href="#document" data-document="content-calendar.md"><span class="eyebrow">02 / 30-DAY PLAN</span><h2>A sustainable rhythm.</h2><p>Every day mapped, with hooks, captions, hashtags and calls to action.</p><span>Open the calendar →</span></a><a class="resource" href="#document" data-document="video-scripts.md"><span class="eyebrow">03 / TEN VIDEO SCRIPTS</span><h2>Ready for rehearsal.</h2><p>Full speaking scripts, scene directions and on-screen text.</p><span>Read the scripts →</span></a></div>
+<article class="panel"><p class="eyebrow">ACCOUNT SETUP</p><h2>ProfitLane | Dispatcher AI</h2><p class="bio">AI assistance for dispatchers. Your judgment stays in control. In development.</p><p>Suggested handle: <strong>@profitlane</strong> (availability unverified). Use the approved default square icon with safe circular cropping. No official link is assumed; add Angel’s approved destination only when it is available.</p><p><strong>Primary audience:</strong> independent dispatchers. <strong>Secondary:</strong> owner-operators. <strong>Cadence:</strong> Monday / Wednesday / Friday. <strong>CTA:</strong> Follow for practical load-review tips.</p></article>
+<article class="panel"><div class="panel-heading"><h2>Script rehearsal library</h2><span class="muted">First 10 scheduled videos</span></div><div id="scripts"></div></article>
+<article class="panel"><h2>Before anything goes live</h2><p>Confirm founder details with Angel. Check product status, labels, arithmetic, privacy, captions and audio rights. The proposed 1–100 score has not been validated. Publish manually only after review.</p><a href="#document" data-document="README.md">Open the workspace instructions →</a></article>
+</section>
+<footer>ProfitLane · TikTok studio <span>College project / Fictional demonstration data</span></footer>
+</main>
+</div>
+<dialog id="post-dialog" aria-labelledby="editor-title"><form id="post-form"><div class="dialog-heading"><div><p class="eyebrow">CONTENT WORKSPACE</p><h2 id="editor-title">New post</h2></div><button type="button" id="close-editor" aria-label="Close post editor">✕</button></div><input type="hidden" name="id"><label>Video title *<input name="title" required maxlength="140"></label><label>Description / main message *<textarea name="description" required maxlength="4000" rows="3"></textarea></label><div class="form-grid"><label>Planned posting date *<input name="date" required type="date" min="2000-01-01" max="2100-12-31"></label><label>Content category *<select name="category" required></select></label><label>Status *<select name="status"><option>Idea</option><option>Planned</option><option>Ready</option><option>Published</option></select></label><label>Video URL (HTTPS)<input name="url" type="url" placeholder="Paste after manual publishing" maxlength="2048"></label></div><fieldset><legend>Cumulative performance · leave unknown counts blank</legend><div class="form-grid metrics-grid"><label>Views<input name="views" type="number" min="0" max="999999999999" step="1"></label><label>Likes<input name="likes" type="number" min="0" max="999999999999" step="1"></label><label>Comments<input name="comments" type="number" min="0" max="999999999999" step="1"></label><label>Shares<input name="shares" type="number" min="0" max="999999999999" step="1"></label></div><output id="rate-preview">Engagement: —</output></fieldset><details class="copy-details"><summary>Hook, format, caption, hashtags & CTA</summary><label>Opening hook<input name="hook" maxlength="500"></label><label>Video format<input name="format" maxlength="500"></label><label>Caption<textarea name="caption" maxlength="2200" rows="2"></textarea></label><label>Hashtags<input name="hashtags" maxlength="500"></label><label>Call to action<input name="cta" maxlength="500"></label></details><label>Notes and next steps<textarea name="notes" maxlength="4000" rows="3" placeholder="Record metric observation date, production notes and one next step."></textarea></label><p id="form-error" class="form-error" role="alert"></p><div class="dialog-actions"><button id="cancel-editor" type="button">Cancel</button><button type="submit" class="primary">Save post</button></div></form></dialog>
+<dialog id="prompt-dialog" aria-labelledby="prompt-title"><div class="dialog-heading"><h2 id="prompt-title"></h2><button id="close-prompt" aria-label="Close plan details">✕</button></div><div id="prompt-content"></div></dialog>
+<noscript><p>This tracker requires JavaScript. The Markdown playbook, calendar, scripts and CSV remain readable without it.</p></noscript>
+<dialog id="document-dialog" aria-labelledby="document-title"><div class="dialog-heading"><h2 id="document-title">Reference document</h2><button id="close-document" aria-label="Close document">✕</button></div><pre id="document-copy"></pre></dialog>
+<script>
+window.PROFITLANE_CONTENT = {
+  "calendar": [
+    {
+      "day": 1,
+      "date": "2026-11-09",
+      "activity": "Publish",
+      "title": "AI beside the dispatcher",
+      "category": "Brand awareness",
+      "hook": "AI should help your dispatch desk—not take it over.",
+      "format": "Founder to camera",
+      "message": "ProfitLane is in development to support dispatcher judgment.",
+      "caption": "Your experience stays at the center. Meet the idea behind ProfitLane.",
+      "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
+      "cta": "Follow for practical load-review tips."
+    },
+    {
+      "day": 2,
+      "date": "2026-11-10",
+      "activity": "Prepare & engage",
+      "title": "Your load-review routine",
+      "category": "Engagement",
+      "hook": "What do you check before you even discuss the rate?",
+      "format": "Question card + talking head",
+      "message": "Listen to real workflows before choosing features.",
+      "caption": "Every dispatcher has a first check. What is yours?",
+      "hashtags": "#ProfitLane #TruckDispatch #DispatcherLife",
+      "cta": "Comment with one check, without sharing private load details."
+    },
+    {
+      "day": 3,
+      "date": "2026-11-11",
+      "activity": "Publish",
+      "title": "The miles before the load",
+      "category": "Education",
+      "hook": "That load starts before pickup. Count those miles.",
+      "format": "Whiteboard example",
+      "message": "Add deadhead to loaded miles before comparing revenue per mile.",
+      "caption": "The empty miles belong in the conversation too. Fictional example.",
+      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "cta": "Save this total-miles check."
+    },
+    {
+      "day": 4,
+      "date": "2026-11-12",
+      "activity": "Prepare & engage",
+      "title": "A better filming checklist",
+      "category": "Industry tips",
+      "hook": "A useful load video starts with clean inputs.",
+      "format": "Desk checklist",
+      "message": "Use fictional load data and clear labels in educational content.",
+      "caption": "No private rate confirmations needed to teach the basics.",
+      "hashtags": "#ProfitLane #DispatchTips #TruckDispatch #LoadPlanning",
+      "cta": "Which input would you explain first?"
+    },
+    {
+      "day": 5,
+      "date": "2026-11-13",
+      "activity": "Publish",
+      "title": "Revenue is not take-home pay",
+      "category": "Education",
+      "hook": "A $1,200 load does not mean $1,200 in profit.",
+      "format": "Calculator close-up",
+      "message": "Subtract relevant costs; revenue per mile alone is incomplete.",
+      "caption": "Revenue first. Costs next. Your final decision last. Fictional figures.",
+      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "cta": "Save the cost checklist."
+    },
+    {
+      "day": 6,
+      "date": "2026-11-14",
+      "activity": "Review & respond",
+      "title": "Build the next cost checklist",
+      "category": "Industry tips",
+      "hook": "Which cost is easiest to leave out?",
+      "format": "Checklist draft",
+      "message": "Include fuel, tolls, time and allocated operating costs.",
+      "caption": "Help us build a more useful review checklist.",
+      "hashtags": "#ProfitLane #DispatchTips #TruckDispatch #LoadPlanning",
+      "cta": "Suggest one overlooked cost."
+    },
+    {
+      "day": 7,
+      "date": "2026-11-15",
+      "activity": "Review & respond",
+      "title": "One week of questions",
+      "category": "Engagement",
+      "hook": "What did this week leave unanswered?",
+      "format": "Comment roundup",
+      "message": "Use audience questions to choose the next explanation.",
+      "caption": "We are listening before adding more concepts.",
+      "hashtags": "#ProfitLane #TruckDispatch #DispatcherLife",
+      "cta": "Leave a question for next week."
+    },
+    {
+      "day": 8,
+      "date": "2026-11-16",
+      "activity": "Publish",
+      "title": "Angel and the mission",
+      "category": "Brand awareness",
+      "hook": "The person at the dispatch desk still makes the call.",
+      "format": "Founder interview",
+      "message": "Angel brings approximately eight years of trucking experience; confirm before filming.",
+      "caption": "Meet the purpose behind ProfitLane: support the person making the call.",
+      "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
+      "cta": "What would helpful AI support look like to you?"
+    },
+    {
+      "day": 9,
+      "date": "2026-11-17",
+      "activity": "Prepare & engage",
+      "title": "Prepare a rate conversation",
+      "category": "Industry tips",
+      "hook": "Before asking for more, organize the reason.",
+      "format": "Role-play rehearsal",
+      "message": "Use accurate route, timing and cost facts; no guaranteed negotiation outcome.",
+      "caption": "Facts make a clearer conversation than a random counteroffer.",
+      "hashtags": "#ProfitLane #DispatchTips #TruckDispatch #LoadPlanning",
+      "cta": "Write down your three key facts."
+    },
+    {
+      "day": 10,
+      "date": "2026-11-18",
+      "activity": "Publish",
+      "title": "Fuel math you can check",
+      "category": "Education",
+      "hook": "How much fuel does this fictional trip actually need?",
+      "format": "Whiteboard calculation",
+      "message": "Total miles divided by assumed MPG, multiplied by fuel price, estimates fuel cost.",
+      "caption": "A fuel estimate is only as good as its assumptions. Fictional inputs.",
+      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "cta": "Check your own assumptions before using an estimate."
+    },
+    {
+      "day": 11,
+      "date": "2026-11-19",
+      "activity": "Prepare & engage",
+      "title": "What changes your fuel estimate?",
+      "category": "Engagement",
+      "hook": "Would you use the same MPG for every trip?",
+      "format": "Question + input cards",
+      "message": "Vehicle and route assumptions need review.",
+      "caption": "One estimate cannot describe every truck or route.",
+      "hashtags": "#ProfitLane #TruckDispatch #DispatcherLife",
+      "cta": "Tell us which assumption you revisit."
+    },
+    {
+      "day": 12,
+      "date": "2026-11-20",
+      "activity": "Publish",
+      "title": "A score is a starting point",
+      "category": "Product concept",
+      "hook": "Would you accept a load because a screen says 76?",
+      "format": "Labeled concept mockup",
+      "message": "Proposed 1–100 rating is unvalidated and never replaces a full review.",
+      "caption": "Concept only: a summary should invite questions, not make your decision.",
+      "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
+      "cta": "What would you need to see behind a score?"
+    },
+    {
+      "day": 13,
+      "date": "2026-11-21",
+      "activity": "Review & respond",
+      "title": "Design the explanation",
+      "category": "Product concept",
+      "hook": "If a score changed, would you know why?",
+      "format": "Sketch review",
+      "message": "A proposed score should explain inputs and missing information.",
+      "caption": "We want understandable assistance, not unexplained numbers. Concept in development.",
+      "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
+      "cta": "Which input needs the clearest explanation?"
+    },
+    {
+      "day": 14,
+      "date": "2026-11-22",
+      "activity": "Review & respond",
+      "title": "Your three-question review",
+      "category": "Engagement",
+      "hook": "Which of these three checks comes first for you?",
+      "format": "Comment-response plan",
+      "message": "Invite audience priorities without presenting an acceptance rule.",
+      "caption": "Miles, time or costs—where do you start?",
+      "hashtags": "#ProfitLane #TruckDispatch #DispatcherLife",
+      "cta": "Comment with your order and why."
+    },
+    {
+      "day": 15,
+      "date": "2026-11-23",
+      "activity": "Publish",
+      "title": "Ask before you counter",
+      "category": "Industry tips",
+      "hook": "Before you counter, what do you still need to know?",
+      "format": "Two-person broker role-play",
+      "message": "Clarify appointment times, accessorial terms and load details before negotiating.",
+      "caption": "A clearer question can improve your information. No rate outcome is promised.",
+      "hashtags": "#ProfitLane #DispatchTips #TruckDispatch #LoadPlanning",
+      "cta": "Save these three questions."
+    },
+    {
+      "day": 16,
+      "date": "2026-11-24",
+      "activity": "Prepare & engage",
+      "title": "Time belongs in the review",
+      "category": "Education",
+      "hook": "Two loads. Same miles. Different time commitments.",
+      "format": "Side-by-side cards",
+      "message": "Pickup windows, waiting and delivery timing affect the review.",
+      "caption": "Mileage does not tell the whole schedule. Fictional comparison.",
+      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "cta": "What timing detail do you always confirm?"
+    },
+    {
+      "day": 17,
+      "date": "2026-11-25",
+      "activity": "Publish",
+      "title": "The same rate, different trip",
+      "category": "Education",
+      "hook": "Both loads pay $1,200. Would you review them the same way?",
+      "format": "Split-screen calculation",
+      "message": "Compare revenue across total miles while reviewing costs and time.",
+      "caption": "Same revenue can hide very different trips. Fictional examples.",
+      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "cta": "Save this comparison for your next review checklist."
+    },
+    {
+      "day": 18,
+      "date": "2026-11-26",
+      "activity": "Prepare & engage",
+      "title": "Missing information matters",
+      "category": "Product concept",
+      "hook": "What should an assistant do when an input is missing?",
+      "format": "Mockup question",
+      "message": "Flag unknown inputs instead of presenting certainty.",
+      "caption": "Concept in development: unknown should stay unknown.",
+      "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
+      "cta": "Which missing input should trigger a follow-up?"
+    },
+    {
+      "day": 19,
+      "date": "2026-11-27",
+      "activity": "Publish",
+      "title": "Walk through the proposed assistant",
+      "category": "Product concept",
+      "hook": "Here is the idea—not a live product demo.",
+      "format": "Paper prototype walkthrough",
+      "message": "Proposed input, review and explanation workflow; features unconfirmed.",
+      "caption": "A concept walkthrough of support at the dispatch desk. In development.",
+      "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
+      "cta": "Tell us which step needs more clarity."
+    },
+    {
+      "day": 20,
+      "date": "2026-11-28",
+      "activity": "Review & respond",
+      "title": "Make labels readable",
+      "category": "Industry tips",
+      "hook": "Can you read the important part in two seconds?",
+      "format": "Overlay rehearsal",
+      "message": "Keep concept labels visible and explain assumptions in captions.",
+      "caption": "Clear wording helps people understand what is real and what is proposed.",
+      "hashtags": "#ProfitLane #DispatchTips #TruckDispatch #LoadPlanning",
+      "cta": "Which part would you simplify?"
+    },
+    {
+      "day": 21,
+      "date": "2026-11-29",
+      "activity": "Review & respond",
+      "title": "Listen before the next batch",
+      "category": "Engagement",
+      "hook": "What should we explain next: fuel, time or deadhead?",
+      "format": "Poll-style question",
+      "message": "Let qualified questions shape future education.",
+      "caption": "Choose a topic for the next recording session.",
+      "hashtags": "#ProfitLane #TruckDispatch #DispatcherLife",
+      "cta": "Comment fuel, time or deadhead."
+    },
+    {
+      "day": 22,
+      "date": "2026-11-30",
+      "activity": "Publish",
+      "title": "The dispatcher stays in control",
+      "category": "Brand awareness",
+      "hook": "What should AI leave to the dispatcher?",
+      "format": "Founder answer + checklist",
+      "message": "Context, relationships and final judgment remain human responsibilities.",
+      "caption": "Made for dispatchers by dispatchers. AI assistance stays in a supporting role.",
+      "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
+      "cta": "Tell us one decision you would always review yourself."
+    },
+    {
+      "day": 23,
+      "date": "2026-12-01",
+      "activity": "Prepare & engage",
+      "title": "Build a useful reply video",
+      "category": "Engagement",
+      "hook": "A good question deserves more than a quick reply.",
+      "format": "Reply-video storyboard",
+      "message": "Answer a real question accurately; do not invent a customer comment.",
+      "caption": "We are collecting questions for the next explanation.",
+      "hashtags": "#ProfitLane #TruckDispatch #DispatcherLife",
+      "cta": "Ask one specific load-review question."
+    },
+    {
+      "day": 24,
+      "date": "2026-12-02",
+      "activity": "Publish",
+      "title": "Three inputs to double-check",
+      "category": "Industry tips",
+      "hook": "Before trusting any summary, check the inputs.",
+      "format": "Three-card checklist",
+      "message": "Verify total miles, fuel assumptions and schedule; this is not a complete operating checklist.",
+      "caption": "Better inputs help you ask better questions.",
+      "hashtags": "#ProfitLane #DispatchTips #TruckDispatch #LoadPlanning",
+      "cta": "Save these checks and add your own."
+    },
+    {
+      "day": 25,
+      "date": "2026-12-03",
+      "activity": "Prepare & engage",
+      "title": "What a demo request should explain",
+      "category": "Product concept",
+      "hook": "Before you request a demo, you should know what is available.",
+      "format": "Founder update draft",
+      "message": "State actual development status and access limits.",
+      "caption": "Product updates should tell you what you can really try.",
+      "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
+      "cta": "Follow for confirmed development updates."
+    },
+    {
+      "day": 26,
+      "date": "2026-12-04",
+      "activity": "Publish",
+      "title": "Answer a real dispatcher question",
+      "category": "Engagement",
+      "hook": "Let us work through one question from the dispatch desk.",
+      "format": "Comment reply; use a genuine approved question",
+      "message": "Use a real question with consent or label it as a team prompt.",
+      "caption": "A practical explanation starts with a specific question.",
+      "hashtags": "#ProfitLane #TruckDispatch #DispatcherLife",
+      "cta": "What would you like us to work through next?"
+    },
+    {
+      "day": 27,
+      "date": "2026-12-05",
+      "activity": "Review & respond",
+      "title": "Review useful responses",
+      "category": "Engagement",
+      "hook": "Which explanation helped you ask a better question?",
+      "format": "Weekly recap preparation",
+      "message": "Measure useful audience feedback without fabricating testimonials.",
+      "caption": "Your feedback helps shape the next month of education.",
+      "hashtags": "#ProfitLane #TruckDispatch #DispatcherLife",
+      "cta": "Name a topic we should revisit."
+    },
+    {
+      "day": 28,
+      "date": "2026-12-06",
+      "activity": "Review & respond",
+      "title": "Plan next month thoughtfully",
+      "category": "Industry tips",
+      "hook": "Do more views always mean a more useful video?",
+      "format": "Analytics worksheet",
+      "message": "Compare equal observation windows and qualified responses.",
+      "caption": "Look beyond reach when reviewing what helped.",
+      "hashtags": "#ProfitLane #DispatchTips #TruckDispatch #LoadPlanning",
+      "cta": "Choose one question to test next month."
+    },
+    {
+      "day": 29,
+      "date": "2026-12-07",
+      "activity": "Publish",
+      "title": "What we want to learn next",
+      "category": "Brand awareness",
+      "hook": "What would make AI assistance worth trying for you?",
+      "format": "Founder recap",
+      "message": "Invite needs and confirmed update interest, without promising product availability.",
+      "caption": "ProfitLane is in development. Your judgment stays at the center.",
+      "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
+      "cta": "Follow for updates and tell us what support you need."
+    },
+    {
+      "day": 30,
+      "date": "2026-12-08",
+      "activity": "Prepare & engage",
+      "title": "A month of learning",
+      "category": "Engagement",
+      "hook": "What should stay on the calendar next month?",
+      "format": "Month-end planning card",
+      "message": "Review actual results and choose useful next experiments.",
+      "caption": "A thoughtful next month starts with what we learned.",
+      "hashtags": "#ProfitLane #TruckDispatch #DispatcherLife",
+      "cta": "Suggest one topic for the next calendar."
+    }
+  ],
+  "scripts": [
+    {
+      "number": 1,
+      "day": 1,
+      "date": "2026-11-09",
+      "title": "AI beside the dispatcher",
+      "hook": "AI should help your dispatch desk—not take it over.",
+      "length": "30–40 seconds",
+      "script": "AI should help your dispatch desk—not take it over. ProfitLane is an AI dispatching assistant in development. The goal is to help independent dispatchers organize load information, review costs and prepare for rate conversations. Your experience and your judgment stay at the center. We are sharing practical load-review ideas as we develop the concept. Follow along, and tell us which part of reviewing a load needs the most support.",
+      "scenes": "0–3s: Angel or team presenter at a parked desk. 3–20s: fictional input cards beside the presenter. 20–35s: approved logo and mission.",
+      "text": "AI assistance • In development | Your judgment stays in control | Follow for load-review tips",
+      "caption": "Your experience stays at the center. Meet the idea behind ProfitLane.",
+      "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
+      "cta": "Follow for practical load-review tips."
+    },
+    {
+      "number": 2,
+      "day": 3,
+      "date": "2026-11-11",
+      "title": "The miles before the load",
+      "hook": "That load starts before pickup. Count those miles.",
+      "length": "35–45 seconds",
+      "script": "That load starts before pickup. Count those miles. Here is a fictional example: 100 empty miles to pickup and 500 loaded miles. That is 600 total miles. If the offer is $1,200, dividing by loaded miles gives $2.40 per mile. Dividing by total miles gives $2.00 per mile. Neither number is profit. Fuel, time and other costs still matter. Save this check, and make sure your comparison includes the miles before the load.",
+      "scenes": "0–3s: empty route arrow. 3–12s: write 100 + 500 = 600. 12–25s: show $1,200 ÷ 500 and $1,200 ÷ 600. 25–40s: cost checklist.",
+      "text": "Fictional example | 100 deadhead + 500 loaded = 600 total | $2.40/loaded mile vs $2.00/total mile | Revenue ≠ profit",
+      "caption": "The empty miles belong in the conversation too. Fictional example.",
+      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "cta": "Save this total-miles check."
+    },
+    {
+      "number": 3,
+      "day": 5,
+      "date": "2026-11-13",
+      "title": "Revenue is not take-home pay",
+      "hook": "A $1,200 load does not mean $1,200 in profit.",
+      "length": "35–45 seconds",
+      "script": "A $1,200 load does not mean $1,200 in profit. In this fictional example, suppose fuel is $400, tolls are $50 and allocated operating costs are $300. Subtracting those leaves $450 before any other costs or taxes that apply. Those are made-up inputs, not typical industry costs. Your own labor, maintenance, insurance, financing and other expenses may change the picture. Build a complete cost review before deciding. Save this checklist as a starting point.",
+      "scenes": "0–3s: $1,200 revenue card. 3–25s: subtract each labeled expense. 25–40s: show remaining review items.",
+      "text": "Fictional inputs—not typical costs | $1,200 − $400 − $50 − $300 = $450 | Before other applicable costs and taxes",
+      "caption": "Revenue first. Costs next. Your final decision last. Fictional figures.",
+      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "cta": "Save the cost checklist."
+    },
+    {
+      "number": 4,
+      "day": 8,
+      "date": "2026-11-16",
+      "title": "Angel and the mission",
+      "hook": "The person at the dispatch desk still makes the call.",
+      "length": "30–40 seconds",
+      "script": "The person at the dispatch desk still makes the call. ProfitLane's founder, Angel, has approximately eight years of trucking industry experience. His mission is to help dispatchers rather than replace them. The assistant is being developed to support a closer look at the numbers, while the dispatcher brings the context and makes the decision. That is the idea behind ProfitLane. What would useful AI assistance look like at your desk?",
+      "scenes": "0–3s: founder portrait or approved team intro. 3–22s: interview at a desk. 22–35s: mission over approved logo.",
+      "text": "Angel • Founder | Approximately 8 years in trucking* | AI assists. Dispatcher decides. | *Confirm founder wording before recording",
+      "caption": "Meet the purpose behind ProfitLane: support the person making the call.",
+      "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
+      "cta": "What would helpful AI support look like to you?"
+    },
+    {
+      "number": 5,
+      "day": 10,
+      "date": "2026-11-18",
+      "title": "Fuel math you can check",
+      "hook": "How much fuel does this fictional trip actually need?",
+      "length": "35–45 seconds",
+      "script": "How much fuel does this fictional trip actually need? Start with 600 total miles. At an assumed six miles per gallon, that is 100 gallons. At an assumed four dollars per gallon, estimated fuel cost is $400. Change the MPG or the price and your estimate changes. This is a simplified example, not a fuel quote or a prediction for your truck. Review actual conditions and your own assumptions. Check the inputs before you use the result.",
+      "scenes": "0–3s: calculator and total-mile card. 3–15s: 600 ÷ 6 = 100 gallons. 15–27s: 100 × $4 = $400. 27–40s: assumptions checklist.",
+      "text": "Fictional example | 600 miles ÷ 6 MPG = 100 gal | 100 gal × $4 = $400 estimated fuel | Assumptions change results",
+      "caption": "A fuel estimate is only as good as its assumptions. Fictional inputs.",
+      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "cta": "Check your own assumptions before using an estimate."
+    },
+    {
+      "number": 6,
+      "day": 12,
+      "date": "2026-11-20",
+      "title": "A score is a starting point",
+      "hook": "Would you accept a load because a screen says 76?",
+      "length": "35–45 seconds",
+      "script": "Would you accept a load because a screen says 76? This is a concept mockup, not a live ProfitLane feature. A proposed rating from one to one hundred could summarize inputs such as deadhead, fuel and mileage. But the scoring method has not been validated. Seventy-six here is just a made-up visual example, not a recommendation. You would still need the inputs, the missing information and your own judgment. What would you need to see behind a score?",
+      "scenes": "0–3s: paper score card. 3–23s: point to fictional input labels. 23–40s: replace focus on the number with questions. Keep concept label visible throughout.",
+      "text": "Concept mockup • In development | 76/100: arbitrary illustration | Proposed scoring is unvalidated | Review inputs. You decide.",
+      "caption": "Concept only: a summary should invite questions, not make your decision.",
+      "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
+      "cta": "What would you need to see behind a score?"
+    },
+    {
+      "number": 7,
+      "day": 15,
+      "date": "2026-11-23",
+      "title": "Ask before you counter",
+      "hook": "Before you counter, what do you still need to know?",
+      "length": "35–45 seconds",
+      "script": "Before you counter, what do you still need to know? In a fictional rate conversation, I would first ask: Can you confirm pickup and delivery appointment times? What accessorial terms apply, and how are they documented? Are there any other load requirements I should review? Then I can explain a counteroffer using accurate trip facts. No script guarantees a better rate. Save the questions and adapt them to your own process and agreements.",
+      "scenes": "0–3s: presenter with question cards. 3–26s: team member plays broker, no real company shown. 26–40s: three-question recap.",
+      "text": "Fictional role-play | Confirm appointment times | Clarify accessorial terms | Verify other requirements | No guaranteed rate outcome",
+      "caption": "A clearer question can improve your information. No rate outcome is promised.",
+      "hashtags": "#ProfitLane #DispatchTips #TruckDispatch #LoadPlanning",
+      "cta": "Save these three questions."
+    },
+    {
+      "number": 8,
+      "day": 17,
+      "date": "2026-11-25",
+      "title": "The same rate, different trip",
+      "hook": "Both loads pay $1,200. Would you review them the same way?",
+      "length": "35–45 seconds",
+      "script": "Both loads pay $1,200. Would you review them the same way? In this fictional example, Load A has 500 loaded miles and 100 deadhead miles: 600 total. That is two dollars of revenue per total mile. Load B has 500 loaded miles and 200 deadhead miles: 700 total. That is about a dollar seventy-one per total mile. Neither figure is profit. Costs, timing and the next move still need review. Save this comparison as one part of your checklist.",
+      "scenes": "0–3s: two $1,200 cards. 3–20s: animate total-mile sums. 20–35s: show division side by side. 35–45s: costs/time prompt.",
+      "text": "Fictional loads | A: $1,200 ÷ 600 = $2.00/mi | B: $1,200 ÷ 700 ≈ $1.71/mi | Revenue per total mile—not profit",
+      "caption": "Same revenue can hide very different trips. Fictional examples.",
+      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "cta": "Save this comparison for your next review checklist."
+    },
+    {
+      "number": 9,
+      "day": 19,
+      "date": "2026-11-27",
+      "title": "Walk through the proposed assistant",
+      "hook": "Here is the idea—not a live product demo.",
+      "length": "35–45 seconds",
+      "script": "Here is the idea—not a live product demo. This paper prototype shows a proposed ProfitLane workflow. First, enter fictional load details, including loaded miles, deadhead and fuel assumptions. Next, review the information and identify anything missing. A proposed summary could explain the inputs behind a rating. Then the dispatcher reviews costs, timing and context before making a decision. The interface and features are still in development; this is not a validated scoring system. Which step needs more clarity?",
+      "scenes": "0–3s: visible paper prototype. 3–15s: point to input fields. 15–28s: flag unknown inputs. 28–45s: proposed explanation and human review. Keep concept label visible throughout.",
+      "text": "Concept mockup • In development | 1. Inputs 2. Review 3. Explanation 4. Your decision | Proposed score is unvalidated",
+      "caption": "A concept walkthrough of support at the dispatch desk. In development.",
+      "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
+      "cta": "Tell us which step needs more clarity."
+    },
+    {
+      "number": 10,
+      "day": 22,
+      "date": "2026-11-30",
+      "title": "The dispatcher stays in control",
+      "hook": "What should AI leave to the dispatcher?",
+      "length": "35–45 seconds",
+      "script": "What should AI leave to the dispatcher? A tool can help organize information, but relationships, unusual conditions and final decisions need human judgment. ProfitLane is in development as an assistant to dispatchers. The purpose is to support a closer look at the numbers, not to promise a better rate or make the call for you. Made for dispatchers by dispatchers. Tell us one part of your review you would always want to handle yourself.",
+      "scenes": "0–3s: presenter asks the question. 3–25s: three cards: context, relationships, judgment. 25–40s: mission and comment prompt.",
+      "text": "In development | Context • Relationships • Judgment | Made for dispatchers by dispatchers.",
+      "caption": "Made for dispatchers by dispatchers. AI assistance stays in a supporting role.",
+      "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
+      "cta": "Tell us one decision you would always review yourself."
+    }
+  ]
+};
+
+/* No network calls or TikTok SDK. All workspace data is local. */
+(() => {
+'use strict';
+const KEY='profitlane-tiktok-v1', VERSION=1;
+const categories=['Education','Industry tips','Engagement','Product concept','Brand awareness'];
+const statuses=['Idea','Planned','Ready','Published'];
+const metrics=['views','likes','comments','shares'];
+const textLimits={title:140,description:4000,url:2048,notes:4000,hook:500,format:500,caption:2200,hashtags:500,cta:500};
+const $=s=>document.querySelector(s);
+const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=n=>new Intl.NumberFormat('en-US').format(n);
+const uid=()=>globalThis.crypto?.randomUUID?.()||`post-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+const dateLabel=d=>new Date(d+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+const validDate=s=>typeof s==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(s)&&s>='2000-01-01'&&s<='2100-12-31'&&!isNaN(new Date(s+'T00:00:00Z'))&&new Date(s+'T00:00:00Z').toISOString().slice(0,10)===s;
+const rate=p=>metrics.every(k=>typeof p[k]==='number'&&Number.isFinite(p[k]))&&p.views>0?(p.likes+p.comments+p.shares)/p.views*100:null;
+const rateText=p=>rate(p)===null?'—':rate(p).toFixed(2)+'%';
+function seed(){
+ const planned=window.PROFITLANE_CONTENT.calendar.filter(p=>p.activity==='Publish').map((p,i)=>({id:`launch-${p.day}`,title:p.title,description:p.message,date:p.date,category:p.category,status:i<2?'Ready':'Planned',url:'',views:null,likes:null,comments:null,shares:null,notes:'Launch plan, not published. Review claims and captions before recording.',hook:p.hook,format:p.format,caption:p.caption,hashtags:p.hashtags,cta:p.cta}));
+ const examples=[['Demo: The total-mile check','2026-11-02','Education',1840,68,9,12],['Demo: What do you check first?','2026-11-04','Engagement',920,31,14,4],['Demo: Meet the mission','2026-11-06','Brand awareness',2460,96,11,15]].map((a,i)=>({id:`demo-${i}`,title:a[0],description:'FICTIONAL published example for learning the tracker. This video was not actually posted.',date:a[1],category:a[2],status:'Published',url:'',views:a[3],likes:a[4],comments:a[5],shares:a[6],notes:'Fictional cumulative results, illustrated as of November 7, 2026. Replace with your own measured data at launch. Next step: compare equal seven-day observation windows.',hook:'',format:'Demo example',caption:'Fictional workspace sample',hashtags:'#ProfitLane #TruckDispatch',cta:'Review the example.'}));
+ return [...examples,...planned];
+}
+function normalize(raw){
+ if(!raw||typeof raw!=='object'||Array.isArray(raw)) throw Error('Each post must be an object.');
+ const p={id:typeof raw.id==='string'?raw.id:uid()};
+ if(!p.id||p.id.length>100)throw Error('Invalid post identifier.');
+ for(const [k,limit] of Object.entries(textLimits)){
+  if(raw[k]!==undefined&&typeof raw[k]!=='string')throw Error(`${k} must be text.`);
+  p[k]=(raw[k]||'').trim();if(p[k].length>limit)throw Error(`${k} exceeds ${limit} characters.`);
+ }
+ if(!p.title||!p.description)throw Error('A title and description are required.');
+ if(!validDate(raw.date))throw Error('Use a valid date between 2000 and 2100.');p.date=raw.date;
+ if(!categories.includes(raw.category)||!statuses.includes(raw.status))throw Error('Choose a supported category and status.');
+ p.category=raw.category;p.status=raw.status;
+ if(p.url){let u;try{u=new URL(p.url);}catch{throw Error('Enter a full HTTPS video URL.');}if(u.protocol!=='https:'||u.username||u.password)throw Error('Video URLs must use HTTPS without embedded credentials.');}
+ for(const k of metrics){const n=raw[k];if(n!==null&&n!==undefined&&(!Number.isSafeInteger(n)||n<0||n>999999999999))throw Error('Counts must be nonnegative whole numbers below one trillion.');p[k]=n??null;}
+ return p;
+}
+function decode(payload){if(!payload||payload.version!==VERSION||!Array.isArray(payload.posts)||payload.posts.length>2000)throw Error('Expected a version 1 backup with at most 2,000 posts.');const list=payload.posts.map(normalize);if(new Set(list.map(p=>p.id)).size!==list.length)throw Error('Duplicate post identifiers are not allowed.');return list;}
+let posts=seed(), storageLocked=false, storageMessage='';
+try{const saved=localStorage.getItem(KEY);if(saved!==null)posts=decode(JSON.parse(saved));}catch(e){storageLocked=true;storageMessage='Saved data could not be read. Samples are shown; existing storage is untouched. Edits are session-only. Import a valid backup or reset explicitly to recover.';}
+function say(message,warning=false){$('#feedback').textContent=message;$('#feedback').classList.toggle('warning',warning);}
+function persist(message){
+ if(storageLocked){$('#storage-state').textContent='Session-only changes; export a backup.';say(`${message} Session only: saved storage is locked to preserve unreadable data. Export before leaving.`,true);return;}
+ try{localStorage.setItem(KEY,JSON.stringify({version:VERSION,posts}));$('#storage-state').textContent='Edits save in this browser.';say(message);}
+ catch{ $('#storage-state').textContent='Session-only changes; export a backup.';say(`${message} Browser storage is unavailable or full. Changes are session-only; export a backup before leaving.`,true); }
+}
+const form=$('#post-form'), editor=$('#post-dialog');let month=new Date(2026,10,1);let previousFocus=null;
+for(const sel of ['#category-filter','select[name="category"]']){for(const c of categories){const op=document.createElement('option');op.value=c;op.textContent=c;$(sel).append(op);}}
+function badge(s){return `<span class="status status-${s.toLowerCase()}">${escape(s)}</span>`;}
+function bar(label,value,max,amber=false){return `<div><div class="bar-label"><span>${escape(label)}</span><strong>${fmt(value)}</strong></div><div class="bar-track"><div class="bar-fill ${amber?'amber-fill':''}" style="width:${max?Math.max(0,Math.min(100,value/max*100)):0}%"></div></div></div>`;}
+function renderOverview(){
+ const pub=posts.filter(p=>p.status==='Published'), complete=pub.filter(p=>rate(p)!==null),views=pub.reduce((s,p)=>s+(p.views??0),0),denom=complete.reduce((s,p)=>s+p.views,0),interactions=complete.reduce((s,p)=>s+p.likes+p.comments+p.shares,0),pooled=denom?`${(interactions/denom*100).toFixed(2)}%`:'—';
+ const stats=[['In the library',fmt(posts.length),'All saved content'],['Published',fmt(pub.length),'Manual status · demo included'],['Total views',fmt(views),'Published · known counts only'],['Engagement by views',pooled,`${complete.length} complete Published posts · pooled`]];
+ $('#stats').innerHTML=stats.map(a=>`<article class="stat"><span>${a[0]}</span><strong>${a[1]}</strong><small>${a[2]}</small></article>`).join('');
+ const counts=statuses.map(s=>posts.filter(p=>p.status===s).length),max=Math.max(...counts,1);
+ $('#status-chart').innerHTML=statuses.map((s,i)=>bar(s,counts[i],max,s==='Ready')).join('');
+ const catViews=categories.map(c=>pub.filter(p=>p.category===c).reduce((s,p)=>s+(p.views??0),0)),vmax=Math.max(...catViews,1);
+ $('#category-chart').innerHTML=categories.map((c,i)=>bar(c,catViews[i],vmax,i%2===0)).join('');
+ const next=posts.filter(p=>p.status!=='Published').sort((a,b)=>a.date.localeCompare(b.date)).slice(0,3);
+ $('#up-next').innerHTML=next.length?next.map(p=>{const d=new Date(p.date+'T12:00:00');return `<div class="up-item"><div class="up-date">${d.toLocaleDateString('en-US',{month:'short'})}<b>${d.getDate()}</b></div><div><button data-edit="${escape(p.id)}">${escape(p.title)}</button><small>${escape(p.category)} · ${escape(p.status)} · ${d.getFullYear()}</small></div></div>`;}).join(''):'<p>No unpublished posts. Add an idea to start the next plan.</p>';
+}
+function filtered(){const q=$('#search').value.trim().toLowerCase(),s=$('#status-filter').value,c=$('#category-filter').value,from=$('#date-from').value,to=$('#date-to').value;return posts.filter(p=>(!q||[p.title,p.description,p.notes,p.caption,p.hook,p.hashtags].join(' ').toLowerCase().includes(q))&&(!s||p.status===s)&&(!c||p.category===c)&&(!from||p.date>=from)&&(!to||p.date<=to)).sort((a,b)=>a.date.localeCompare(b.date)||a.title.localeCompare(b.title));}
+function renderTable(){
+ const list=filtered();$('#result-count').textContent=`${list.length} of ${posts.length} posts · chronological order`;
+ $('#post-rows').innerHTML=list.length?list.map(p=>`<tr><td><strong>${escape(p.title)}</strong><p>${escape(p.description)}</p>${p.notes?`<details><summary>Notes & next steps</summary><p>${escape(p.notes)}</p></details>`:''}${p.url?`<a href="${escape(p.url)}" target="_blank" rel="noopener noreferrer">Open video ↗</a>`:'<small>No video URL</small>'}</td><td>${escape(dateLabel(p.date))}</td><td>${escape(p.category)}</td><td>${badge(p.status)}</td>${metrics.map(k=>`<td>${p[k]===null?'—':fmt(p[k])}</td>`).join('')}<td>${rateText(p)}</td><td><button data-edit="${escape(p.id)}" aria-label="Edit ${escape(p.title)}">Edit</button><button class="danger" data-delete="${escape(p.id)}" aria-label="Delete ${escape(p.title)}">Delete</button></td></tr>`).join(''):'<tr><td colspan="10">No matching posts. Clear filters or add a new idea.</td></tr>';
+}
+function isoDate(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
+function renderCalendar(){
+ $('#month-title').textContent=month.toLocaleDateString('en-US',{month:'long',year:'numeric'});
+ const offset=(month.getDay()+6)%7,start=new Date(month.getFullYear(),month.getMonth(),1-offset);
+ let cells='';for(let i=0;i<42;i++){const d=new Date(start);d.setDate(start.getDate()+i);const key=isoDate(d),dayPosts=posts.filter(p=>p.date===key),prompts=window.PROFITLANE_CONTENT.calendar.filter(p=>p.date===key&&p.activity!=='Publish');cells+=`<div class="day-cell ${d.getMonth()!==month.getMonth()?'outside':''}" aria-label="${dateLabel(key)}"><span class="day-number">${d.getDate()}</span>${dayPosts.map(p=>`<button class="calendar-post" data-edit="${escape(p.id)}">● ${escape(p.title)}<br>${escape(p.status)}</button>`).join('')}${prompts.map(p=>`<button class="calendar-prompt" data-prompt="${p.day}">○ ${escape(p.activity)}<br>${escape(p.title)}</button>`).join('')}</div>`;}
+ $('#calendar-grid').innerHTML=cells;
+}
+function render(){renderOverview();renderTable();renderCalendar();}
+function openEditor(id){
+ const p=id?posts.find(p=>p.id===id):null;if(id&&!p)return;
+ previousFocus=document.activeElement;form.reset();$('#form-error').textContent='';form.querySelector('details').open=false;
+ for(const name of ['id',...Object.keys(textLimits),'date','category','status',...metrics]){const el=form.elements.namedItem(name);if(el)el.value=p?.[name]??'';}
+ if(!p){form.elements.category.value='Education';form.elements.status.value='Idea';form.elements.date.value=isoDate(new Date());}
+ $('#editor-title').textContent=p?'Edit post':'New post';updateRate();editor.showModal();form.elements.title.focus();
+}
+function closeEditor(){editor.close();if(previousFocus?.isConnected)previousFocus.focus();else $('#add-post').focus();}
+function updateRate(){const p={};for(const k of metrics){const v=form.elements[k].value;p[k]=v===''?null:Number(v);}$('#rate-preview').textContent=`Engagement: ${rateText(p)}${p.views===0?' · zero views: rate undefined':''}`;}
+$('#add-post').addEventListener('click',()=>openEditor());$('#close-editor').addEventListener('click',closeEditor);$('#cancel-editor').addEventListener('click',closeEditor);metrics.forEach(k=>form.elements[k].addEventListener('input',updateRate));
+form.addEventListener('submit',e=>{
+ e.preventDefault();$('#form-error').textContent='';
+ try{const raw=Object.fromEntries(new FormData(form));raw.id=raw.id||uid();for(const k of metrics)raw[k]=raw[k]===''?null:Number(raw[k]);const p=normalize(raw),index=posts.findIndex(x=>x.id===p.id);if(index<0){if(posts.length>=2000)throw Error('Workspace limit: 2,000 posts. Export a backup before removing old posts.');posts.push(p);}else posts[index]=p;persist('Post saved.');render();closeEditor();}
+ catch(err){$('#form-error').textContent=err.message;}
+});
+document.addEventListener('click',e=>{
+ const edit=e.target.closest('[data-edit]');if(edit){openEditor(edit.dataset.edit);return;}
+ const del=e.target.closest('[data-delete]');if(del){const p=posts.find(x=>x.id===del.dataset.delete);if(p&&confirm(`Delete “${p.title}”? Export a backup first if you may need it later.`)){posts=posts.filter(x=>x.id!==p.id);persist('Post deleted.');render();}return;}
+ const prompt=e.target.closest('[data-prompt]');if(prompt){const p=window.PROFITLANE_CONTENT.calendar.find(x=>x.day===Number(prompt.dataset.prompt));if(!p)return;$('#prompt-title').textContent=`Day ${p.day} · ${p.title}`;$('#prompt-content').innerHTML=`<p><strong>${dateLabel(p.date)} · ${escape(p.activity)}</strong></p>`+[['Category',p.category],['Hook',p.hook],['Format',p.format],['Main message',p.message],['Caption',p.caption],['Hashtags',p.hashtags],['Call to action',p.cta]].map(([k,v])=>`<p><strong>${k}:</strong> ${escape(v)}</p>`).join('')+(p.activity!=='Publish'?'<p>This is a preparation or review day. Use the concept as a reserve idea, not an extra publishing requirement.</p>':'<p>The post library holds your editable publishing record. This is the original reference plan.</p>');$('#prompt-dialog').showModal();}
+});
+$('#close-prompt').addEventListener('click',()=>$('#prompt-dialog').close());
+for(const selector of ['#search','#status-filter','#category-filter','#date-from','#date-to'])$(selector).addEventListener('input',renderTable);
+$('#clear-filters').addEventListener('click',()=>{for(const s of ['#search','#status-filter','#category-filter','#date-from','#date-to'])$(s).value='';renderTable();});
+$('#prev-month').addEventListener('click',()=>{month=new Date(month.getFullYear(),month.getMonth()-1,1);renderCalendar();});$('#next-month').addEventListener('click',()=>{month=new Date(month.getFullYear(),month.getMonth()+1,1);renderCalendar();});$('#launch-month').addEventListener('click',()=>{month=new Date(2026,10,1);renderCalendar();});
+$('#daily-plan').innerHTML=window.PROFITLANE_CONTENT.calendar.map(p=>`<button class="plan-card" data-prompt="${p.day}"><small>DAY ${String(p.day).padStart(2,'0')} · ${dateLabel(p.date)}</small><b>${escape(p.title)}</b><span>${escape(p.activity)} · ${escape(p.category)}</span></button>`).join('');
+$('#scripts').innerHTML=window.PROFITLANE_CONTENT.scripts.map(p=>`<details><summary>${String(p.number).padStart(2,'0')} · ${escape(p.title)}</summary><p>${dateLabel(p.date)} · ${escape(p.length)}</p><p><strong>Opening hook (first 2–3 seconds):</strong> ${escape(p.hook)}</p><p class="script-body">${escape(p.script)}</p>${[['Scenes & visuals',p.scenes],['On-screen text',p.text],['Caption',p.caption],['Hashtags',p.hashtags],['CTA',p.cta]].map(([k,v])=>`<p><strong>${k}:</strong> ${escape(v)}</p>`).join('')}</details>`).join('');
+$('#export').addEventListener('click',()=>{const blob=new Blob([JSON.stringify({version:VERSION,exportedAt:new Date().toISOString(),posts},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`profitlane-tiktok-${isoDate(new Date())}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);say('Backup downloaded. Keep it somewhere safe; it contains your current workspace, not the reference documents.');});
+$('#import').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>5000000)throw Error('Backup is too large (maximum 5 MB).');const list=decode(JSON.parse(await file.text()));if(confirm(`Replace this workspace with ${list.length} imported posts? Export current work first if needed.`)){posts=list;storageLocked=false;persist('Backup imported.');render();}}catch(err){say(`Import rejected: ${err.message} No posts were replaced.`,true);}finally{e.target.value='';}});
+$('#reset-demo').addEventListener('click',()=>{if(confirm('Replace all current posts with fictional sample data? This cannot be undone without a backup.')){posts=seed();storageLocked=false;persist('Sample data restored.');render();}});
+window.addEventListener('storage',e=>{if(e.key===KEY)say('This workspace changed in another tab. Export this tab before reloading if you have unsaved work. Avoid editing in multiple tabs.',true);});
+const titles={overview:['Your content, in motion.','A clear plan. Useful conversations. One post at a time.'],calendar:['Make room for good content.','A sustainable launch rhythm, from first idea to final review.'],posts:['From idea to conversation.','Plan the post, record the result, decide what comes next.'],playbook:['A practical start for ProfitLane.','The mission, the plan and the first ten videos—ready for your review.']};
+function route(){let v=location.hash.slice(1);if(!titles[v])v='overview';for(const key of Object.keys(titles))$(`#${key}-view`).hidden=key!==v;document.querySelectorAll('[data-view]').forEach(a=>{if(a.dataset.view===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});$('#page-title').textContent=titles[v][0];$('#page-subtitle').textContent=titles[v][1];document.title=`ProfitLane · ${v[0].toUpperCase()+v.slice(1)} · TikTok studio`;}
+window.addEventListener('hashchange',route);render();route();if(storageMessage){$('#storage-state').textContent='Session only; existing storage could not be read.';say(storageMessage,true);}
+})();
+
+(() => {
+const docs = {"profile-and-strategy.md": "# ProfitLane · TikTok launch playbook\n\n## Profile setup\n\n**Username options, in priority order:** `@profitlane`, `@profitlane.dispatch`, `@profitlane.ai`, `@profitlaneassist`. These are suggestions; availability and trademark conflicts have not been checked. Keep the same handle across channels when possible.\n\n**Display name:** ProfitLane | Dispatcher AI\n\n**Bio (78 characters):**\n> AI assistance for dispatchers. Your judgment stays in control. In development.\n\n**Profile image:** Use the existing default `../brand/logo-icon.svg`, not the full wordmark. Center the complete square with about 10% inset on each side for TikTok's circular crop. Export a sufficiently large square PNG using a graphics tool if TikTok requires it; inspect at profile size before upload. Retain the original charcoal, amber and white artwork. Do not redraw, stretch, add text to, or recolor it. The tracker reads the existing full logo directly without modifying it.\n\n**Account description:** A founder-led educational account about practical load review for independent dispatchers, with owner-operators as a secondary audience. ProfitLane is an AI dispatching assistant in development. It is intended to help organize load information and support rate conversations; it does not replace a dispatcher's expertise or guarantee a profitable outcome.\n\n**Official tagline:** Made for dispatchers by dispatchers.\n\n**Profile link:** Use Angel's verified, approved ProfitLane landing page when one exists. No official domain, signup form or working product access is established by this package. Suggested landing-page structure: overview → development status → request an update or demo → privacy information. Use a TikTok campaign tag such as `utm_source=tiktok&utm_medium=organic_social&utm_campaign=launch30` on a real approved URL. Until then, omit the link rather than inventing one. Link availability depends on the account's current TikTok eligibility; verify in-app.\n\n**Profile CTA:** “Follow for practical load-review tips.” After a working destination is available: “See development updates or request a demo through our profile link.” Use “try ProfitLane” only after Angel confirms access is available, with honest instructions and any eligibility limits.\n\n## Why test TikTok?\n\nShort vertical videos can make one load-review idea concrete with a worked example, a whiteboard or a founder explanation. Comment replies offer a way to learn what dispatchers actually need. TikTok is a channel hypothesis, not proven audience fit: evaluate qualified conversations and interest alongside reach. No audience size, growth rate or industry statistic is assumed here.\n\n## Audience and positioning\n\nPrimary: independent truck dispatchers who review offers, coordinate schedules and talk with brokers. Secondary: owner-operators who make their own load decisions. Aim for practical, plain-language explanations useful to a new dispatcher without talking down to experienced people. Angel's approximately eight years of trucking industry experience is user-provided context, not an independently verified credential. Ask him to confirm his wording and any personal anecdotes before filming. Do not write invented customer stories or quotes in his voice.\n\nLead with “AI should be an assistant to dispatchers, not a replacement.” State the problem, show the inputs, and leave the decision with the person. Describe future features with “proposed,” “intended” or “in development.” A 1–100 score is a proposed summary, not a validated measure, acceptance rule, earnings prediction or safety assessment.\n\n## Five content pillars\n\n| Pillar | Purpose | Repeatable format |\n| --- | --- | --- |\n| Education | Explain total miles, costs and time | One whiteboard calculation |\n| Industry tips | Prepare for rate conversations and planning | Three-question checklist |\n| Engagement | Learn dispatchers' needs | One specific question; a reply video |\n| Product concept | Explain the proposed assistant honestly | Clearly labeled mockup walkthrough |\n| Brand awareness | Make Angel and the mission familiar | Founder face-to-camera |\n\n## Publishing and production rhythm\n\nThe suggested launch window is **November 9–December 8, 2026**, with **13 posts** on Mondays, Wednesdays and Fridays (plus the final Monday). The 30 daily entries include 17 preparation, response and review days, each with a reserve video concept. These reserve concepts are not extra daily publishing commitments. Shift the dates together if launch moves. Start by testing 6 p.m. in the audience's primary time zone, then compare actual audience activity; this is a starting experiment, not a claimed optimal time. The tracker stores calendar dates only; time and time zone belong in notes.\n\nBatch record three short videos each week. Allow a separate review pass for captions, arithmetic, claims and readable overlays. Shoot vertical 9:16, keep the speaker clearly audible, put text away from TikTok controls, and manually check captions. Use Barlow Condensed headings and Barlow body text when available, with the approved brand fallbacks. Use charcoal on off-white or amber and off-white on charcoal. Do not use small amber text on off-white. Existing brand assets are the only logos.\n\n## Engagement and awareness\n\nOpen with a specific question or decision, then teach one idea. Ask for a real workflow insight rather than generic engagement. Reply to relevant comments within the next working day when possible; turn recurring questions into response videos and credit commenters only with permission. Use three to five relevant hashtags from the calendar; avoid unrelated trending tags. Review completion and meaningful replies to compare formats. Repeat the mission and visual identity consistently. Use Angel on camera and practical examples, not hype or fabricated endorsements.\n\nShare approved posts with the website and other social leads for consistency, without editing their folders. Collaborate with relevant trucking educators only after agreeing on factual claims and any required sponsorship disclosure. Use original or properly licensed audio suitable for the chosen TikTok account type. Never film while driving. Use fictional loads and remove customer, broker, rate confirmation, plate, phone and route-identifying information from visuals.\n\n## From awareness to a trial\n\n1. Teach a useful concept without requiring a signup.\n2. Explain the proposed workflow with an unmistakable “Concept mockup · in development” label that stays on screen.\n3. Invite questions about the inputs and limitations.\n4. When Angel has approved a real destination, offer a transparent update or demo request, with clear privacy information.\n5. Only when access works, invite viewers to try it. Ask which step helped and where human judgment was still needed. Never guarantee better rates, savings or profitability.\n\n## Angel's measurement routine\n\nReview weekly, using the same observation window (for example, seven days after each post). Enter cumulative TikTok counts with an “as of” date in notes; do not mix daily increments with lifetime totals. Compare a post's first seven days with other posts' first seven days rather than comparing a one-day post to a month-old one.\n\n| Metric | What it helps answer | Where to record |\n| --- | --- | --- |\n| Views | Did this topic reach viewers? | Tracker |\n| Likes, comments, shares | Did viewers respond or pass it on? | Tracker |\n| Engagement by views | How much visible interaction per view? | Calculated in tracker |\n| Watch time, completion, retention | Where do viewers drop off? | TikTok analytics; summarize in notes |\n| Saves and qualified questions | Was this practically useful? | Analytics/comments; notes |\n| Profile visits and follows | Did interest carry beyond one video? | Analytics; weekly notes |\n| Approved link visits, demo requests, activated trials | Did interest become intent and use? | Approved web/product analytics; notes |\n\n**Formula:** `(likes + comments + shares) / views × 100`. Require all four nonnegative integer counts and views greater than zero. Blank means unknown; zero means a measured zero. The overview uses pooled interactions divided by pooled views for Published posts with complete counts; it is not an average of individual percentages. Total views includes Published posts with a measured view count, including those with incomplete engagement counts. Interactions are events, not distinct people, so engagement can exceed 100%. This definition excludes saves and is not claimed to be TikTok's official rate.\n\nSet a baseline from the first month rather than inventing growth targets. Choose the next experiment from watch-through, qualified comments and tracked interest. More views alone do not establish more customers. Record one concrete next step after each weekly review.\n\n## Pre-publication checklist\n\nConfirm founder wording, product availability, arithmetic and labels; remove private information; check caption readability and audio rights; confirm any link works; obtain permission for recognizable people. Angel or the assigned student publishes manually after review. This package never connects to TikTok or publishes content.\n", "content-calendar.md": "# 30-day TikTok content calendar\n\nSuggested window: November 9–December 8, 2026. Publish three times weekly: 13 publishing slots. The other 17 days are production, response and review days with reserve concepts, not extra daily posts. All topics are fictional plans; dates can be shifted. Suggested publishing test: 6 p.m. in the audience’s primary time zone; validate through account analytics. See the CSV for spreadsheet use.\n\n## Day 1 · 2026-11-09 · Publish\n\n- **Video topic / reserve idea:** AI beside the dispatcher\n- **Pillar:** Brand awareness\n- **Hook:** AI should help your dispatch desk—not take it over.\n- **Format:** Founder to camera\n- **Main message:** ProfitLane is in development to support dispatcher judgment.\n- **Caption:** Your experience stays at the center. Meet the idea behind ProfitLane.\n- **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools\n- **CTA:** Follow for practical load-review tips.\n\n## Day 2 · 2026-11-10 · Prepare & engage\n\n- **Video topic / reserve idea:** Your load-review routine\n- **Pillar:** Engagement\n- **Hook:** What do you check before you even discuss the rate?\n- **Format:** Question card + talking head\n- **Main message:** Listen to real workflows before choosing features.\n- **Caption:** Every dispatcher has a first check. What is yours?\n- **Hashtags:** #ProfitLane #TruckDispatch #DispatcherLife\n- **CTA:** Comment with one check, without sharing private load details.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 3 · 2026-11-11 · Publish\n\n- **Video topic / reserve idea:** The miles before the load\n- **Pillar:** Education\n- **Hook:** That load starts before pickup. Count those miles.\n- **Format:** Whiteboard example\n- **Main message:** Add deadhead to loaded miles before comparing revenue per mile.\n- **Caption:** The empty miles belong in the conversation too. Fictional example.\n- **Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning\n- **CTA:** Save this total-miles check.\n\n## Day 4 · 2026-11-12 · Prepare & engage\n\n- **Video topic / reserve idea:** A better filming checklist\n- **Pillar:** Industry tips\n- **Hook:** A useful load video starts with clean inputs.\n- **Format:** Desk checklist\n- **Main message:** Use fictional load data and clear labels in educational content.\n- **Caption:** No private rate confirmations needed to teach the basics.\n- **Hashtags:** #ProfitLane #DispatchTips #TruckDispatch #LoadPlanning\n- **CTA:** Which input would you explain first?\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 5 · 2026-11-13 · Publish\n\n- **Video topic / reserve idea:** Revenue is not take-home pay\n- **Pillar:** Education\n- **Hook:** A $1,200 load does not mean $1,200 in profit.\n- **Format:** Calculator close-up\n- **Main message:** Subtract relevant costs; revenue per mile alone is incomplete.\n- **Caption:** Revenue first. Costs next. Your final decision last. Fictional figures.\n- **Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning\n- **CTA:** Save the cost checklist.\n\n## Day 6 · 2026-11-14 · Review & respond\n\n- **Video topic / reserve idea:** Build the next cost checklist\n- **Pillar:** Industry tips\n- **Hook:** Which cost is easiest to leave out?\n- **Format:** Checklist draft\n- **Main message:** Include fuel, tolls, time and allocated operating costs.\n- **Caption:** Help us build a more useful review checklist.\n- **Hashtags:** #ProfitLane #DispatchTips #TruckDispatch #LoadPlanning\n- **CTA:** Suggest one overlooked cost.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 7 · 2026-11-15 · Review & respond\n\n- **Video topic / reserve idea:** One week of questions\n- **Pillar:** Engagement\n- **Hook:** What did this week leave unanswered?\n- **Format:** Comment roundup\n- **Main message:** Use audience questions to choose the next explanation.\n- **Caption:** We are listening before adding more concepts.\n- **Hashtags:** #ProfitLane #TruckDispatch #DispatcherLife\n- **CTA:** Leave a question for next week.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 8 · 2026-11-16 · Publish\n\n- **Video topic / reserve idea:** Angel and the mission\n- **Pillar:** Brand awareness\n- **Hook:** The person at the dispatch desk still makes the call.\n- **Format:** Founder interview\n- **Main message:** Angel brings approximately eight years of trucking experience; confirm before filming.\n- **Caption:** Meet the purpose behind ProfitLane: support the person making the call.\n- **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools\n- **CTA:** What would helpful AI support look like to you?\n\n## Day 9 · 2026-11-17 · Prepare & engage\n\n- **Video topic / reserve idea:** Prepare a rate conversation\n- **Pillar:** Industry tips\n- **Hook:** Before asking for more, organize the reason.\n- **Format:** Role-play rehearsal\n- **Main message:** Use accurate route, timing and cost facts; no guaranteed negotiation outcome.\n- **Caption:** Facts make a clearer conversation than a random counteroffer.\n- **Hashtags:** #ProfitLane #DispatchTips #TruckDispatch #LoadPlanning\n- **CTA:** Write down your three key facts.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 10 · 2026-11-18 · Publish\n\n- **Video topic / reserve idea:** Fuel math you can check\n- **Pillar:** Education\n- **Hook:** How much fuel does this fictional trip actually need?\n- **Format:** Whiteboard calculation\n- **Main message:** Total miles divided by assumed MPG, multiplied by fuel price, estimates fuel cost.\n- **Caption:** A fuel estimate is only as good as its assumptions. Fictional inputs.\n- **Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning\n- **CTA:** Check your own assumptions before using an estimate.\n\n## Day 11 · 2026-11-19 · Prepare & engage\n\n- **Video topic / reserve idea:** What changes your fuel estimate?\n- **Pillar:** Engagement\n- **Hook:** Would you use the same MPG for every trip?\n- **Format:** Question + input cards\n- **Main message:** Vehicle and route assumptions need review.\n- **Caption:** One estimate cannot describe every truck or route.\n- **Hashtags:** #ProfitLane #TruckDispatch #DispatcherLife\n- **CTA:** Tell us which assumption you revisit.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 12 · 2026-11-20 · Publish\n\n- **Video topic / reserve idea:** A score is a starting point\n- **Pillar:** Product concept\n- **Hook:** Would you accept a load because a screen says 76?\n- **Format:** Labeled concept mockup\n- **Main message:** Proposed 1–100 rating is unvalidated and never replaces a full review.\n- **Caption:** Concept only: a summary should invite questions, not make your decision.\n- **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch\n- **CTA:** What would you need to see behind a score?\n\n## Day 13 · 2026-11-21 · Review & respond\n\n- **Video topic / reserve idea:** Design the explanation\n- **Pillar:** Product concept\n- **Hook:** If a score changed, would you know why?\n- **Format:** Sketch review\n- **Main message:** A proposed score should explain inputs and missing information.\n- **Caption:** We want understandable assistance, not unexplained numbers. Concept in development.\n- **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch\n- **CTA:** Which input needs the clearest explanation?\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 14 · 2026-11-22 · Review & respond\n\n- **Video topic / reserve idea:** Your three-question review\n- **Pillar:** Engagement\n- **Hook:** Which of these three checks comes first for you?\n- **Format:** Comment-response plan\n- **Main message:** Invite audience priorities without presenting an acceptance rule.\n- **Caption:** Miles, time or costs—where do you start?\n- **Hashtags:** #ProfitLane #TruckDispatch #DispatcherLife\n- **CTA:** Comment with your order and why.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 15 · 2026-11-23 · Publish\n\n- **Video topic / reserve idea:** Ask before you counter\n- **Pillar:** Industry tips\n- **Hook:** Before you counter, what do you still need to know?\n- **Format:** Two-person broker role-play\n- **Main message:** Clarify appointment times, accessorial terms and load details before negotiating.\n- **Caption:** A clearer question can improve your information. No rate outcome is promised.\n- **Hashtags:** #ProfitLane #DispatchTips #TruckDispatch #LoadPlanning\n- **CTA:** Save these three questions.\n\n## Day 16 · 2026-11-24 · Prepare & engage\n\n- **Video topic / reserve idea:** Time belongs in the review\n- **Pillar:** Education\n- **Hook:** Two loads. Same miles. Different time commitments.\n- **Format:** Side-by-side cards\n- **Main message:** Pickup windows, waiting and delivery timing affect the review.\n- **Caption:** Mileage does not tell the whole schedule. Fictional comparison.\n- **Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning\n- **CTA:** What timing detail do you always confirm?\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 17 · 2026-11-25 · Publish\n\n- **Video topic / reserve idea:** The same rate, different trip\n- **Pillar:** Education\n- **Hook:** Both loads pay $1,200. Would you review them the same way?\n- **Format:** Split-screen calculation\n- **Main message:** Compare revenue across total miles while reviewing costs and time.\n- **Caption:** Same revenue can hide very different trips. Fictional examples.\n- **Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning\n- **CTA:** Save this comparison for your next review checklist.\n\n## Day 18 · 2026-11-26 · Prepare & engage\n\n- **Video topic / reserve idea:** Missing information matters\n- **Pillar:** Product concept\n- **Hook:** What should an assistant do when an input is missing?\n- **Format:** Mockup question\n- **Main message:** Flag unknown inputs instead of presenting certainty.\n- **Caption:** Concept in development: unknown should stay unknown.\n- **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch\n- **CTA:** Which missing input should trigger a follow-up?\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 19 · 2026-11-27 · Publish\n\n- **Video topic / reserve idea:** Walk through the proposed assistant\n- **Pillar:** Product concept\n- **Hook:** Here is the idea—not a live product demo.\n- **Format:** Paper prototype walkthrough\n- **Main message:** Proposed input, review and explanation workflow; features unconfirmed.\n- **Caption:** A concept walkthrough of support at the dispatch desk. In development.\n- **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch\n- **CTA:** Tell us which step needs more clarity.\n\n## Day 20 · 2026-11-28 · Review & respond\n\n- **Video topic / reserve idea:** Make labels readable\n- **Pillar:** Industry tips\n- **Hook:** Can you read the important part in two seconds?\n- **Format:** Overlay rehearsal\n- **Main message:** Keep concept labels visible and explain assumptions in captions.\n- **Caption:** Clear wording helps people understand what is real and what is proposed.\n- **Hashtags:** #ProfitLane #DispatchTips #TruckDispatch #LoadPlanning\n- **CTA:** Which part would you simplify?\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 21 · 2026-11-29 · Review & respond\n\n- **Video topic / reserve idea:** Listen before the next batch\n- **Pillar:** Engagement\n- **Hook:** What should we explain next: fuel, time or deadhead?\n- **Format:** Poll-style question\n- **Main message:** Let qualified questions shape future education.\n- **Caption:** Choose a topic for the next recording session.\n- **Hashtags:** #ProfitLane #TruckDispatch #DispatcherLife\n- **CTA:** Comment fuel, time or deadhead.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 22 · 2026-11-30 · Publish\n\n- **Video topic / reserve idea:** The dispatcher stays in control\n- **Pillar:** Brand awareness\n- **Hook:** What should AI leave to the dispatcher?\n- **Format:** Founder answer + checklist\n- **Main message:** Context, relationships and final judgment remain human responsibilities.\n- **Caption:** Made for dispatchers by dispatchers. AI assistance stays in a supporting role.\n- **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools\n- **CTA:** Tell us one decision you would always review yourself.\n\n## Day 23 · 2026-12-01 · Prepare & engage\n\n- **Video topic / reserve idea:** Build a useful reply video\n- **Pillar:** Engagement\n- **Hook:** A good question deserves more than a quick reply.\n- **Format:** Reply-video storyboard\n- **Main message:** Answer a real question accurately; do not invent a customer comment.\n- **Caption:** We are collecting questions for the next explanation.\n- **Hashtags:** #ProfitLane #TruckDispatch #DispatcherLife\n- **CTA:** Ask one specific load-review question.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 24 · 2026-12-02 · Publish\n\n- **Video topic / reserve idea:** Three inputs to double-check\n- **Pillar:** Industry tips\n- **Hook:** Before trusting any summary, check the inputs.\n- **Format:** Three-card checklist\n- **Main message:** Verify total miles, fuel assumptions and schedule; this is not a complete operating checklist.\n- **Caption:** Better inputs help you ask better questions.\n- **Hashtags:** #ProfitLane #DispatchTips #TruckDispatch #LoadPlanning\n- **CTA:** Save these checks and add your own.\n\n## Day 25 · 2026-12-03 · Prepare & engage\n\n- **Video topic / reserve idea:** What a demo request should explain\n- **Pillar:** Product concept\n- **Hook:** Before you request a demo, you should know what is available.\n- **Format:** Founder update draft\n- **Main message:** State actual development status and access limits.\n- **Caption:** Product updates should tell you what you can really try.\n- **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch\n- **CTA:** Follow for confirmed development updates.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 26 · 2026-12-04 · Publish\n\n- **Video topic / reserve idea:** Answer a real dispatcher question\n- **Pillar:** Engagement\n- **Hook:** Let us work through one question from the dispatch desk.\n- **Format:** Comment reply; use a genuine approved question\n- **Main message:** Use a real question with consent or label it as a team prompt.\n- **Caption:** A practical explanation starts with a specific question.\n- **Hashtags:** #ProfitLane #TruckDispatch #DispatcherLife\n- **CTA:** What would you like us to work through next?\n\n## Day 27 · 2026-12-05 · Review & respond\n\n- **Video topic / reserve idea:** Review useful responses\n- **Pillar:** Engagement\n- **Hook:** Which explanation helped you ask a better question?\n- **Format:** Weekly recap preparation\n- **Main message:** Measure useful audience feedback without fabricating testimonials.\n- **Caption:** Your feedback helps shape the next month of education.\n- **Hashtags:** #ProfitLane #TruckDispatch #DispatcherLife\n- **CTA:** Name a topic we should revisit.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 28 · 2026-12-06 · Review & respond\n\n- **Video topic / reserve idea:** Plan next month thoughtfully\n- **Pillar:** Industry tips\n- **Hook:** Do more views always mean a more useful video?\n- **Format:** Analytics worksheet\n- **Main message:** Compare equal observation windows and qualified responses.\n- **Caption:** Look beyond reach when reviewing what helped.\n- **Hashtags:** #ProfitLane #DispatchTips #TruckDispatch #LoadPlanning\n- **CTA:** Choose one question to test next month.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n## Day 29 · 2026-12-07 · Publish\n\n- **Video topic / reserve idea:** What we want to learn next\n- **Pillar:** Brand awareness\n- **Hook:** What would make AI assistance worth trying for you?\n- **Format:** Founder recap\n- **Main message:** Invite needs and confirmed update interest, without promising product availability.\n- **Caption:** ProfitLane is in development. Your judgment stays at the center.\n- **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools\n- **CTA:** Follow for updates and tell us what support you need.\n\n## Day 30 · 2026-12-08 · Prepare & engage\n\n- **Video topic / reserve idea:** A month of learning\n- **Pillar:** Engagement\n- **Hook:** What should stay on the calendar next month?\n- **Format:** Month-end planning card\n- **Main message:** Review actual results and choose useful next experiments.\n- **Caption:** A thoughtful next month starts with what we learned.\n- **Hashtags:** #ProfitLane #TruckDispatch #DispatcherLife\n- **CTA:** Suggest one topic for the next calendar.\n- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n\n", "video-scripts.md": "# First ten scheduled TikTok videos\n\nRecord vertical 9:16, stationary and safely away from driving. Use fictional data only, approved brand assets, clear audio and checked captions. Lengths are targets; rehearse and adjust pauses. Opening hooks are the first 2–3 seconds and are included in the complete scripts below. Speaker may be Angel or an identified team presenter. Obtain Angel’s confirmation of founder details before filming video 4; do not present a team member as Angel. Product concepts are labeled throughout and do not demonstrate a live product.\n\n## 1. AI beside the dispatcher\n\n**Scheduled:** Day 1 · 2026-11-09\n\n**Length:** 30–40 seconds\n\n**Opening hook (2–3 seconds):** AI should help your dispatch desk—not take it over.\n\n**Full voiceover / speaking script:**\n\nAI should help your dispatch desk—not take it over. ProfitLane is an AI dispatching assistant in development. The goal is to help independent dispatchers organize load information, review costs and prepare for rate conversations. Your experience and your judgment stay at the center. We are sharing practical load-review ideas as we develop the concept. Follow along, and tell us which part of reviewing a load needs the most support.\n\n**Scenes and visuals:** 0–3s: Angel or team presenter at a parked desk. 3–20s: fictional input cards beside the presenter. 20–35s: approved logo and mission.\n\n**On-screen text:** AI assistance • In development | Your judgment stays in control | Follow for load-review tips\n\n**Caption:** Your experience stays at the center. Meet the idea behind ProfitLane.\n\n**Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools\n\n**CTA:** Follow for practical load-review tips.\n\n## 2. The miles before the load\n\n**Scheduled:** Day 3 · 2026-11-11\n\n**Length:** 35–45 seconds\n\n**Opening hook (2–3 seconds):** That load starts before pickup. Count those miles.\n\n**Full voiceover / speaking script:**\n\nThat load starts before pickup. Count those miles. Here is a fictional example: 100 empty miles to pickup and 500 loaded miles. That is 600 total miles. If the offer is $1,200, dividing by loaded miles gives $2.40 per mile. Dividing by total miles gives $2.00 per mile. Neither number is profit. Fuel, time and other costs still matter. Save this check, and make sure your comparison includes the miles before the load.\n\n**Scenes and visuals:** 0–3s: empty route arrow. 3–12s: write 100 + 500 = 600. 12–25s: show $1,200 ÷ 500 and $1,200 ÷ 600. 25–40s: cost checklist.\n\n**On-screen text:** Fictional example | 100 deadhead + 500 loaded = 600 total | $2.40/loaded mile vs $2.00/total mile | Revenue ≠ profit\n\n**Caption:** The empty miles belong in the conversation too. Fictional example.\n\n**Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning\n\n**CTA:** Save this total-miles check.\n\n## 3. Revenue is not take-home pay\n\n**Scheduled:** Day 5 · 2026-11-13\n\n**Length:** 35–45 seconds\n\n**Opening hook (2–3 seconds):** A $1,200 load does not mean $1,200 in profit.\n\n**Full voiceover / speaking script:**\n\nA $1,200 load does not mean $1,200 in profit. In this fictional example, suppose fuel is $400, tolls are $50 and allocated operating costs are $300. Subtracting those leaves $450 before any other costs or taxes that apply. Those are made-up inputs, not typical industry costs. Your own labor, maintenance, insurance, financing and other expenses may change the picture. Build a complete cost review before deciding. Save this checklist as a starting point.\n\n**Scenes and visuals:** 0–3s: $1,200 revenue card. 3–25s: subtract each labeled expense. 25–40s: show remaining review items.\n\n**On-screen text:** Fictional inputs—not typical costs | $1,200 − $400 − $50 − $300 = $450 | Before other applicable costs and taxes\n\n**Caption:** Revenue first. Costs next. Your final decision last. Fictional figures.\n\n**Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning\n\n**CTA:** Save the cost checklist.\n\n## 4. Angel and the mission\n\n**Scheduled:** Day 8 · 2026-11-16\n\n**Length:** 30–40 seconds\n\n**Opening hook (2–3 seconds):** The person at the dispatch desk still makes the call.\n\n**Full voiceover / speaking script:**\n\nThe person at the dispatch desk still makes the call. ProfitLane's founder, Angel, has approximately eight years of trucking industry experience. His mission is to help dispatchers rather than replace them. The assistant is being developed to support a closer look at the numbers, while the dispatcher brings the context and makes the decision. That is the idea behind ProfitLane. What would useful AI assistance look like at your desk?\n\n**Scenes and visuals:** 0–3s: founder portrait or approved team intro. 3–22s: interview at a desk. 22–35s: mission over approved logo.\n\n**On-screen text:** Angel • Founder | Approximately 8 years in trucking* | AI assists. Dispatcher decides. | *Confirm founder wording before recording\n\n**Caption:** Meet the purpose behind ProfitLane: support the person making the call.\n\n**Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools\n\n**CTA:** What would helpful AI support look like to you?\n\n## 5. Fuel math you can check\n\n**Scheduled:** Day 10 · 2026-11-18\n\n**Length:** 35–45 seconds\n\n**Opening hook (2–3 seconds):** How much fuel does this fictional trip actually need?\n\n**Full voiceover / speaking script:**\n\nHow much fuel does this fictional trip actually need? Start with 600 total miles. At an assumed six miles per gallon, that is 100 gallons. At an assumed four dollars per gallon, estimated fuel cost is $400. Change the MPG or the price and your estimate changes. This is a simplified example, not a fuel quote or a prediction for your truck. Review actual conditions and your own assumptions. Check the inputs before you use the result.\n\n**Scenes and visuals:** 0–3s: calculator and total-mile card. 3–15s: 600 ÷ 6 = 100 gallons. 15–27s: 100 × $4 = $400. 27–40s: assumptions checklist.\n\n**On-screen text:** Fictional example | 600 miles ÷ 6 MPG = 100 gal | 100 gal × $4 = $400 estimated fuel | Assumptions change results\n\n**Caption:** A fuel estimate is only as good as its assumptions. Fictional inputs.\n\n**Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning\n\n**CTA:** Check your own assumptions before using an estimate.\n\n## 6. A score is a starting point\n\n**Scheduled:** Day 12 · 2026-11-20\n\n**Length:** 35–45 seconds\n\n**Opening hook (2–3 seconds):** Would you accept a load because a screen says 76?\n\n**Full voiceover / speaking script:**\n\nWould you accept a load because a screen says 76? This is a concept mockup, not a live ProfitLane feature. A proposed rating from one to one hundred could summarize inputs such as deadhead, fuel and mileage. But the scoring method has not been validated. Seventy-six here is just a made-up visual example, not a recommendation. You would still need the inputs, the missing information and your own judgment. What would you need to see behind a score?\n\n**Scenes and visuals:** 0–3s: paper score card. 3–23s: point to fictional input labels. 23–40s: replace focus on the number with questions. Keep concept label visible throughout.\n\n**On-screen text:** Concept mockup • In development | 76/100: arbitrary illustration | Proposed scoring is unvalidated | Review inputs. You decide.\n\n**Caption:** Concept only: a summary should invite questions, not make your decision.\n\n**Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch\n\n**CTA:** What would you need to see behind a score?\n\n## 7. Ask before you counter\n\n**Scheduled:** Day 15 · 2026-11-23\n\n**Length:** 35–45 seconds\n\n**Opening hook (2–3 seconds):** Before you counter, what do you still need to know?\n\n**Full voiceover / speaking script:**\n\nBefore you counter, what do you still need to know? In a fictional rate conversation, I would first ask: Can you confirm pickup and delivery appointment times? What accessorial terms apply, and how are they documented? Are there any other load requirements I should review? Then I can explain a counteroffer using accurate trip facts. No script guarantees a better rate. Save the questions and adapt them to your own process and agreements.\n\n**Scenes and visuals:** 0–3s: presenter with question cards. 3–26s: team member plays broker, no real company shown. 26–40s: three-question recap.\n\n**On-screen text:** Fictional role-play | Confirm appointment times | Clarify accessorial terms | Verify other requirements | No guaranteed rate outcome\n\n**Caption:** A clearer question can improve your information. No rate outcome is promised.\n\n**Hashtags:** #ProfitLane #DispatchTips #TruckDispatch #LoadPlanning\n\n**CTA:** Save these three questions.\n\n## 8. The same rate, different trip\n\n**Scheduled:** Day 17 · 2026-11-25\n\n**Length:** 35–45 seconds\n\n**Opening hook (2–3 seconds):** Both loads pay $1,200. Would you review them the same way?\n\n**Full voiceover / speaking script:**\n\nBoth loads pay $1,200. Would you review them the same way? In this fictional example, Load A has 500 loaded miles and 100 deadhead miles: 600 total. That is two dollars of revenue per total mile. Load B has 500 loaded miles and 200 deadhead miles: 700 total. That is about a dollar seventy-one per total mile. Neither figure is profit. Costs, timing and the next move still need review. Save this comparison as one part of your checklist.\n\n**Scenes and visuals:** 0–3s: two $1,200 cards. 3–20s: animate total-mile sums. 20–35s: show division side by side. 35–45s: costs/time prompt.\n\n**On-screen text:** Fictional loads | A: $1,200 ÷ 600 = $2.00/mi | B: $1,200 ÷ 700 ≈ $1.71/mi | Revenue per total mile—not profit\n\n**Caption:** Same revenue can hide very different trips. Fictional examples.\n\n**Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning\n\n**CTA:** Save this comparison for your next review checklist.\n\n## 9. Walk through the proposed assistant\n\n**Scheduled:** Day 19 · 2026-11-27\n\n**Length:** 35–45 seconds\n\n**Opening hook (2–3 seconds):** Here is the idea—not a live product demo.\n\n**Full voiceover / speaking script:**\n\nHere is the idea—not a live product demo. This paper prototype shows a proposed ProfitLane workflow. First, enter fictional load details, including loaded miles, deadhead and fuel assumptions. Next, review the information and identify anything missing. A proposed summary could explain the inputs behind a rating. Then the dispatcher reviews costs, timing and context before making a decision. The interface and features are still in development; this is not a validated scoring system. Which step needs more clarity?\n\n**Scenes and visuals:** 0–3s: visible paper prototype. 3–15s: point to input fields. 15–28s: flag unknown inputs. 28–45s: proposed explanation and human review. Keep concept label visible throughout.\n\n**On-screen text:** Concept mockup • In development | 1. Inputs 2. Review 3. Explanation 4. Your decision | Proposed score is unvalidated\n\n**Caption:** A concept walkthrough of support at the dispatch desk. In development.\n\n**Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch\n\n**CTA:** Tell us which step needs more clarity.\n\n## 10. The dispatcher stays in control\n\n**Scheduled:** Day 22 · 2026-11-30\n\n**Length:** 35–45 seconds\n\n**Opening hook (2–3 seconds):** What should AI leave to the dispatcher?\n\n**Full voiceover / speaking script:**\n\nWhat should AI leave to the dispatcher? A tool can help organize information, but relationships, unusual conditions and final decisions need human judgment. ProfitLane is in development as an assistant to dispatchers. The purpose is to support a closer look at the numbers, not to promise a better rate or make the call for you. Made for dispatchers by dispatchers. Tell us one part of your review you would always want to handle yourself.\n\n**Scenes and visuals:** 0–3s: presenter asks the question. 3–25s: three cards: context, relationships, judgment. 25–40s: mission and comment prompt.\n\n**On-screen text:** In development | Context • Relationships • Judgment | Made for dispatchers by dispatchers.\n\n**Caption:** Made for dispatchers by dispatchers. AI assistance stays in a supporting role.\n\n**Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools\n\n**CTA:** Tell us one decision you would always review yourself.\n\n", "README.md": "Social media TikTok files for ProfitLane (TikTok Lead)\n\n# ProfitLane TikTok marketing package\n\nA college-project launch plan and working local content tracker for Angel. All sample performance is fictional. ProfitLane is in development; product videos describe proposed workflows, not verified capabilities. Nothing connects to TikTok or publishes content.\n\n## What is here\n\n- **`index.html`** — interactive studio: overview, calendar, searchable post library and script rehearsal library.\n- **`profile-and-strategy.md`** — usernames, display name, bio, approved-logo guidance, audience, link/CTA plan, pillars, posting rhythm and measurement.\n- **`content-calendar.md` / `content-calendar.csv`** — 30 daily entries from November 9 to December 8, 2026. Each includes a concept, hook, format, message, caption, hashtags and CTA. Thirteen are publishing days; seventeen are preparation, engagement or review days with reserve ideas.\n- **`video-scripts.md`** — first ten scheduled posts, with full scripts, first 2–3 second hooks, scenes, overlays, captions, tags, CTAs and lengths.\n- **`content.js`** — reference calendar and scripts read by the tracker. Initial editable posts are drawn from its publishing days.\n- **`tracker.js` / `tracker.css`** — dependency-free dashboard behavior and brand styling.\n- **`build-content.py`** — curated reference source and optional documentation generator. Requires Python 3, not needed to use the tracker.\n- **`tests/tracker.test.cjs`** — browser interaction tests. See testing notes below.\n\nThe original one-line folder description above is preserved. Only this folder is changed. The dashboard reads the existing `../brand/brand.css` and logo assets; keep the repository's folder structure intact. It uses the brand font stacks (Barlow/Barlow Condensed when installed, approved system fallbacks otherwise) and makes no font network requests. `brand/HOW-TO-USE.md` was absent when inspected; the brand kit and stylesheet were followed.\n\n## Open the tracker\n\n**If the chat link shows “an error occurred inside the visualization”:** download `profitlane-tiktok-download.zip`, extract it, and double-click `OPEN-TRACKER.html` in a regular browser. The chat preview is not a reliable way to run this multi-file app. The ZIP includes a self-contained tracker with embedded CSS, JavaScript, approved logos, reference documents and CSV. It requires no installation, server or neighboring brand folder. You can also download `profitlane-tiktok-standalone.html` alone and open it in your browser. Keep the downloaded HTML in the same location for repeat visits; changing browser or file location can change which local data you see. Export/import a backup to transfer work between versions or browsers.\n\nThe standalone file is generated by `python3 build-standalone.py` from this folder after updating the source files. Rebuild it after regenerating content or changing the tracker. This also refreshes the ZIP. All generated files stay here; brand files are only read. Documentation links in the standalone version open embedded text documents, and its calendar CSV download is embedded too.\n\nThe original repository version remains available:\n\nOpen `social-tiktok/index.html` in a current Chrome, Edge, Firefox or Safari with JavaScript enabled. There is no build, npm install or backend. Direct-file storage can vary by browser; for consistent local persistence, serve the repository:\n\n```sh\ncd /path/to/MGMT-3450-Team-3\npython3 -m http.server 8000 --bind 127.0.0.1\n```\n\nThen open the server's `/social-tiktok/` path in your local browser. In a hosted coding workspace use its supported browser access; this package does not create a public preview. The port can be changed if occupied. Use the same address/port/browser to return to the same saved workspace.\n\n## Use the workspace\n\n1. **Overview:** see library size, Published count, known Published views and pooled engagement. Pipeline and pillar bars have visible numeric labels. All charts include the explicitly fictional sample records until you remove them.\n2. **Calendar:** use the arrows to browse months or “Launch month” to return to November 2026. Select a scheduled post to edit. Dashed preparation/review prompts and the 30-day cards show the original reference plan. They do not move when you edit a post.\n3. **New post:** enter title, description, date, category and status. Expand the copy section for hook, format, caption, tags and CTA. Save, then use Edit to update or Delete to remove (with confirmation). Status is manual: Idea → Planned → Ready → Published. Ready does not mean anything was scheduled on TikTok.\n4. **Post library:** search title, description, notes, hook, caption or hashtags. Combine status/category/date filters; bounds include their dates. Clear resets the filters. Filters affect the table only, not overview charts or calendar.\n5. **Results:** after publishing manually, paste an HTTPS video URL and enter cumulative views, likes, comments and shares from the same observation time. Use notes for the “as of” date, watch time, qualified questions and one next step. A blank count is unknown; enter `0` only when measured. Counts must be nonnegative whole numbers. A URL does not verify that the video exists.\n6. **Engagement:** `(likes + comments + shares) / views × 100`. All four metrics are needed and views must exceed zero. Otherwise show `—`; zero views does not produce an infinite rate. The editor/table calculate a per-post rate regardless of status. The overview pools only Published records with complete positive-view data: total eligible interactions ÷ total eligible views. It is not a mean of percentages, and excludes saves. See strategy for measurement limits.\n7. **Backup:** Export backup downloads versioned JSON for all current posts, regardless of filters. Import JSON validates records and asks before replacing the current workspace. Unknown categories/statuses, negative/fractional counts, invalid dates and unsafe URL protocols are rejected. Maximum 2,000 posts / 5 MB import. Reset to sample data also requires confirmation. Export before resetting or importing.\n\nBrowser localStorage is not a shared database, cloud sync or automatic backup. Clearing site data, changing browser/profile/address or using private mode can lose access to it. If storage is blocked/full the app keeps session edits and warns you to export. If saved data is unreadable, the original stored value is protected, samples appear, and edits are session-only until a deliberate import/reset. Avoid editing in multiple tabs; a notice appears if another tab changes the stored workspace. Exported files can contain sensitive notes, so keep real customer details out.\n\n## Update the content calendar\n\nFor everyday use, edit a post's date, copy, status or category inside the tracker; its calendar entry, table, statistics and charts update together. The launch plan is a suggested window, not an automated schedule. Add desired time and audience time zone to notes (for example “test 6 p.m. Central”); the date field does not schedule publication or convert time zones.\n\nTo move the whole launch, edit each planned date and compare the resulting calendar. For a non-publishing day, use the reference idea as a reserve and create a post only if you decide to publish it. Export a backup after planning. The browser's edits do **not** rewrite the Markdown, CSV or script library.\n\nFor repository reference changes, edit the curated concepts, dates and scripts in `build-content.py`, then run from this folder:\n\n```sh\npython3 build-content.py\n```\n\nThis intentionally regenerates `content.js`, `content-calendar.md`, `content-calendar.csv` and `video-scripts.md`. Check those files for other students' edits first; do not run the generator blindly over their work. Existing browser data stays untouched: importing a backup or explicitly resetting starts a changed reference set. The generator does not alter strategy, branding, application code or other folders.\n\n## Launch with Angel\n\nConfirm account name availability and founder wording; obtain permission for any personal story. Review the package together. Replace/delete the three fictional Published samples before measuring a real account. Update dates to the actual launch, rehearse scripts, check arithmetic and fictional-data labels, then mark reviewed videos Ready. Use original/approved audio, check captions and never film while driving. Product concepts must keep the in-development/unvalidated labels. No guaranteed rate improvements, earnings, validated scores or customer results are claimed here.\n\nUse the existing default square logo for the profile; see the playbook for safe cropping. Add a profile link only to Angel's approved real destination and only when eligible. Until usable access exists, invite follows and questions rather than claiming a trial is available. Publish manually after Angel's review. Enter actual metrics consistently, compare equal windows each week, and choose the next topic from useful questions and measured interest.\n\n## Testing\n\nThe tracker has no runtime dependencies. Its optional browser test uses an existing Playwright installation and Chromium. It writes temporary browser profiles and test artifacts only under `social-tiktok/.runtime/` and `social-tiktok/tests/artifacts/` (ignored). Test a fresh workspace, not your personal live tracker data.\n\nFrom the repository root, using an environment with `playwright` available to Node:\n\n```sh\nnode social-tiktok/tests/tracker.test.cjs\n```\n\nThe test starts its own local HTTP server on an available port, exercises a separate browser profile and closes its own server/browser afterward. It does not contact TikTok. In restricted coding sandboxes, browser and socket creation may require the platform's supported execution permission. See `tests/RESULTS.md` for the actual checks run and their results.\n\n### Portable download checks\n\n`TRACKER_ENTRY=profitlane-tiktok-standalone.html node social-tiktok/tests/tracker.test.cjs` runs the interaction suite against the portable build. `node social-tiktok/tests/portable.test.cjs` serves the HTML as the only file in an isolated directory and checks embedded branding, documents, CSV, saved edits and the absence of external resource requests. Direct file navigation cannot be verified in this managed Chromium because its policy blocks `file://` pages; a regular desktop browser is the intended downloaded-file viewer.\n"};
+document.addEventListener('click', e => {
+  const link = e.target.closest('[data-document]');
+  if (!link) return;
+  e.preventDefault();
+  document.querySelector('#document-title').textContent = link.dataset.document;
+  document.querySelector('#document-copy').textContent = docs[link.dataset.document];
+  document.querySelector('#document-dialog').showModal();
+});
+document.querySelector('#close-document').addEventListener('click', () => document.querySelector('#document-dialog').close());
+})();
+
+</script>
+</body></html>

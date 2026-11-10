@@ -7,7 +7,9 @@ A college-project launch plan and working local content tracker for Angel. All s
 ## What is here
 
 - **`index.html`** — interactive studio: overview, calendar, searchable post library and script rehearsal library.
-- **`profile-and-strategy.md`** — usernames, display name, bio, approved-logo guidance, audience, link/CTA plan, pillars, posting rhythm and measurement.
+- **`profile-and-strategy.md`** — owner-selected handle, display name, bio, approved-logo guidance, audience, goals, tone, proposed product concepts, link/CTA plan and measurement.
+- **`angel-stakeholder-feedback.md`** — Angel’s exact questions/responses, preserved verbatim.
+- **`research/`** — the four original research entries and comparison index, preserved as historical research.
 - **`content-calendar.md` / `content-calendar.csv`** — 30 daily entries from November 9 to December 8, 2026. Each includes a concept, hook, format, message, caption, hashtags and CTA. Thirteen are publishing days; seventeen are preparation, engagement or review days with reserve ideas.
 - **`video-scripts.md`** — first ten scheduled posts, with full scripts, first 2–3 second hooks, scenes, overlays, captions, tags, CTAs and lengths.
 - **`content.js`** — reference calendar and scripts read by the tracker. Initial editable posts are drawn from its publishing days.
@@ -16,6 +18,16 @@ A college-project launch plan and working local content tracker for Angel. All s
 - **`tests/tracker.test.cjs`** — browser interaction tests. See testing notes below.
 
 The original one-line folder description above is preserved. Only this folder is changed. The dashboard reads the existing `../brand/brand.css` and logo assets; keep the repository's folder structure intact. It uses the brand font stacks (Barlow/Barlow Condensed when installed, approved system fallbacks otherwise) and makes no font network requests. `brand/HOW-TO-USE.md` was absent when inspected; the brand kit and stylesheet were followed.
+
+## Alignment with Angel's direction
+
+The working handle is **@profitlane.dispatch**, selected by Angel; availability/registration is unverified. Independent dispatchers are the primary audience. Independent operators interested in starting their own dispatching are secondary. Combine educational, professional, casual and relatable delivery to support **brand awareness and attracting potential customers**. Angel is willing to appear and prefers straightforward client-to-client conversations; confirm his background wording and any authentic examples before filming.
+
+AI system tracking is Angel's proposed concept for helping dispatchers identify logistics companies using AI in broker–dispatcher negotiation/communication so they can choose whom to work with. Its method, accuracy and availability are unverified. The proposed 1–100 recommendation score considers weight relative to distance, pre-trip deadhead, diesel prices in relevant areas, pallet count and load payment; it is not a validated profitability or booking decision. Both remain concepts in these materials. The functional TikTok tracker is not evidence of a working ProfitLane dispatching product.
+
+The current draft invites follows once the account is available. Product-exploration and demo-request CTAs are conditional on an approved real page, actual demo and functioning request route; no business email, URL or phone number is invented. The calendar retains 30 days and 13 publishing slots. Existing educational calculations and titles are retained, with targeted updates to founder content, concept explanations and CTAs. Research entries are unchanged observations from before this alignment; read current product positioning in the playbook alongside the exact stakeholder record.
+
+**Existing browser data is preserved:** updated reference scripts/calendar and fresh sample data reflect the revised draft. Your already-saved post copy is not silently overwritten. Export a backup and edit the relevant saved posts manually. Resetting sample data replaces your entire local library and is optional. No account is registered and nothing is published by these changes.
 
 ## Open the tracker
 

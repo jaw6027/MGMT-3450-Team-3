@@ -1,28 +1,28 @@
 # First ten scheduled TikTok videos
 
-Record vertical 9:16, stationary and safely away from driving. Use fictional data only, approved brand assets, clear audio and checked captions. Lengths are targets; rehearse and adjust pauses. Opening hooks are the first 2–3 seconds and are included in the complete scripts below. Speaker may be Angel or an identified team presenter. Obtain Angel’s confirmation of founder details before filming video 4; do not present a team member as Angel. Product concepts are labeled throughout and do not demonstrate a live product.
+Record vertical 9:16, stationary and safely away from driving. Use fictional data only, approved brand assets, clear audio and checked captions. Lengths are targets; rehearse and adjust pauses. Opening hooks are the first 2–3 seconds and are included in the complete scripts below. Primary audience: independent dispatchers; secondary audience: independent operators starting their own dispatching. Support brand awareness and potential-customer interest with educational, professional, casual and relatable delivery. Speaker may be Angel, who is comfortable on camera and prefers client-to-client conversations, or an identified team presenter. Rehearse naturally; do not read draft production conditions as if an unavailable product/demo were available. Obtain Angel’s confirmation of founder details before filming video 4; do not present a team member as Angel. Product concepts are labeled throughout and do not demonstrate a live product.
 
 ## 1. AI beside the dispatcher
 
 **Scheduled:** Day 1 · 2026-11-09
 
-**Length:** 30–40 seconds
+**Length:** 40–50 seconds
 
 **Opening hook (2–3 seconds):** AI should help your dispatch desk—not take it over.
 
 **Full voiceover / speaking script:**
 
-AI should help your dispatch desk—not take it over. ProfitLane is an AI dispatching assistant in development. The goal is to help independent dispatchers organize load information, review costs and prepare for rate conversations. Your experience and your judgment stay at the center. We are sharing practical load-review ideas as we develop the concept. Follow along, and tell us which part of reviewing a load needs the most support.
+AI should help your dispatch desk—not take it over. ProfitLane is being developed for independent dispatchers. Independent operators starting their own dispatching are welcome too. Angel's proposed concepts include AI system tracking and a one-to-one-hundred load recommendation score. They are intended to support the review, with your judgment at the center. We will explain the concepts and practical load questions as development continues. Follow ProfitLane at profitlane dot dispatch for education and product updates. What would you want help reviewing first?
 
-**Scenes and visuals:** 0–3s: Angel or team presenter at a parked desk. 3–20s: fictional input cards beside the presenter. 20–35s: approved logo and mission.
+**Scenes and visuals:** 0–3s: Angel or identified team presenter at a desk. 3–25s: two labeled concept cards. 25–45s: approved logo, handle and a natural question.
 
-**On-screen text:** AI assistance • In development | Your judgment stays in control | Follow for load-review tips
+**On-screen text:** In development | Independent dispatchers first | AI system tracking + proposed 1–100 recommendation | @profitlane.dispatch
 
-**Caption:** Your experience stays at the center. Meet the idea behind ProfitLane.
+**Caption:** Meet ProfitLane: proposed assistance for independent dispatchers. Your judgment stays at the center.
 
 **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools
 
-**CTA:** Follow for practical load-review tips.
+**CTA:** Follow @profitlane.dispatch for dispatcher education and product updates.
 
 ## 2. The miles before the load
 
@@ -42,7 +42,7 @@ That load starts before pickup. Count those miles. Here is a fictional example: 
 
 **Caption:** The empty miles belong in the conversation too. Fictional example.
 
-**Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning
+**Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
 
 **CTA:** Save this total-miles check.
 
@@ -64,7 +64,7 @@ A $1,200 load does not mean $1,200 in profit. In this fictional example, suppose
 
 **Caption:** Revenue first. Costs next. Your final decision last. Fictional figures.
 
-**Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning
+**Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
 
 **CTA:** Save the cost checklist.
 
@@ -72,23 +72,23 @@ A $1,200 load does not mean $1,200 in profit. In this fictional example, suppose
 
 **Scheduled:** Day 8 · 2026-11-16
 
-**Length:** 30–40 seconds
+**Length:** 40–50 seconds
 
 **Opening hook (2–3 seconds):** The person at the dispatch desk still makes the call.
 
 **Full voiceover / speaking script:**
 
-The person at the dispatch desk still makes the call. ProfitLane's founder, Angel, has approximately eight years of trucking industry experience. His mission is to help dispatchers rather than replace them. The assistant is being developed to support a closer look at the numbers, while the dispatcher brings the context and makes the decision. That is the idea behind ProfitLane. What would useful AI assistance look like at your desk?
+The person at the dispatch desk still makes the call. ProfitLane's founder, Angel, brings approximately eight years of trucking industry experience. His focus is independent dispatchers, with room for independent operators starting their own dispatching. He is comfortable sharing the idea in straightforward desk conversations. His AI system tracking concept is intended to help dispatchers identify logistics companies using AI in broker–dispatcher communication, so they can choose whom to work with. The method and availability still need confirmation. Follow ProfitLane for more of the concept and practical dispatcher questions.
 
-**Scenes and visuals:** 0–3s: founder portrait or approved team intro. 3–22s: interview at a desk. 22–35s: mission over approved logo.
+**Scenes and visuals:** 0–3s: approved founder introduction. 3–35s: Angel in a relaxed client-to-client desk interview, or an identified presenter introducing his concept. 35–50s: follow prompt. Ask Angel for an authentic explanation; do not invent an anecdote.
 
-**On-screen text:** Angel • Founder | Approximately 8 years in trucking* | AI assists. Dispatcher decides. | *Confirm founder wording before recording
+**On-screen text:** Angel • Founder | Approximately 8 years in trucking: confirm wording | AI system tracking: proposed concept | Method and availability unverified | @profitlane.dispatch
 
 **Caption:** Meet the purpose behind ProfitLane: support the person making the call.
 
 **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools
 
-**CTA:** What would helpful AI support look like to you?
+**CTA:** Follow @profitlane.dispatch; what would useful assistance look like at your desk?
 
 ## 5. Fuel math you can check
 
@@ -108,7 +108,7 @@ How much fuel does this fictional trip actually need? Start with 600 total miles
 
 **Caption:** A fuel estimate is only as good as its assumptions. Fictional inputs.
 
-**Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning
+**Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
 
 **CTA:** Check your own assumptions before using an estimate.
 
@@ -116,23 +116,23 @@ How much fuel does this fictional trip actually need? Start with 600 total miles
 
 **Scheduled:** Day 12 · 2026-11-20
 
-**Length:** 35–45 seconds
+**Length:** 50–60 seconds
 
 **Opening hook (2–3 seconds):** Would you accept a load because a screen says 76?
 
 **Full voiceover / speaking script:**
 
-Would you accept a load because a screen says 76? This is a concept mockup, not a live ProfitLane feature. A proposed rating from one to one hundred could summarize inputs such as deadhead, fuel and mileage. But the scoring method has not been validated. Seventy-six here is just a made-up visual example, not a recommendation. You would still need the inputs, the missing information and your own judgment. What would you need to see behind a score?
+Would you accept a load because a screen says 76? This is a concept mockup, not a live ProfitLane feature. Angel's proposed one-to-one-hundred score is a recommendation tool, especially for dispatchers who are new. The proposed inputs are weight in relation to distance, deadhead before the trip, diesel prices in relevant areas, pallet count and load payment. Angel emphasizes the payment; no numerical weights are established. The scoring method has not been validated. Seventy-six is an arbitrary illustration, with no acceptance threshold or profitability guarantee. Review the inputs and decide yourself. Explore the concept in our videos and follow for product updates.
 
-**Scenes and visuals:** 0–3s: paper score card. 3–23s: point to fictional input labels. 23–40s: replace focus on the number with questions. Keep concept label visible throughout.
+**Scenes and visuals:** 0–3s: arbitrary 76 score card. 3–35s: reveal proposed inputs. 35–55s: questions for human review. Keep the concept label visible throughout.
 
-**On-screen text:** Concept mockup • In development | 76/100: arbitrary illustration | Proposed scoring is unvalidated | Review inputs. You decide.
+**On-screen text:** Concept mockup • In development | Weight/distance • Pre-trip deadhead • Area diesel prices • Pallet count • Payment | 76/100: arbitrary, unvalidated illustration | No guaranteed outcome
 
-**Caption:** Concept only: a summary should invite questions, not make your decision.
+**Caption:** Concept only: Angel’s proposed score supports review, especially for new dispatchers. The dispatcher decides.
 
 **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch
 
-**CTA:** What would you need to see behind a score?
+**CTA:** Explore the proposed score in our concept videos; follow for confirmed product updates.
 
 ## 7. Ask before you counter
 
@@ -174,7 +174,7 @@ Both loads pay $1,200. Would you review them the same way? In this fictional exa
 
 **Caption:** Same revenue can hide very different trips. Fictional examples.
 
-**Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning
+**Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
 
 **CTA:** Save this comparison for your next review checklist.
 
@@ -182,23 +182,23 @@ Both loads pay $1,200. Would you review them the same way? In this fictional exa
 
 **Scheduled:** Day 19 · 2026-11-27
 
-**Length:** 35–45 seconds
+**Length:** 50–60 seconds
 
 **Opening hook (2–3 seconds):** Here is the idea—not a live product demo.
 
 **Full voiceover / speaking script:**
 
-Here is the idea—not a live product demo. This paper prototype shows a proposed ProfitLane workflow. First, enter fictional load details, including loaded miles, deadhead and fuel assumptions. Next, review the information and identify anything missing. A proposed summary could explain the inputs behind a rating. Then the dispatcher reviews costs, timing and context before making a decision. The interface and features are still in development; this is not a validated scoring system. Which step needs more clarity?
+Here is the idea—not a live product demo. This paper prototype shows Angel's proposed load review: weight relative to distance, pre-trip deadhead, diesel prices in relevant areas, pallet count and load payment. The proposed recommendation score would support your review; no working or validated score is shown. Separately, his AI system tracking concept is intended to help identify logistics companies using AI in broker–dispatcher communication, so dispatchers can choose whom to work with. Its method, accuracy and availability need confirmation. Follow for product updates. Once a real product page and demo request are available, we will share how to explore ProfitLane and request a demo.
 
-**Scenes and visuals:** 0–3s: visible paper prototype. 3–15s: point to input fields. 15–28s: flag unknown inputs. 28–45s: proposed explanation and human review. Keep concept label visible throughout.
+**Scenes and visuals:** 0–3s: visible paper prototype. 3–25s: proposed score-input cards. 25–45s: separate AI system tracking concept card explained by Angel or an identified presenter. 45–60s: follow CTA and conditional future demo route. No fake detected-company flags, real company labels or live-system screens.
 
-**On-screen text:** Concept mockup • In development | 1. Inputs 2. Review 3. Explanation 4. Your decision | Proposed score is unvalidated
+**On-screen text:** Concept mockup • In development | Proposed score: unvalidated | AI system tracking: method/accuracy/availability unverified | Human review stays central | Follow now • Demo invitation only when available
 
-**Caption:** A concept walkthrough of support at the dispatch desk. In development.
+**Caption:** Two proposed concepts. Clear limits. Your judgment. No working dispatch product is demonstrated here.
 
 **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch
 
-**CTA:** Tell us which step needs more clarity.
+**CTA:** Now: follow for product updates. Once a real product page and demo-request route are approved: explore ProfitLane and request a demo through the profile link.
 
 ## 10. The dispatcher stays in control
 
@@ -210,15 +210,14 @@ Here is the idea—not a live product demo. This paper prototype shows a propose
 
 **Full voiceover / speaking script:**
 
-What should AI leave to the dispatcher? A tool can help organize information, but relationships, unusual conditions and final decisions need human judgment. ProfitLane is in development as an assistant to dispatchers. The purpose is to support a closer look at the numbers, not to promise a better rate or make the call for you. Made for dispatchers by dispatchers. Tell us one part of your review you would always want to handle yourself.
+What should AI leave to the dispatcher? Think about the questions you ask, the relationships you know and the context a number cannot explain. Angel wants ProfitLane to support independent dispatchers, including those new to the work. The proposed recommendation score and AI system tracking concept are intended as assistance. Working features and results have not been demonstrated here. Your judgment stays central. Made for dispatchers by dispatchers. Follow ProfitLane for practical explanations and product updates. What question would you like Angel to work through next?
 
-**Scenes and visuals:** 0–3s: presenter asks the question. 3–25s: three cards: context, relationships, judgment. 25–40s: mission and comment prompt.
+**Scenes and visuals:** 0–3s: Angel or identified presenter asks the question conversationally. 3–30s: original cards for context, relationships and judgment. 30–45s: approved tagline and follow prompt.
 
-**On-screen text:** In development | Context • Relationships • Judgment | Made for dispatchers by dispatchers.
+**On-screen text:** Independent dispatchers first | Proposed assistance • No verified product results | Made for dispatchers by dispatchers. | @profitlane.dispatch
 
 **Caption:** Made for dispatchers by dispatchers. AI assistance stays in a supporting role.
 
 **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools
 
-**CTA:** Tell us one decision you would always review yourself.
-
+**CTA:** Follow @profitlane.dispatch; tell Angel which decision you would always review yourself.

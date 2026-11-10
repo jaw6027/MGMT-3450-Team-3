@@ -8,10 +8,10 @@ window.PROFITLANE_CONTENT = {
       "category": "Brand awareness",
       "hook": "AI should help your dispatch desk—not take it over.",
       "format": "Founder to camera",
-      "message": "ProfitLane is in development to support dispatcher judgment.",
-      "caption": "Your experience stays at the center. Meet the idea behind ProfitLane.",
+      "message": "Introduce ProfitLane to independent dispatchers; proposed AI system tracking and recommendation-score concepts support human judgment.",
+      "caption": "Meet ProfitLane: proposed assistance for independent dispatchers. Your judgment stays at the center.",
       "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
-      "cta": "Follow for practical load-review tips."
+      "cta": "Follow @profitlane.dispatch for dispatcher education and product updates."
     },
     {
       "day": 2,
@@ -36,7 +36,7 @@ window.PROFITLANE_CONTENT = {
       "format": "Whiteboard example",
       "message": "Add deadhead to loaded miles before comparing revenue per mile.",
       "caption": "The empty miles belong in the conversation too. Fictional example.",
-      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "hashtags": "#ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning",
       "cta": "Save this total-miles check."
     },
     {
@@ -62,7 +62,7 @@ window.PROFITLANE_CONTENT = {
       "format": "Calculator close-up",
       "message": "Subtract relevant costs; revenue per mile alone is incomplete.",
       "caption": "Revenue first. Costs next. Your final decision last. Fictional figures.",
-      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "hashtags": "#ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning",
       "cta": "Save the cost checklist."
     },
     {
@@ -98,11 +98,11 @@ window.PROFITLANE_CONTENT = {
       "title": "Angel and the mission",
       "category": "Brand awareness",
       "hook": "The person at the dispatch desk still makes the call.",
-      "format": "Founder interview",
-      "message": "Angel brings approximately eight years of trucking experience; confirm before filming.",
+      "format": "Casual founder desk interview; identified team introduction if needed",
+      "message": "Angel introduces his dispatcher-first vision and an authentic explanation of what he would review; approve his approximately eight-year background wording before filming.",
       "caption": "Meet the purpose behind ProfitLane: support the person making the call.",
       "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
-      "cta": "What would helpful AI support look like to you?"
+      "cta": "Follow @profitlane.dispatch; what would useful assistance look like at your desk?"
     },
     {
       "day": 9,
@@ -127,7 +127,7 @@ window.PROFITLANE_CONTENT = {
       "format": "Whiteboard calculation",
       "message": "Total miles divided by assumed MPG, multiplied by fuel price, estimates fuel cost.",
       "caption": "A fuel estimate is only as good as its assumptions. Fictional inputs.",
-      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "hashtags": "#ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning",
       "cta": "Check your own assumptions before using an estimate."
     },
     {
@@ -151,10 +151,10 @@ window.PROFITLANE_CONTENT = {
       "category": "Product concept",
       "hook": "Would you accept a load because a screen says 76?",
       "format": "Labeled concept mockup",
-      "message": "Proposed 1–100 rating is unvalidated and never replaces a full review.",
-      "caption": "Concept only: a summary should invite questions, not make your decision.",
+      "message": "Proposed 1–100 recommendation tool: weight relative to distance, pre-trip deadhead, diesel prices in relevant areas, pallet count and load payment; unvalidated, with no guaranteed outcome.",
+      "caption": "Concept only: Angel’s proposed score supports review, especially for new dispatchers. The dispatcher decides.",
       "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
-      "cta": "What would you need to see behind a score?"
+      "cta": "Explore the proposed score in our concept videos; follow for confirmed product updates."
     },
     {
       "day": 13,
@@ -162,12 +162,12 @@ window.PROFITLANE_CONTENT = {
       "activity": "Review & respond",
       "title": "Design the explanation",
       "category": "Product concept",
-      "hook": "If a score changed, would you know why?",
-      "format": "Sketch review",
-      "message": "A proposed score should explain inputs and missing information.",
-      "caption": "We want understandable assistance, not unexplained numbers. Concept in development.",
+      "hook": "What does Angel mean by AI system tracking?",
+      "format": "Casual founder Q&A with labeled concept cards",
+      "message": "Explain the intended identification of logistics companies using AI in broker–dispatcher communication so dispatchers can choose whom to work with. Method, accuracy and availability remain unverified.",
+      "caption": "AI system tracking: Angel’s proposed concept, not a working detection demonstration. Questions help shape a clearer explanation.",
       "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
-      "cta": "Which input needs the clearest explanation?"
+      "cta": "Which part of this proposed concept would you want Angel to explain?"
     },
     {
       "day": 14,
@@ -205,7 +205,7 @@ window.PROFITLANE_CONTENT = {
       "format": "Side-by-side cards",
       "message": "Pickup windows, waiting and delivery timing affect the review.",
       "caption": "Mileage does not tell the whole schedule. Fictional comparison.",
-      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "hashtags": "#ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning",
       "cta": "What timing detail do you always confirm?"
     },
     {
@@ -218,7 +218,7 @@ window.PROFITLANE_CONTENT = {
       "format": "Split-screen calculation",
       "message": "Compare revenue across total miles while reviewing costs and time.",
       "caption": "Same revenue can hide very different trips. Fictional examples.",
-      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "hashtags": "#ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning",
       "cta": "Save this comparison for your next review checklist."
     },
     {
@@ -242,10 +242,10 @@ window.PROFITLANE_CONTENT = {
       "category": "Product concept",
       "hook": "Here is the idea—not a live product demo.",
       "format": "Paper prototype walkthrough",
-      "message": "Proposed input, review and explanation workflow; features unconfirmed.",
-      "caption": "A concept walkthrough of support at the dispatch desk. In development.",
+      "message": "Walk through the proposed load recommendation inputs and explain AI system tracking separately; concept-only visuals, no live detection, scoring or booking demonstration.",
+      "caption": "Two proposed concepts. Clear limits. Your judgment. No working dispatch product is demonstrated here.",
       "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
-      "cta": "Tell us which step needs more clarity."
+      "cta": "Now: follow for product updates. Once a real product page and demo-request route are approved: explore ProfitLane and request a demo through the profile link."
     },
     {
       "day": 20,
@@ -280,11 +280,11 @@ window.PROFITLANE_CONTENT = {
       "title": "The dispatcher stays in control",
       "category": "Brand awareness",
       "hook": "What should AI leave to the dispatcher?",
-      "format": "Founder answer + checklist",
-      "message": "Context, relationships and final judgment remain human responsibilities.",
+      "format": "Casual founder answer + practical checklist",
+      "message": "Angel explains how dispatcher experience and relationships guide decisions; AI system tracking and the score remain proposed assistance concepts.",
       "caption": "Made for dispatchers by dispatchers. AI assistance stays in a supporting role.",
       "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
-      "cta": "Tell us one decision you would always review yourself."
+      "cta": "Follow @profitlane.dispatch; tell Angel which decision you would always review yourself."
     },
     {
       "day": 23,
@@ -320,10 +320,10 @@ window.PROFITLANE_CONTENT = {
       "category": "Product concept",
       "hook": "Before you request a demo, you should know what is available.",
       "format": "Founder update draft",
-      "message": "State actual development status and access limits.",
+      "message": "Plan a product-exploration and demo CTA only after Angel confirms the actual feature, demo and request route. No business contact details or availability are supplied.",
       "caption": "Product updates should tell you what you can really try.",
       "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
-      "cta": "Follow for confirmed development updates."
+      "cta": "Now: follow for development updates. Later, after approval and verification: explore the features and request a demo through the real profile link."
     },
     {
       "day": 26,
@@ -372,10 +372,10 @@ window.PROFITLANE_CONTENT = {
       "category": "Brand awareness",
       "hook": "What would make AI assistance worth trying for you?",
       "format": "Founder recap",
-      "message": "Invite needs and confirmed update interest, without promising product availability.",
+      "message": "Recap dispatcher-first education and both proposed concepts; invite qualified product questions to support awareness and potential-customer interest.",
       "caption": "ProfitLane is in development. Your judgment stays at the center.",
       "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
-      "cta": "Follow for updates and tell us what support you need."
+      "cta": "Follow @profitlane.dispatch for product updates. When a verified page and demo-request route exist, invite viewers to explore ProfitLane and request a demo."
     },
     {
       "day": 30,
@@ -398,13 +398,13 @@ window.PROFITLANE_CONTENT = {
       "date": "2026-11-09",
       "title": "AI beside the dispatcher",
       "hook": "AI should help your dispatch desk—not take it over.",
-      "length": "30–40 seconds",
-      "script": "AI should help your dispatch desk—not take it over. ProfitLane is an AI dispatching assistant in development. The goal is to help independent dispatchers organize load information, review costs and prepare for rate conversations. Your experience and your judgment stay at the center. We are sharing practical load-review ideas as we develop the concept. Follow along, and tell us which part of reviewing a load needs the most support.",
-      "scenes": "0–3s: Angel or team presenter at a parked desk. 3–20s: fictional input cards beside the presenter. 20–35s: approved logo and mission.",
-      "text": "AI assistance • In development | Your judgment stays in control | Follow for load-review tips",
-      "caption": "Your experience stays at the center. Meet the idea behind ProfitLane.",
+      "length": "40–50 seconds",
+      "script": "AI should help your dispatch desk—not take it over. ProfitLane is being developed for independent dispatchers. Independent operators starting their own dispatching are welcome too. Angel's proposed concepts include AI system tracking and a one-to-one-hundred load recommendation score. They are intended to support the review, with your judgment at the center. We will explain the concepts and practical load questions as development continues. Follow ProfitLane at profitlane dot dispatch for education and product updates. What would you want help reviewing first?",
+      "scenes": "0–3s: Angel or identified team presenter at a desk. 3–25s: two labeled concept cards. 25–45s: approved logo, handle and a natural question.",
+      "text": "In development | Independent dispatchers first | AI system tracking + proposed 1–100 recommendation | @profitlane.dispatch",
+      "caption": "Meet ProfitLane: proposed assistance for independent dispatchers. Your judgment stays at the center.",
       "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
-      "cta": "Follow for practical load-review tips."
+      "cta": "Follow @profitlane.dispatch for dispatcher education and product updates."
     },
     {
       "number": 2,
@@ -417,7 +417,7 @@ window.PROFITLANE_CONTENT = {
       "scenes": "0–3s: empty route arrow. 3–12s: write 100 + 500 = 600. 12–25s: show $1,200 ÷ 500 and $1,200 ÷ 600. 25–40s: cost checklist.",
       "text": "Fictional example | 100 deadhead + 500 loaded = 600 total | $2.40/loaded mile vs $2.00/total mile | Revenue ≠ profit",
       "caption": "The empty miles belong in the conversation too. Fictional example.",
-      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "hashtags": "#ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning",
       "cta": "Save this total-miles check."
     },
     {
@@ -431,7 +431,7 @@ window.PROFITLANE_CONTENT = {
       "scenes": "0–3s: $1,200 revenue card. 3–25s: subtract each labeled expense. 25–40s: show remaining review items.",
       "text": "Fictional inputs—not typical costs | $1,200 − $400 − $50 − $300 = $450 | Before other applicable costs and taxes",
       "caption": "Revenue first. Costs next. Your final decision last. Fictional figures.",
-      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "hashtags": "#ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning",
       "cta": "Save the cost checklist."
     },
     {
@@ -440,13 +440,13 @@ window.PROFITLANE_CONTENT = {
       "date": "2026-11-16",
       "title": "Angel and the mission",
       "hook": "The person at the dispatch desk still makes the call.",
-      "length": "30–40 seconds",
-      "script": "The person at the dispatch desk still makes the call. ProfitLane's founder, Angel, has approximately eight years of trucking industry experience. His mission is to help dispatchers rather than replace them. The assistant is being developed to support a closer look at the numbers, while the dispatcher brings the context and makes the decision. That is the idea behind ProfitLane. What would useful AI assistance look like at your desk?",
-      "scenes": "0–3s: founder portrait or approved team intro. 3–22s: interview at a desk. 22–35s: mission over approved logo.",
-      "text": "Angel • Founder | Approximately 8 years in trucking* | AI assists. Dispatcher decides. | *Confirm founder wording before recording",
+      "length": "40–50 seconds",
+      "script": "The person at the dispatch desk still makes the call. ProfitLane's founder, Angel, brings approximately eight years of trucking industry experience. His focus is independent dispatchers, with room for independent operators starting their own dispatching. He is comfortable sharing the idea in straightforward desk conversations. His AI system tracking concept is intended to help dispatchers identify logistics companies using AI in broker–dispatcher communication, so they can choose whom to work with. The method and availability still need confirmation. Follow ProfitLane for more of the concept and practical dispatcher questions.",
+      "scenes": "0–3s: approved founder introduction. 3–35s: Angel in a relaxed client-to-client desk interview, or an identified presenter introducing his concept. 35–50s: follow prompt. Ask Angel for an authentic explanation; do not invent an anecdote.",
+      "text": "Angel • Founder | Approximately 8 years in trucking: confirm wording | AI system tracking: proposed concept | Method and availability unverified | @profitlane.dispatch",
       "caption": "Meet the purpose behind ProfitLane: support the person making the call.",
       "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
-      "cta": "What would helpful AI support look like to you?"
+      "cta": "Follow @profitlane.dispatch; what would useful assistance look like at your desk?"
     },
     {
       "number": 5,
@@ -459,7 +459,7 @@ window.PROFITLANE_CONTENT = {
       "scenes": "0–3s: calculator and total-mile card. 3–15s: 600 ÷ 6 = 100 gallons. 15–27s: 100 × $4 = $400. 27–40s: assumptions checklist.",
       "text": "Fictional example | 600 miles ÷ 6 MPG = 100 gal | 100 gal × $4 = $400 estimated fuel | Assumptions change results",
       "caption": "A fuel estimate is only as good as its assumptions. Fictional inputs.",
-      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "hashtags": "#ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning",
       "cta": "Check your own assumptions before using an estimate."
     },
     {
@@ -468,13 +468,13 @@ window.PROFITLANE_CONTENT = {
       "date": "2026-11-20",
       "title": "A score is a starting point",
       "hook": "Would you accept a load because a screen says 76?",
-      "length": "35–45 seconds",
-      "script": "Would you accept a load because a screen says 76? This is a concept mockup, not a live ProfitLane feature. A proposed rating from one to one hundred could summarize inputs such as deadhead, fuel and mileage. But the scoring method has not been validated. Seventy-six here is just a made-up visual example, not a recommendation. You would still need the inputs, the missing information and your own judgment. What would you need to see behind a score?",
-      "scenes": "0–3s: paper score card. 3–23s: point to fictional input labels. 23–40s: replace focus on the number with questions. Keep concept label visible throughout.",
-      "text": "Concept mockup • In development | 76/100: arbitrary illustration | Proposed scoring is unvalidated | Review inputs. You decide.",
-      "caption": "Concept only: a summary should invite questions, not make your decision.",
+      "length": "50–60 seconds",
+      "script": "Would you accept a load because a screen says 76? This is a concept mockup, not a live ProfitLane feature. Angel's proposed one-to-one-hundred score is a recommendation tool, especially for dispatchers who are new. The proposed inputs are weight in relation to distance, deadhead before the trip, diesel prices in relevant areas, pallet count and load payment. Angel emphasizes the payment; no numerical weights are established. The scoring method has not been validated. Seventy-six is an arbitrary illustration, with no acceptance threshold or profitability guarantee. Review the inputs and decide yourself. Explore the concept in our videos and follow for product updates.",
+      "scenes": "0–3s: arbitrary 76 score card. 3–35s: reveal proposed inputs. 35–55s: questions for human review. Keep the concept label visible throughout.",
+      "text": "Concept mockup • In development | Weight/distance • Pre-trip deadhead • Area diesel prices • Pallet count • Payment | 76/100: arbitrary, unvalidated illustration | No guaranteed outcome",
+      "caption": "Concept only: Angel’s proposed score supports review, especially for new dispatchers. The dispatcher decides.",
       "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
-      "cta": "What would you need to see behind a score?"
+      "cta": "Explore the proposed score in our concept videos; follow for confirmed product updates."
     },
     {
       "number": 7,
@@ -501,7 +501,7 @@ window.PROFITLANE_CONTENT = {
       "scenes": "0–3s: two $1,200 cards. 3–20s: animate total-mile sums. 20–35s: show division side by side. 35–45s: costs/time prompt.",
       "text": "Fictional loads | A: $1,200 ÷ 600 = $2.00/mi | B: $1,200 ÷ 700 ≈ $1.71/mi | Revenue per total mile—not profit",
       "caption": "Same revenue can hide very different trips. Fictional examples.",
-      "hashtags": "#ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning",
+      "hashtags": "#ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning",
       "cta": "Save this comparison for your next review checklist."
     },
     {
@@ -510,13 +510,13 @@ window.PROFITLANE_CONTENT = {
       "date": "2026-11-27",
       "title": "Walk through the proposed assistant",
       "hook": "Here is the idea—not a live product demo.",
-      "length": "35–45 seconds",
-      "script": "Here is the idea—not a live product demo. This paper prototype shows a proposed ProfitLane workflow. First, enter fictional load details, including loaded miles, deadhead and fuel assumptions. Next, review the information and identify anything missing. A proposed summary could explain the inputs behind a rating. Then the dispatcher reviews costs, timing and context before making a decision. The interface and features are still in development; this is not a validated scoring system. Which step needs more clarity?",
-      "scenes": "0–3s: visible paper prototype. 3–15s: point to input fields. 15–28s: flag unknown inputs. 28–45s: proposed explanation and human review. Keep concept label visible throughout.",
-      "text": "Concept mockup • In development | 1. Inputs 2. Review 3. Explanation 4. Your decision | Proposed score is unvalidated",
-      "caption": "A concept walkthrough of support at the dispatch desk. In development.",
+      "length": "50–60 seconds",
+      "script": "Here is the idea—not a live product demo. This paper prototype shows Angel's proposed load review: weight relative to distance, pre-trip deadhead, diesel prices in relevant areas, pallet count and load payment. The proposed recommendation score would support your review; no working or validated score is shown. Separately, his AI system tracking concept is intended to help identify logistics companies using AI in broker–dispatcher communication, so dispatchers can choose whom to work with. Its method, accuracy and availability need confirmation. Follow for product updates. Once a real product page and demo request are available, we will share how to explore ProfitLane and request a demo.",
+      "scenes": "0–3s: visible paper prototype. 3–25s: proposed score-input cards. 25–45s: separate AI system tracking concept card explained by Angel or an identified presenter. 45–60s: follow CTA and conditional future demo route. No fake detected-company flags, real company labels or live-system screens.",
+      "text": "Concept mockup • In development | Proposed score: unvalidated | AI system tracking: method/accuracy/availability unverified | Human review stays central | Follow now • Demo invitation only when available",
+      "caption": "Two proposed concepts. Clear limits. Your judgment. No working dispatch product is demonstrated here.",
       "hashtags": "#ProfitLane #DispatchTools #AIassistant #TruckDispatch",
-      "cta": "Tell us which step needs more clarity."
+      "cta": "Now: follow for product updates. Once a real product page and demo-request route are approved: explore ProfitLane and request a demo through the profile link."
     },
     {
       "number": 10,
@@ -525,12 +525,12 @@ window.PROFITLANE_CONTENT = {
       "title": "The dispatcher stays in control",
       "hook": "What should AI leave to the dispatcher?",
       "length": "35–45 seconds",
-      "script": "What should AI leave to the dispatcher? A tool can help organize information, but relationships, unusual conditions and final decisions need human judgment. ProfitLane is in development as an assistant to dispatchers. The purpose is to support a closer look at the numbers, not to promise a better rate or make the call for you. Made for dispatchers by dispatchers. Tell us one part of your review you would always want to handle yourself.",
-      "scenes": "0–3s: presenter asks the question. 3–25s: three cards: context, relationships, judgment. 25–40s: mission and comment prompt.",
-      "text": "In development | Context • Relationships • Judgment | Made for dispatchers by dispatchers.",
+      "script": "What should AI leave to the dispatcher? Think about the questions you ask, the relationships you know and the context a number cannot explain. Angel wants ProfitLane to support independent dispatchers, including those new to the work. The proposed recommendation score and AI system tracking concept are intended as assistance. Working features and results have not been demonstrated here. Your judgment stays central. Made for dispatchers by dispatchers. Follow ProfitLane for practical explanations and product updates. What question would you like Angel to work through next?",
+      "scenes": "0–3s: Angel or identified presenter asks the question conversationally. 3–30s: original cards for context, relationships and judgment. 30–45s: approved tagline and follow prompt.",
+      "text": "Independent dispatchers first | Proposed assistance • No verified product results | Made for dispatchers by dispatchers. | @profitlane.dispatch",
       "caption": "Made for dispatchers by dispatchers. AI assistance stays in a supporting role.",
       "hashtags": "#ProfitLane #TruckDispatch #SmallBusiness #DispatchTools",
-      "cta": "Tell us one decision you would always review yourself."
+      "cta": "Follow @profitlane.dispatch; tell Angel which decision you would always review yourself."
     }
   ]
 };

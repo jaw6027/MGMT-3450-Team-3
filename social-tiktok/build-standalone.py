@@ -18,7 +18,7 @@ css += '\n#document-dialog {width:min(900px,calc(100% - 24px))} #document-copy {
 html = html.replace('<link rel="stylesheet" href="../brand/brand.css"><link rel="stylesheet" href="tracker.css">', '<style>\n' + css + '\n</style>')
 html = html.replace('<script src="content.js" defer></script><script src="tracker.js" defer></script>', '')
 # Make documentation links work even when this is the only file downloaded.
-docs = ['profile-and-strategy.md', 'content-calendar.md', 'video-scripts.md', 'README.md']
+docs = ['profile-and-strategy.md', 'content-calendar.md', 'video-scripts.md', 'README.md', 'angel-stakeholder-feedback.md', 'research/README.md', 'research/001-kovin-group.md', 'research/002-kovin-group.md', 'research/003-rtd-team.md', 'research/004-alvys-team.md']
 for name in docs:
     html = html.replace('href="' + name + '"', 'href="#document" data-document="' + name + '"')
 csv_url = 'data:text/csv;base64,' + b64encode((ROOT / 'content-calendar.csv').read_bytes()).decode()

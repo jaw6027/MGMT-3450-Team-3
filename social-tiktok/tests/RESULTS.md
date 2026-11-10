@@ -1,9 +1,10 @@
 # Tracker validation
 
-Executed November 7, 2026 using Playwright and system Chromium against an isolated local HTTP server. All requests were local; no TikTok account was contacted.
+Executed November 9, 2026 using Playwright and system Chromium against an isolated local HTTP server. All requests were local; no TikTok account was contacted.
 
 - PASS: Initial dashboard, exact pooled engagement, visible charts and approved logos
 - PASS: Ten complete scripts accessible in the playbook
+- PASS: Owner-selected handle, precise audience, goals, tone, proposed concepts and conditional demo CTA are visible
 - PASS: 30-day plan, 13 publishing slots, month navigation and preparation detail dialog
 - PASS: Create, metric entry, live engagement, pooled overview update, escaped text and reload persistence
 - PASS: Edit synchronizes calendar; unknown/zero metrics and invalid numbers/unsafe URLs handled

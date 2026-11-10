@@ -1,6 +1,6 @@
 # 30-day TikTok content calendar
 
-Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 publishing slots. The other 17 days are production, response and review days with reserve concepts, not extra daily posts. All topics are fictional plans; dates can be shifted. Suggested publishing test: 6 p.m. in the audience’s primary time zone; validate through account analytics. See the CSV for spreadsheet use.
+Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 publishing slots. The other 17 days are production, response and review days with reserve concepts, not extra daily posts. Draft audience: independent dispatchers first; independent operators starting their own dispatching second. Goals: brand awareness and attracting potential customers. Tone: educational, professional, casual and relatable. All topics are plans; load examples are fictional. Dates remain suggested and can be shifted. The historical research and exact stakeholder responses are unchanged. Suggested publishing test: 6 p.m. in the audience’s primary time zone; validate through account analytics. See the CSV for spreadsheet use.
 
 ## Day 1 · 2026-11-09 · Publish
 
@@ -8,10 +8,10 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Pillar:** Brand awareness
 - **Hook:** AI should help your dispatch desk—not take it over.
 - **Format:** Founder to camera
-- **Main message:** ProfitLane is in development to support dispatcher judgment.
-- **Caption:** Your experience stays at the center. Meet the idea behind ProfitLane.
+- **Main message:** Introduce ProfitLane to independent dispatchers; proposed AI system tracking and recommendation-score concepts support human judgment.
+- **Caption:** Meet ProfitLane: proposed assistance for independent dispatchers. Your judgment stays at the center.
 - **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools
-- **CTA:** Follow for practical load-review tips.
+- **CTA:** Follow @profitlane.dispatch for dispatcher education and product updates.
 
 ## Day 2 · 2026-11-10 · Prepare & engage
 
@@ -33,7 +33,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Format:** Whiteboard example
 - **Main message:** Add deadhead to loaded miles before comparing revenue per mile.
 - **Caption:** The empty miles belong in the conversation too. Fictional example.
-- **Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning
+- **Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
 - **CTA:** Save this total-miles check.
 
 ## Day 4 · 2026-11-12 · Prepare & engage
@@ -56,7 +56,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Format:** Calculator close-up
 - **Main message:** Subtract relevant costs; revenue per mile alone is incomplete.
 - **Caption:** Revenue first. Costs next. Your final decision last. Fictional figures.
-- **Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning
+- **Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
 - **CTA:** Save the cost checklist.
 
 ## Day 6 · 2026-11-14 · Review & respond
@@ -88,11 +88,11 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Video topic / reserve idea:** Angel and the mission
 - **Pillar:** Brand awareness
 - **Hook:** The person at the dispatch desk still makes the call.
-- **Format:** Founder interview
-- **Main message:** Angel brings approximately eight years of trucking experience; confirm before filming.
+- **Format:** Casual founder desk interview; identified team introduction if needed
+- **Main message:** Angel introduces his dispatcher-first vision and an authentic explanation of what he would review; approve his approximately eight-year background wording before filming.
 - **Caption:** Meet the purpose behind ProfitLane: support the person making the call.
 - **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools
-- **CTA:** What would helpful AI support look like to you?
+- **CTA:** Follow @profitlane.dispatch; what would useful assistance look like at your desk?
 
 ## Day 9 · 2026-11-17 · Prepare & engage
 
@@ -114,7 +114,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Format:** Whiteboard calculation
 - **Main message:** Total miles divided by assumed MPG, multiplied by fuel price, estimates fuel cost.
 - **Caption:** A fuel estimate is only as good as its assumptions. Fictional inputs.
-- **Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning
+- **Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
 - **CTA:** Check your own assumptions before using an estimate.
 
 ## Day 11 · 2026-11-19 · Prepare & engage
@@ -135,21 +135,21 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Pillar:** Product concept
 - **Hook:** Would you accept a load because a screen says 76?
 - **Format:** Labeled concept mockup
-- **Main message:** Proposed 1–100 rating is unvalidated and never replaces a full review.
-- **Caption:** Concept only: a summary should invite questions, not make your decision.
+- **Main message:** Proposed 1–100 recommendation tool: weight relative to distance, pre-trip deadhead, diesel prices in relevant areas, pallet count and load payment; unvalidated, with no guaranteed outcome.
+- **Caption:** Concept only: Angel’s proposed score supports review, especially for new dispatchers. The dispatcher decides.
 - **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch
-- **CTA:** What would you need to see behind a score?
+- **CTA:** Explore the proposed score in our concept videos; follow for confirmed product updates.
 
 ## Day 13 · 2026-11-21 · Review & respond
 
 - **Video topic / reserve idea:** Design the explanation
 - **Pillar:** Product concept
-- **Hook:** If a score changed, would you know why?
-- **Format:** Sketch review
-- **Main message:** A proposed score should explain inputs and missing information.
-- **Caption:** We want understandable assistance, not unexplained numbers. Concept in development.
+- **Hook:** What does Angel mean by AI system tracking?
+- **Format:** Casual founder Q&A with labeled concept cards
+- **Main message:** Explain the intended identification of logistics companies using AI in broker–dispatcher communication so dispatchers can choose whom to work with. Method, accuracy and availability remain unverified.
+- **Caption:** AI system tracking: Angel’s proposed concept, not a working detection demonstration. Questions help shape a clearer explanation.
 - **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch
-- **CTA:** Which input needs the clearest explanation?
+- **CTA:** Which part of this proposed concept would you want Angel to explain?
 - **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.
 
 ## Day 14 · 2026-11-22 · Review & respond
@@ -183,7 +183,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Format:** Side-by-side cards
 - **Main message:** Pickup windows, waiting and delivery timing affect the review.
 - **Caption:** Mileage does not tell the whole schedule. Fictional comparison.
-- **Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning
+- **Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
 - **CTA:** What timing detail do you always confirm?
 - **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.
 
@@ -195,7 +195,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Format:** Split-screen calculation
 - **Main message:** Compare revenue across total miles while reviewing costs and time.
 - **Caption:** Same revenue can hide very different trips. Fictional examples.
-- **Hashtags:** #ProfitLane #TruckDispatch #OwnerOperator #LoadPlanning
+- **Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
 - **CTA:** Save this comparison for your next review checklist.
 
 ## Day 18 · 2026-11-26 · Prepare & engage
@@ -216,10 +216,10 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Pillar:** Product concept
 - **Hook:** Here is the idea—not a live product demo.
 - **Format:** Paper prototype walkthrough
-- **Main message:** Proposed input, review and explanation workflow; features unconfirmed.
-- **Caption:** A concept walkthrough of support at the dispatch desk. In development.
+- **Main message:** Walk through the proposed load recommendation inputs and explain AI system tracking separately; concept-only visuals, no live detection, scoring or booking demonstration.
+- **Caption:** Two proposed concepts. Clear limits. Your judgment. No working dispatch product is demonstrated here.
 - **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch
-- **CTA:** Tell us which step needs more clarity.
+- **CTA:** Now: follow for product updates. Once a real product page and demo-request route are approved: explore ProfitLane and request a demo through the profile link.
 
 ## Day 20 · 2026-11-28 · Review & respond
 
@@ -250,11 +250,11 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Video topic / reserve idea:** The dispatcher stays in control
 - **Pillar:** Brand awareness
 - **Hook:** What should AI leave to the dispatcher?
-- **Format:** Founder answer + checklist
-- **Main message:** Context, relationships and final judgment remain human responsibilities.
+- **Format:** Casual founder answer + practical checklist
+- **Main message:** Angel explains how dispatcher experience and relationships guide decisions; AI system tracking and the score remain proposed assistance concepts.
 - **Caption:** Made for dispatchers by dispatchers. AI assistance stays in a supporting role.
 - **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools
-- **CTA:** Tell us one decision you would always review yourself.
+- **CTA:** Follow @profitlane.dispatch; tell Angel which decision you would always review yourself.
 
 ## Day 23 · 2026-12-01 · Prepare & engage
 
@@ -285,10 +285,10 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Pillar:** Product concept
 - **Hook:** Before you request a demo, you should know what is available.
 - **Format:** Founder update draft
-- **Main message:** State actual development status and access limits.
+- **Main message:** Plan a product-exploration and demo CTA only after Angel confirms the actual feature, demo and request route. No business contact details or availability are supplied.
 - **Caption:** Product updates should tell you what you can really try.
 - **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch
-- **CTA:** Follow for confirmed development updates.
+- **CTA:** Now: follow for development updates. Later, after approval and verification: explore the features and request a demo through the real profile link.
 - **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.
 
 ## Day 26 · 2026-12-04 · Publish
@@ -332,10 +332,10 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Pillar:** Brand awareness
 - **Hook:** What would make AI assistance worth trying for you?
 - **Format:** Founder recap
-- **Main message:** Invite needs and confirmed update interest, without promising product availability.
+- **Main message:** Recap dispatcher-first education and both proposed concepts; invite qualified product questions to support awareness and potential-customer interest.
 - **Caption:** ProfitLane is in development. Your judgment stays at the center.
 - **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools
-- **CTA:** Follow for updates and tell us what support you need.
+- **CTA:** Follow @profitlane.dispatch for product updates. When a verified page and demo-request route exist, invite viewers to explore ProfitLane and request a demo.
 
 ## Day 30 · 2026-12-08 · Prepare & engage
 
@@ -348,4 +348,3 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 - **Hashtags:** #ProfitLane #TruckDispatch #DispatcherLife
 - **CTA:** Suggest one topic for the next calendar.
 - **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.
-

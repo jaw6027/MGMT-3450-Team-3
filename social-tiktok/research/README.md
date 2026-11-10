@@ -7,8 +7,9 @@ Working research for the existing TikTok draft. Entries capture individual video
 | Entry | Account | Sample and source completeness | Observed themes | Candidate content fit | Status |
 | --- | --- | --- | --- | --- | --- |
 | [#1: @kovin.group](001-kovin-group.md) | @kovin.group; recommended by Angel, per student | One negotiation video; 86 comments displayed; five selected comment summaries supplied. Video URL, observation date and original comment text not supplied. | Payment expectations; multiple stops and time; negotiation skill; carrier acceptance; assessing a worthwhile load | Calendar Days 5, 9, 15–17, 22, 24 and 26; scripts 3, 7, 8 and 10, with possible later concept clarifications in 6 and 9 | Preliminary, student-reported; not independently verified; no calendar/script edits approved or applied |
+| [#2: @kovin.group](002-kovin-group.md) | @kovin.group; recommended by Angel, per student | A second video, approximately 6:16; 16 comments displayed; four selected summaries supplied. URL, observation date and original comment text not supplied. | Gross payment versus remaining funds; dispatch/factoring fees, tolls and IFTA; negotiation context; educational value and presentation | Calendar Days 5–6, 9, 15, 24 and 26; primarily scripts 3, 5 and 7; possible later limitations clarification in 6 and 9 | Preliminary, student-reported; compared with Entry #1 from the same account, not independent cross-account confirmation; no draft revisions applied |
 
-The themes listed together are not equally supported or necessarily agreed upon by viewers. Five selected summaries do not provide a representative sample of the 86 displayed comments. No engagement rate or performance comparison can be calculated from a displayed comment count alone.
+The themes listed together are not equally supported or necessarily agreed upon by viewers. Entry #1’s five selected summaries do not represent its 86 displayed comments; Entry #2’s four selected summaries do not represent its 16 displayed comments. Both videos come from the same account, with possible audience overlap. No engagement rate or performance comparison can be calculated from a displayed comment count alone.
 
 ## Keep future entries comparable
 
@@ -31,4 +32,4 @@ Compare whether a theme reappears across different videos and accounts, and reco
 
 Use original fictional examples when developing future videos. Do not reuse footage, identifiable comments, voices or customer material without appropriate permission. Keep commenter identities out of these notes unless they are needed and permission is established.
 
-Existing materials remain the [30-day calendar](../content-calendar.md), [ten scripts](../video-scripts.md) and [profile/strategy draft](../profile-and-strategy.md). This research log is a supporting record; it does not update the tracker, reference CSV, generated standalone HTML or ZIP. No strategy, branding, dates, scripts or application files were changed for Entry #1.
+Existing materials remain the [30-day calendar](../content-calendar.md), [ten scripts](../video-scripts.md) and [profile/strategy draft](../profile-and-strategy.md). This research log is a supporting record; it does not update the tracker, reference CSV, generated standalone HTML or ZIP. No strategy, branding, dates, scripts or application files were changed for Entries #1 or #2.

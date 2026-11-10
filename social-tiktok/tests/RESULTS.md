@@ -5,6 +5,7 @@ Executed November 9, 2026 using Playwright and system Chromium against an isolat
 - PASS: Initial dashboard, exact pooled engagement, visible charts and approved logos
 - PASS: Ten complete scripts accessible in the playbook
 - PASS: Ten timed scripts expose exact commentary with synchronized visuals and readable timecodes
+- PASS: Four Angel speaking roles, two fictional phone role-plays and complete creative production directions are visible
 - PASS: Owner-selected handle, precise audience, goals, tone, proposed concepts and conditional demo CTA are visible
 - PASS: 30-day plan, 13 publishing slots, month navigation and preparation detail dialog
 - PASS: Create, metric entry, live engagement, pooled overview update, escaped text and reload persistence

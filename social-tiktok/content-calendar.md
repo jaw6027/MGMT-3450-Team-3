@@ -6,12 +6,12 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** AI beside the dispatcher
 - **Pillar:** Brand awareness
-- **Hook:** AI assists. You decide.
-- **Format:** Founder to camera
+- **Hook:** Replace the dispatcher? No. Assist them.
+- **Format:** Desk-side conversation with Angel
 - **Main message:** Introduce ProfitLane to independent dispatchers; proposed AI system tracking and recommendation-score concepts support human judgment.
-- **Caption:** Meet ProfitLane: proposed assistance for independent dispatchers. Your judgment stays at the center.
+- **Caption:** Who makes the call at your dispatch desk? Angel’s answer is the starting point for ProfitLane. In development.
 - **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools
-- **CTA:** Follow @profitlane.dispatch for dispatcher education and product updates.
+- **CTA:** Follow @profitlane.dispatch for practical conversations and honest product updates.
 
 ## Day 2 · 2026-11-10 · Prepare & engage
 
@@ -29,12 +29,12 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** The miles before the load
 - **Pillar:** Education
-- **Hook:** Count the miles before pickup.
-- **Format:** Whiteboard example
+- **Hook:** Five hundred miles. From where?
+- **Format:** Fictional dispatcher–broker phone role-play
 - **Main message:** Add deadhead to loaded miles before comparing revenue per mile.
-- **Caption:** The empty miles belong in the conversation too. Fictional example.
+- **Caption:** Fictional offer: $1,200, 500 loaded miles… plus the miles before pickup. What would you ask next?
 - **Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
-- **CTA:** Save this total-miles check.
+- **CTA:** Comment with the first detail you would confirm before discussing the rate.
 
 ## Day 4 · 2026-11-12 · Prepare & engage
 
@@ -52,12 +52,12 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** Revenue is not take-home pay
 - **Pillar:** Education
-- **Hook:** Payment is not take-home pay.
-- **Format:** Calculator close-up
+- **Hook:** Twelve hundred. How much stays?
+- **Format:** Hands-only money-and-cost reveal challenge
 - **Main message:** Subtract relevant costs; revenue per mile alone is incomplete.
-- **Caption:** Revenue first. Costs next. Your final decision last. Fictional figures.
+- **Caption:** The payment card says $1,200. What has it still got to cover? All numbers are fictional teaching inputs.
 - **Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
-- **CTA:** Save the cost checklist.
+- **CTA:** Name one cost you would check before calling a remainder take-home pay.
 
 ## Day 6 · 2026-11-14 · Review & respond
 
@@ -87,12 +87,12 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** Angel and the mission
 - **Pillar:** Brand awareness
-- **Hook:** Meet the person behind ProfitLane.
-- **Format:** Casual founder desk interview; identified team introduction if needed
+- **Hook:** Why build ProfitLane? To help dispatchers.
+- **Format:** Behind-the-scenes founder conversation
 - **Main message:** Angel introduces his dispatcher-first vision and an authentic explanation of what he would review; approve his approximately eight-year background wording before filming.
-- **Caption:** Meet the purpose behind ProfitLane: support the person making the call.
+- **Caption:** A conversation with Angel about the purpose behind ProfitLane. Proposed assistance, with the dispatcher in control.
 - **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools
-- **CTA:** Follow @profitlane.dispatch; what would useful assistance look like at your desk?
+- **CTA:** Ask Angel one question you would want answered before exploring the product.
 
 ## Day 9 · 2026-11-17 · Prepare & engage
 
@@ -110,12 +110,12 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** Fuel math you can check
 - **Pillar:** Education
-- **Hook:** Check the fuel assumptions first.
-- **Format:** Whiteboard calculation
+- **Hook:** How many gallons is this?
+- **Format:** Miniature route and fuel-token demonstration
 - **Main message:** Total miles divided by assumed MPG, multiplied by fuel price, estimates fuel cost.
-- **Caption:** A fuel estimate is only as good as its assumptions. Fictional inputs.
+- **Caption:** Ten tokens, 100 hypothetical gallons. A fuel estimate is easier to check when the units stay visible.
 - **Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
-- **CTA:** Check your own assumptions before using an estimate.
+- **CTA:** Save the method; which assumption would you check first?
 
 ## Day 11 · 2026-11-19 · Prepare & engage
 
@@ -133,12 +133,12 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** A score is a starting point
 - **Pillar:** Product concept
-- **Hook:** What is behind that score?
-- **Format:** Labeled concept mockup
+- **Hook:** Seventy-six. Would you take it?
+- **Format:** Angel-led “Would you accept?” challenge
 - **Main message:** Proposed 1–100 recommendation tool: weight relative to distance, pre-trip deadhead, diesel prices in relevant areas, pallet count and load payment; unvalidated, with no guaranteed outcome.
-- **Caption:** Concept only: Angel’s proposed score supports review, especially for new dispatchers. The dispatcher decides.
+- **Caption:** Would you take it—or ask for the missing details? 76 is an arbitrary illustration, not a computed or validated recommendation.
 - **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch
-- **CTA:** Explore the proposed score in our concept videos; follow for confirmed product updates.
+- **CTA:** Tell Angel which missing input you would ask for first.
 
 ## Day 13 · 2026-11-21 · Review & respond
 
@@ -168,12 +168,12 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** Ask before you counter
 - **Pillar:** Industry tips
-- **Hook:** Ask before you counter.
-- **Format:** Two-person broker role-play
+- **Hook:** Need an answer. Three questions first.
+- **Format:** Fictional dispatcher–broker negotiation role-play
 - **Main message:** Clarify appointment times, accessorial terms and load details before negotiating.
-- **Caption:** A clearer question can improve your information. No rate outcome is promised.
+- **Caption:** Fictional call and hypothetical amounts, not market-rate advice. Three questions, then a conditional counter. What would you add?
 - **Hashtags:** #ProfitLane #DispatchTips #TruckDispatch #LoadPlanning
-- **CTA:** Save these three questions.
+- **CTA:** Save the questions or comment with another detail you would clarify.
 
 ## Day 16 · 2026-11-24 · Prepare & engage
 
@@ -191,12 +191,12 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** The same rate, different trip
 - **Pillar:** Education
-- **Hook:** Same payment. Different total miles.
-- **Format:** Split-screen calculation
+- **Hook:** A or B? Same payment.
+- **Format:** Split-screen A/B load challenge
 - **Main message:** Compare revenue across total miles while reviewing costs and time.
-- **Caption:** Same revenue can hide very different trips. Fictional examples.
+- **Caption:** A or B? Same fictional payment, different total miles—and still more questions before booking.
 - **Hashtags:** #ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlanning
-- **CTA:** Save this comparison for your next review checklist.
+- **CTA:** Comment A, B, or need more information, and explain the question behind your choice.
 
 ## Day 18 · 2026-11-26 · Prepare & engage
 
@@ -214,12 +214,12 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** Walk through the proposed assistant
 - **Pillar:** Product concept
-- **Hook:** Two concepts. Clear limits.
-- **Format:** Paper prototype walkthrough
+- **Hook:** Paper prototype. Two different ideas.
+- **Format:** Stop-motion paper prototype walkthrough
 - **Main message:** Walk through the proposed load recommendation inputs and explain AI system tracking separately; concept-only visuals, no live detection, scoring or booking demonstration.
-- **Caption:** Two proposed concepts. Clear limits. Your judgment. No working dispatch product is demonstrated here.
+- **Caption:** Paper, not a product screen: two proposed ProfitLane concepts and the questions still open.
 - **Hashtags:** #ProfitLane #DispatchTools #AIassistant #TruckDispatch
-- **CTA:** Now: follow for product updates. Once a real product page and demo-request route are approved: explore ProfitLane and request a demo through the profile link.
+- **CTA:** Follow for confirmed product updates; real product-exploration and demo details will be shared only when approved and available.
 
 ## Day 20 · 2026-11-28 · Review & respond
 
@@ -249,12 +249,12 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** The dispatcher stays in control
 - **Pillar:** Brand awareness
-- **Hook:** What stays with the dispatcher?
-- **Format:** Casual founder answer + practical checklist
+- **Hook:** Quick answer? Pause the clock.
+- **Format:** Angel’s pause-button desk scenario
 - **Main message:** Angel explains how dispatcher experience and relationships guide decisions; AI system tracking and the score remain proposed assistance concepts.
-- **Caption:** Made for dispatchers by dispatchers. AI assistance stays in a supporting role.
+- **Caption:** Fictional desk challenge: quick answer, or better questions? Angel pauses the clock.
 - **Hashtags:** #ProfitLane #TruckDispatch #SmallBusiness #DispatchTools
-- **CTA:** Follow @profitlane.dispatch; tell Angel which decision you would always review yourself.
+- **CTA:** What information would make you pause before deciding?
 
 ## Day 23 · 2026-12-01 · Prepare & engage
 

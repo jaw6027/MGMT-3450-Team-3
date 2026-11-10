@@ -9,4 +9,4 @@ PASS: tested the downloaded standalone HTML as the only file in an isolated dire
 - Searched, edited and deleted an offline post.
 - No external resource requests and no uncaught JavaScript errors.
 
-The full 18-check interaction suite also passed with TRACKER_ENTRY=profitlane-tiktok-standalone.html. Direct file:// navigation was attempted but returned ERR_BLOCKED_BY_ADMINISTRATOR under the managed browser policy; it was not bypassed. The chat visualization renderer is not exposed by the available tools, so its preview was not directly tested. Downloading the ZIP and opening the extracted HTML in a regular browser is the supported workaround.
+The full 19-check interaction suite also passed with TRACKER_ENTRY=profitlane-tiktok-standalone.html. Direct file:// navigation was attempted but returned ERR_BLOCKED_BY_ADMINISTRATOR under the managed browser policy; it was not bypassed. The chat visualization renderer is not exposed by the available tools, so its preview was not directly tested. Downloading the ZIP and opening the extracted HTML in a regular browser is the supported workaround.

@@ -11,7 +11,7 @@ A college-project launch plan and working local content tracker for Angel. All s
 - **`angel-stakeholder-feedback.md`** — Angel’s exact questions/responses, preserved verbatim.
 - **`research/`** — the four original research entries and comparison index, preserved as historical research.
 - **`content-calendar.md` / `content-calendar.csv`** — 30 daily entries from November 9 to December 8, 2026. Each includes a concept, hook, format, message, caption, hashtags and CTA. Thirteen are publishing days; seventeen are preparation, engagement or review days with reserve ideas.
-- **`video-scripts.md`** — first ten scheduled posts, with full scripts, first 2–3 second hooks, scenes, overlays, captions, tags, CTAs and lengths.
+- **`video-scripts.md`** — first ten scheduled posts, with complete scripts in timed SAY / SHOW / ON-SCREEN TEXT sections, short hooks, captions, tags and CTAs. The filming targets are about 70–90 seconds, including pauses and visual holds.
 - **`content.js`** — reference calendar and scripts read by the tracker. Initial editable posts are drawn from its publishing days.
 - **`tracker.js` / `tracker.css`** — dependency-free dashboard behavior and brand styling.
 - **`build-content.py`** — curated reference source and optional documentation generator. Requires Python 3, not needed to use the tracker.
@@ -45,6 +45,14 @@ python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
 Then open the server's `/social-tiktok/` path in your local browser. In a hosted coding workspace use its supported browser access; this package does not create a public preview. The port can be changed if occupied. Use the same address/port/browser to return to the same saved workspace.
+
+## Read and film the scripts
+
+Open **Launch playbook → Timed filming scripts** and expand a video. Each of its seven sections has an elapsed timecode, exact **SAY** lines, a synchronized **SHOW** direction and the matching **ON-SCREEN TEXT**. In the downloaded tracker, the “Read the scripts” resource also opens this formatted reader, rather than raw Markdown. The same filming guide is available in `video-scripts.md`.
+
+The revised targets are about 70–90 seconds, with 137–172 spoken words per video plus pauses and readable visual holds. These are planned edit timings, not recorded performance. Rehearse with a timer and move the section boundaries to fit a natural take. Do not speed-read to meet a timestamp. The opening hook lasts about 2–3 seconds. Read only SAY aloud; filming notes and overlays are directions. Subtitles should match the voiceover, while overlays highlight one idea at a time. Use the listed speaker: Script 4 is narrated by an identified presenter/voiceover introducing Angel; he may appear in the footage.
+
+All ten existing titles and draft posting slots are retained. Fictional arithmetic remains educational; proposed product concepts stay clearly labeled. These updates replace the existing script presentation rather than creating competing script versions. Browser-saved post edits are still preserved and are not automatically rewritten.
 
 ## Use the workspace
 

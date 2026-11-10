@@ -23,7 +23,7 @@ for name in docs:
     html = html.replace('href="' + name + '"', 'href="#document" data-document="' + name + '"')
 csv_url = 'data:text/csv;base64,' + b64encode((ROOT / 'content-calendar.csv').read_bytes()).decode()
 html = html.replace('href="content-calendar.csv" download', 'href="' + csv_url + '" download="content-calendar.csv"')
-html = html.replace('</body>', '<dialog id="document-dialog" aria-labelledby="document-title"><div class="dialog-heading"><h2 id="document-title">Reference document</h2><button id="close-document" aria-label="Close document">✕</button></div><pre id="document-copy"></pre></dialog>\n</body>')
+html = html.replace('</body>', '<dialog id="document-dialog" aria-labelledby="document-title"><div class="dialog-heading"><h2 id="document-title">Reference document</h2><button id="close-document" aria-label="Close document">✕</button></div><pre id="document-copy"></pre><div id="document-formatted" hidden></div></dialog>\n</body>')
 doc_json = json.dumps({name: (ROOT/name).read_text() for name in docs}, ensure_ascii=False).replace('<', '\\u003c')
 script = (ROOT/'content.js').read_text() + '\n' + (ROOT/'tracker.js').read_text()
 script += '\n(() => {\nconst docs = ' + doc_json + ''';
@@ -32,7 +32,21 @@ document.addEventListener('click', e => {
   if (!link) return;
   e.preventDefault();
   document.querySelector('#document-title').textContent = link.dataset.document;
-  document.querySelector('#document-copy').textContent = docs[link.dataset.document];
+  const copy = document.querySelector('#document-copy');
+  const formatted = document.querySelector('#document-formatted');
+  const filming = link.dataset.document === 'video-scripts.md';
+  copy.hidden = filming;
+  formatted.hidden = !filming;
+  formatted.replaceChildren();
+  if (filming) {
+    const reader = document.querySelector('#scripts').cloneNode(true);
+    reader.removeAttribute('id');
+    reader.querySelectorAll('details').forEach(d => d.open = true);
+    formatted.append(reader);
+    document.querySelector('#document-title').textContent = 'Timed filming scripts';
+  } else {
+    copy.textContent = docs[link.dataset.document];
+  }
   document.querySelector('#document-dialog').showModal();
 });
 document.querySelector('#close-document').addEventListener('click', () => document.querySelector('#document-dialog').close());

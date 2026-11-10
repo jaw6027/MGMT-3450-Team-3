@@ -6,7 +6,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** AI beside the dispatcher
 - **Pillar:** Brand awareness
-- **Hook:** AI should help your dispatch desk—not take it over.
+- **Hook:** AI assists. You decide.
 - **Format:** Founder to camera
 - **Main message:** Introduce ProfitLane to independent dispatchers; proposed AI system tracking and recommendation-score concepts support human judgment.
 - **Caption:** Meet ProfitLane: proposed assistance for independent dispatchers. Your judgment stays at the center.
@@ -29,7 +29,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** The miles before the load
 - **Pillar:** Education
-- **Hook:** That load starts before pickup. Count those miles.
+- **Hook:** Count the miles before pickup.
 - **Format:** Whiteboard example
 - **Main message:** Add deadhead to loaded miles before comparing revenue per mile.
 - **Caption:** The empty miles belong in the conversation too. Fictional example.
@@ -52,7 +52,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** Revenue is not take-home pay
 - **Pillar:** Education
-- **Hook:** A $1,200 load does not mean $1,200 in profit.
+- **Hook:** Payment is not take-home pay.
 - **Format:** Calculator close-up
 - **Main message:** Subtract relevant costs; revenue per mile alone is incomplete.
 - **Caption:** Revenue first. Costs next. Your final decision last. Fictional figures.
@@ -87,7 +87,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** Angel and the mission
 - **Pillar:** Brand awareness
-- **Hook:** The person at the dispatch desk still makes the call.
+- **Hook:** Meet the person behind ProfitLane.
 - **Format:** Casual founder desk interview; identified team introduction if needed
 - **Main message:** Angel introduces his dispatcher-first vision and an authentic explanation of what he would review; approve his approximately eight-year background wording before filming.
 - **Caption:** Meet the purpose behind ProfitLane: support the person making the call.
@@ -110,7 +110,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** Fuel math you can check
 - **Pillar:** Education
-- **Hook:** How much fuel does this fictional trip actually need?
+- **Hook:** Check the fuel assumptions first.
 - **Format:** Whiteboard calculation
 - **Main message:** Total miles divided by assumed MPG, multiplied by fuel price, estimates fuel cost.
 - **Caption:** A fuel estimate is only as good as its assumptions. Fictional inputs.
@@ -133,7 +133,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** A score is a starting point
 - **Pillar:** Product concept
-- **Hook:** Would you accept a load because a screen says 76?
+- **Hook:** What is behind that score?
 - **Format:** Labeled concept mockup
 - **Main message:** Proposed 1–100 recommendation tool: weight relative to distance, pre-trip deadhead, diesel prices in relevant areas, pallet count and load payment; unvalidated, with no guaranteed outcome.
 - **Caption:** Concept only: Angel’s proposed score supports review, especially for new dispatchers. The dispatcher decides.
@@ -168,7 +168,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** Ask before you counter
 - **Pillar:** Industry tips
-- **Hook:** Before you counter, what do you still need to know?
+- **Hook:** Ask before you counter.
 - **Format:** Two-person broker role-play
 - **Main message:** Clarify appointment times, accessorial terms and load details before negotiating.
 - **Caption:** A clearer question can improve your information. No rate outcome is promised.
@@ -191,7 +191,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** The same rate, different trip
 - **Pillar:** Education
-- **Hook:** Both loads pay $1,200. Would you review them the same way?
+- **Hook:** Same payment. Different total miles.
 - **Format:** Split-screen calculation
 - **Main message:** Compare revenue across total miles while reviewing costs and time.
 - **Caption:** Same revenue can hide very different trips. Fictional examples.
@@ -214,7 +214,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** Walk through the proposed assistant
 - **Pillar:** Product concept
-- **Hook:** Here is the idea—not a live product demo.
+- **Hook:** Two concepts. Clear limits.
 - **Format:** Paper prototype walkthrough
 - **Main message:** Walk through the proposed load recommendation inputs and explain AI system tracking separately; concept-only visuals, no live detection, scoring or booking demonstration.
 - **Caption:** Two proposed concepts. Clear limits. Your judgment. No working dispatch product is demonstrated here.
@@ -249,7 +249,7 @@ Suggested window: November 9–December 8, 2026. Publish three times weekly: 13 
 
 - **Video topic / reserve idea:** The dispatcher stays in control
 - **Pillar:** Brand awareness
-- **Hook:** What should AI leave to the dispatcher?
+- **Hook:** What stays with the dispatcher?
 - **Format:** Casual founder answer + practical checklist
 - **Main message:** Angel explains how dispatcher experience and relationships guide decisions; AI system tracking and the score remain proposed assistance concepts.
 - **Caption:** Made for dispatchers by dispatchers. AI assistance stays in a supporting role.

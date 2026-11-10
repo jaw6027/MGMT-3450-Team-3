@@ -44,35 +44,121 @@ tags = {'Education':'#ProfitLane #TruckDispatch #IndependentDispatcher #LoadPlan
 calendar=[]
 for i,(title,category,hook,fmt,msg,caption,cta) in enumerate(ideas):
  calendar.append(dict(day=i+1,date=str(date(2026,11,9)+timedelta(days=i)),activity=activities[i],title=title,category=category,hook=hook,format=fmt,message=msg,caption=caption,hashtags=tags[category],cta=cta))
-# Ten scripts correspond to the first ten scheduled posts, in order.
-spoken = [
-"AI should help your dispatch desk—not take it over. ProfitLane is being developed for independent dispatchers. Independent operators starting their own dispatching are welcome too. Angel's proposed concepts include AI system tracking and a one-to-one-hundred load recommendation score. They are intended to support the review, with your judgment at the center. We will explain the concepts and practical load questions as development continues. Follow ProfitLane at profitlane dot dispatch for education and product updates. What would you want help reviewing first?",
-"That load starts before pickup. Count those miles. Here is a fictional example: 100 empty miles to pickup and 500 loaded miles. That is 600 total miles. If the offer is $1,200, dividing by loaded miles gives $2.40 per mile. Dividing by total miles gives $2.00 per mile. Neither number is profit. Fuel, time and other costs still matter. Save this check, and make sure your comparison includes the miles before the load.",
-"A $1,200 load does not mean $1,200 in profit. In this fictional example, suppose fuel is $400, tolls are $50 and allocated operating costs are $300. Subtracting those leaves $450 before any other costs or taxes that apply. Those are made-up inputs, not typical industry costs. Your own labor, maintenance, insurance, financing and other expenses may change the picture. Build a complete cost review before deciding. Save this checklist as a starting point.",
-"The person at the dispatch desk still makes the call. ProfitLane's founder, Angel, brings approximately eight years of trucking industry experience. His focus is independent dispatchers, with room for independent operators starting their own dispatching. He is comfortable sharing the idea in straightforward desk conversations. His AI system tracking concept is intended to help dispatchers identify logistics companies using AI in broker–dispatcher communication, so they can choose whom to work with. The method and availability still need confirmation. Follow ProfitLane for more of the concept and practical dispatcher questions.",
-"How much fuel does this fictional trip actually need? Start with 600 total miles. At an assumed six miles per gallon, that is 100 gallons. At an assumed four dollars per gallon, estimated fuel cost is $400. Change the MPG or the price and your estimate changes. This is a simplified example, not a fuel quote or a prediction for your truck. Review actual conditions and your own assumptions. Check the inputs before you use the result.",
-"Would you accept a load because a screen says 76? This is a concept mockup, not a live ProfitLane feature. Angel's proposed one-to-one-hundred score is a recommendation tool, especially for dispatchers who are new. The proposed inputs are weight in relation to distance, deadhead before the trip, diesel prices in relevant areas, pallet count and load payment. Angel emphasizes the payment; no numerical weights are established. The scoring method has not been validated. Seventy-six is an arbitrary illustration, with no acceptance threshold or profitability guarantee. Review the inputs and decide yourself. Explore the concept in our videos and follow for product updates.",
-"Before you counter, what do you still need to know? In a fictional rate conversation, I would first ask: Can you confirm pickup and delivery appointment times? What accessorial terms apply, and how are they documented? Are there any other load requirements I should review? Then I can explain a counteroffer using accurate trip facts. No script guarantees a better rate. Save the questions and adapt them to your own process and agreements.",
-"Both loads pay $1,200. Would you review them the same way? In this fictional example, Load A has 500 loaded miles and 100 deadhead miles: 600 total. That is two dollars of revenue per total mile. Load B has 500 loaded miles and 200 deadhead miles: 700 total. That is about a dollar seventy-one per total mile. Neither figure is profit. Costs, timing and the next move still need review. Save this comparison as one part of your checklist.",
-"Here is the idea—not a live product demo. This paper prototype shows Angel's proposed load review: weight relative to distance, pre-trip deadhead, diesel prices in relevant areas, pallet count and load payment. The proposed recommendation score would support your review; no working or validated score is shown. Separately, his AI system tracking concept is intended to help identify logistics companies using AI in broker–dispatcher communication, so dispatchers can choose whom to work with. Its method, accuracy and availability need confirmation. Follow for product updates. Once a real product page and demo request are available, we will share how to explore ProfitLane and request a demo.",
-'What should AI leave to the dispatcher? Think about the questions you ask, the relationships you know and the context a number cannot explain. Angel wants ProfitLane to support independent dispatchers, including those new to the work. The proposed recommendation score and AI system tracking concept are intended as assistance. Working features and results have not been demonstrated here. Your judgment stays central. Made for dispatchers by dispatchers. Follow ProfitLane for practical explanations and product updates. What question would you like Angel to work through next?'
+# Seven filming beats per video: end time, exact spoken words, visual, on-screen text.
+# The first beat is a short 2–3 second hook. Timing includes pauses/visual holds.
+filming = [
+# 1 · Introduction
+[
+(3, "AI assists. You decide.", "Angel or an identified presenter faces the camera at a stationary desk.", "AI assists. You decide."),
+(15, "If you work as an independent dispatcher, you already know a load is more than one number on a screen. There are questions behind the offer.", "Cut to original cards labeled miles, time and payment. Point to each as it is named.", "Miles • Time • Payment"),
+(27, "ProfitLane is being developed with independent dispatchers as the primary audience. Independent operators who want to start their own dispatching are welcome too.", "Return to the presenter. Show the primary audience first and the secondary line underneath.", "Independent dispatchers first"),
+(40, "Angel's proposed concepts include a load recommendation score and AI system tracking. We will explain their intended purpose, the information involved and their limits.", "Show two simple paper concept cards. Keep the in-development label visible.", "Proposed concepts • In development"),
+(52, "Those concepts have not been demonstrated as working features here. A score or a tool still needs the dispatcher's questions, experience and final judgment.", "Keep the presenter in view. Place a human-review card beside the concepts; do not show a fake working dashboard.", "Your questions. Your judgment."),
+(62, "This account will combine practical explanations, honest product updates and conversations with Angel. Think of it as a discussion at the dispatch desk.", "Use a relaxed desk shot and a quick cut to a fictional whiteboard example.", "Education + product updates"),
+(70, "Follow ProfitLane at profitlane dot dispatch. What would you want help reviewing first?", "Finish on the presenter, then hold the approved logo and handle long enough to read.", "@profitlane.dispatch • Follow for updates")
+],
+# 2 · Total-mile calculation
+[
+(3, "Count the miles before pickup.", "Point to an empty route arrow drawn before a pickup pin.", "Before pickup counts too"),
+(15, "Here is a fictional offer: twelve hundred dollars for five hundred loaded miles. The pickup is one hundred empty miles away. Let's write everything down.", "Reveal $1,200, 500 loaded miles and 100 deadhead miles on separate cards.", "Fictional example • $1,200 offer"),
+(28, "If you divide twelve hundred by five hundred, you get two dollars and forty cents per loaded mile. That calculation leaves out the drive to pickup.", "Write $1,200 ÷ 500 = $2.40 per loaded mile. Briefly circle the separate deadhead card.", "$2.40 per loaded mile"),
+(41, "Add the empty miles first. One hundred plus five hundred equals six hundred total miles. Now divide twelve hundred dollars by those six hundred miles.", "Animate 100 + 500 = 600, then place 600 beneath $1,200. Pause for the viewer to read.", "100 + 500 = 600 total miles"),
+(54, "That gives two dollars per total mile. The payment has not changed. The denominator has changed because the comparison now includes the miles before pickup.", "Show the two divisions side by side, with labels for loaded miles and total miles.", "$1,200 ÷ 600 = $2.00/total mile"),
+(66, "Neither number is profit. Fuel, tolls, operating costs and the schedule still need review. Also check what other empty travel belongs in your own comparison.", "Replace the calculator with a short checklist. Keep fictional-example labeling visible.", "Revenue per mile ≠ profit"),
+(75, "Save this total-mile check. Before comparing your next offer, ask: which miles did I leave out?", "Return to the presenter and hold the completed 600-mile equation beside them.", "Save the check • What miles are missing?")
+],
+# 3 · Cost breakdown
+[
+(3, "Payment is not take-home pay.", "Hold a $1,200 payment card beside an empty expense list.", "Payment ≠ take-home pay"),
+(18, "Let's use a fictional twelve-hundred-dollar load. These figures are made up for teaching. They are not typical industry costs, customer results or a ProfitLane calculation.", "Lay out a blank worksheet labeled fictional example. Keep that label throughout.", "Fictional inputs • Not a ProfitLane result"),
+(32, "Suppose fuel is four hundred dollars and tolls are fifty dollars. That leaves seven hundred and fifty dollars before the other costs we still need to review.", "Subtract each item as it is spoken: $1,200 − $400 − $50 = $750. Hold the arithmetic.", "$750 remaining before other costs"),
+(47, "Now suppose we allocate three hundred dollars in other operating costs. That leaves four hundred and fifty dollars. It is only a remainder within this example.", "Add the $300 line and show $750 − $300 = $450. Use a neutral label, not a green profit badge.", "$450 remaining in this example"),
+(62, "It is not automatically the driver's wage, final take-home pay or profit. What counts as a cost depends on the business and what this worksheet actually includes.", "Return to the presenter. Show a card reading included costs, then a second card reading costs still to check.", "Check what is included and excluded"),
+(77, "Your review may need labor, maintenance, insurance, financing, applicable fees and taxes. Do not assume a partial list is complete, or subtract the same expense twice.", "Reveal the possible review items gradually. Do not add invented percentages or tax amounts.", "Review applicable costs • Avoid double-counting"),
+(90, "Start with the payment, then ask what it needs to cover. Save the checklist and follow ProfitLane for practical dispatcher education and honest product updates.", "Show the entire fictional worksheet, then the approved logo and handle. Hold the closing card briefly.", "@profitlane.dispatch • Save the checklist")
+],
+# 4 · Founder introduction
+[
+(3, "Meet the person behind ProfitLane.", "Angel faces the camera at a desk; if unavailable, an identified team presenter introduces him.", "Angel • ProfitLane founder"),
+(15, "ProfitLane's founder, Angel, brings approximately eight years of trucking industry experience. His focus is independent dispatchers and the decisions they make at the desk.", "Use an approved founder portrait or desk interview. Confirm the experience wording before recording; never put that production note on screen.", "Independent dispatchers first"),
+(28, "He is comfortable appearing in videos and prefers a client-to-client conversation. That gives us room for clear explanations, practical questions and a more natural tone.", "Show a relaxed interview setup. An identified team presenter or voiceover delivers this introduction while Angel appears in the desk footage.", "Straightforward desk conversations"),
+(41, "One concept he wants to explain is AI system tracking. Its intended purpose concerns logistics companies using AI in negotiation or communication between brokers and dispatchers.", "Show an original concept card with broker–dispatcher communication. Do not use real company names or detection flags.", "AI system tracking • Proposed concept"),
+(53, "The aim is to support dispatchers in choosing whom to work with. The method, accuracy and availability need confirmation; this video is explaining the concept.", "Return to the speaker and retain the concept label. Hold a short limits card beside it.", "Method, accuracy and availability unverified"),
+(63, "Angel's mission is to assist dispatchers, not replace them. Your experience, relationships and judgment stay central as the product is developed.", "Use a simple close desk shot and the existing approved icon. Avoid invented stories or customer footage.", "AI assists. The dispatcher decides."),
+(72, "Follow ProfitLane for more explanations. What question would you like Angel to work through at the dispatch desk?", "Finish with the speaker and an easy-to-read handle. Invite one specific question.", "@profitlane.dispatch • Ask Angel a question")
+],
+# 5 · Fuel arithmetic
+[
+(3, "Check the fuel assumptions first.", "Show three empty cards: total miles, MPG and price per gallon.", "Fuel estimate = assumptions + arithmetic"),
+(15, "For this fictional trip, use six hundred total miles. That includes the one hundred deadhead miles and five hundred loaded miles from our earlier example.", "Fill the mileage card and show 100 + 500 = 600. Maintain fictional-example labeling.", "Fictional example • 600 total miles"),
+(28, "Assume six miles per gallon. Six hundred divided by six gives one hundred gallons. Keep the units visible so the steps are easy to check.", "Write 600 miles ÷ 6 MPG = 100 gallons. Point to each unit and pause on the result.", "600 ÷ 6 = 100 gallons"),
+(40, "Now assume fuel costs four dollars per gallon. Multiply one hundred gallons by four dollars. The estimated fuel cost is four hundred dollars.", "Fill the fuel-price card and write 100 × $4 = $400. This is not a live fuel-price display.", "100 gallons × $4 = $400"),
+(53, "That is an estimate for those assumptions, not a quote for your truck. If you change the mileage, fuel economy or price, recalculate rather than reusing the answer.", "Highlight the three input cards one at a time. Keep the result labeled estimate.", "Change an input? Recalculate."),
+(65, "Fuel is one part of a load review. This number does not include every operating cost or tell you whether to accept the offer.", "Slide the fuel calculation beside a broader costs-and-time checklist.", "Estimated fuel cost ≠ total cost"),
+(75, "Save the three-step method: total miles, assumed fuel economy and fuel price. Which assumption would you check most carefully?", "Return to the presenter with the completed three-card calculation and a comment prompt.", "Save the method • Check your assumptions")
+],
+# 6 · Proposed score
+[
+(3, "What is behind that score?", "Show a paper 76/100 card with a visible concept label from the first frame.", "Concept mockup • 76 is arbitrary"),
+(18, "Angel describes the proposed one-to-one-hundred load score as a recommendation tool. It is intended to help dispatchers, particularly people new to dispatching, review an opportunity before booking.", "Keep the paper card visible, then reveal a human-review checklist beside it. No acceptance button is shown.", "Proposed recommendation tool • In development"),
+(33, "The proposed considerations include weight in relation to distance, deadhead miles before the trip and diesel prices in relevant areas. Each needs clear, understandable input information.", "Reveal three labeled paper cards as each factor is spoken. Use no actual score calculation.", "Weight/distance • Pre-trip deadhead • Area diesel prices"),
+(47, "Pallet count and load payment are also part of Angel's description. He emphasizes the payment. No numerical weights or formula have been established in these materials.", "Add pallet count and payment cards; emphasize payment visually without assigning a percentage.", "Pallet count • Load payment • No published formula"),
+(62, "The scoring method has not been validated. Seventy-six here is an arbitrary illustration. It is not a computed recommendation, acceptance threshold or promise that a load will be profitable.", "Point to the arbitrary-example label and replace the large score with a reminder to inspect the inputs.", "Unvalidated • No profitability guarantee"),
+(77, "Before relying on any summary, you would still need to check assumptions, missing information, costs and timing. The dispatcher's judgment stays part of the decision.", "Show a person checking the input cards and marking unknowns as questions, without suggesting the product already does this.", "Review assumptions and missing information"),
+(90, "Explore the proposed score in our concept videos and follow ProfitLane for confirmed updates. What would you need to understand before using a recommendation?", "Return to the presenter with the handle and one discussion question. Keep the in-development label visible through the end.", "@profitlane.dispatch • Your judgment stays central")
+],
+# 7 · Negotiation questions
+[
+(3, "Ask before you counter.", "Presenter holds three blank question cards at a desk.", "Three questions before the counteroffer"),
+(15, "Let's rehearse a fictional conversation. A dispatcher is reviewing an offer, but some details are missing. Before discussing a counteroffer, the dispatcher needs clearer information.", "Two team members sit at separate desks or use split-screen. Identify the scene as fictional role-play throughout.", "Fictional role-play • No real company shown"),
+(28, "First question: can you confirm the pickup and delivery dates, appointment times and time zones? A mileage number alone does not tell you the schedule.", "Dispatcher reads the first card; show an original appointment graphic with dates marked to confirm, not invented confirmed times.", "1. Confirm dates, times and time zones"),
+(41, "Second question: what accessorial terms apply, and how are they documented? Ask for clarification before assuming an additional service or waiting time will be paid.", "Reveal the second card. Use a generic terms-to-confirm checklist, without a fake broker promise or rate agreement.", "2. Clarify applicable accessorial terms"),
+(54, "Third question: are there other load requirements, stops or delivery details to review? The purpose is to understand the offer rather than fill in gaps yourself.", "Reveal the final card and a simple multi-stop route sketch. Leave unknown details visibly open.", "3. Verify requirements and stops"),
+(68, "With clearer facts, the dispatcher can prepare a reasoned conversation using their own process and agreements. No script guarantees a better rate or a successful booking.", "Return to one speaker and show the three completed questions. Do not display a negotiated success amount.", "Clearer facts • No guaranteed rate outcome"),
+(80, "Save these questions and follow ProfitLane for dispatcher education. Angel can walk through an authentic example later, after reviewing which details are appropriate to share.", "Close on the checklist and handle. The later founder example is an invitation, not an invented anecdote.", "@profitlane.dispatch • Save the questions")
+],
+# 8 · Comparing two trips
+[
+(3, "Same payment. Different total miles.", "Show two fictional load cards, each labeled $1,200.", "Fictional loads • Same $1,200 payment"),
+(16, "For Load A, imagine five hundred loaded miles and one hundred empty miles before pickup. Add them together: six hundred total miles for this comparison.", "Build the Load A card with 500 + 100 = 600. Hold the completed sum.", "Load A: 600 total miles"),
+(29, "For Load B, keep the five hundred loaded miles, but use two hundred empty miles before pickup. That makes seven hundred total miles. The payment stays twelve hundred dollars.", "Build Load B beside A, changing only the deadhead assumption in this fictional comparison.", "Load B: 700 total miles"),
+(43, "Now divide each payment by its total miles. Load A gives two dollars per mile. Load B gives approximately one dollar and seventy-one cents per mile.", "Show $1,200 ÷ 600 = $2.00 and $1,200 ÷ 700 ≈ $1.71. Pause for viewers to compare.", "A: $2.00/total mile • B: about $1.71/total mile"),
+(56, "Those figures describe revenue per total mile. They do not show profit or tell you which load to accept. This example isolates one difference, not every consideration.", "Circle the words revenue per total mile and place a separate costs-and-time card below both loads.", "Revenue per mile ≠ profit or an acceptance rule"),
+(69, "The dispatcher still needs to review costs, appointment windows, other travel and the next move. Use your actual information rather than treating either fictional rate as a benchmark.", "Show the review checklist, leaving space for the dispatcher's own notes. No market-rate graph or invented benchmark.", "Review costs • Schedule • Next move"),
+(80, "Save the comparison and follow ProfitLane for more examples. What other information would you ask for before making the call?", "Return to the presenter with both load cards and the question underneath.", "@profitlane.dispatch • What information is missing?")
+],
+# 9 · Two concepts, separate purposes
+[
+(3, "Two concepts. Clear limits.", "Show two paper cards labeled score and AI system tracking, with a concept label from frame one.", "Concept mockup • In development"),
+(18, "This is a paper walkthrough, not a live product demo. First, consider Angel's proposed load recommendation score, intended to support review before a dispatcher decides whether to book.", "Focus on the score card and a person reviewing a fictional load sheet. No automated booking action.", "1. Proposed load recommendation score"),
+(33, "The proposed inputs cover weight relative to distance, pre-trip deadhead, diesel prices in relevant areas, pallet count and load payment. No working or validated score is shown here.", "Reveal the proposed inputs one by one. Keep any score number off screen so no calculated result is implied.", "Proposed inputs • No validated score demonstrated"),
+(48, "Separately, Angel's AI system tracking concept concerns logistics companies using AI in communication or negotiation between brokers and dispatchers. Its intended purpose is to help dispatchers choose whom to work with.", "Move to the second card and an original broker–dispatcher communication diagram. Do not show real names, detected-AI flags or a blacklist.", "2. AI system tracking • Proposed purpose"),
+(63, "How identification would work, what information it would use and how accurate it could be still need confirmation. A diagram is not evidence of a functioning detection system.", "Show three question cards: method, information and accuracy. Retain the concept label and avoid animated scanning effects.", "Method • Data access • Accuracy: unverified"),
+(77, "Both ideas are intended as assistance. The dispatcher's review and final judgment stay central. The local marketing tracker you are viewing is separate from the proposed dispatching product.", "Bring the two concept cards back beside a human-review card. Do not present the marketing dashboard as a product screen.", "AI assists. The dispatcher decides."),
+(90, "Follow for product updates. Once a real product page and demo-request route are approved, we will share how to explore ProfitLane and request a demo.", "Close on @profitlane.dispatch. Do not add a fabricated website, email or demo link; the route remains conditional.", "Follow now • Demo details when available")
+],
+# 10 · Human judgment
+[
+(3, "What stays with the dispatcher?", "Angel or an identified presenter asks the question in a relaxed desk shot.", "Your judgment stays central"),
+(15, "Think about the questions you ask, the relationships you know and the context behind an offer. A short summary cannot explain every part of that decision.", "Show three original cards: questions, relationships and context. Pause as each is revealed.", "Questions • Relationships • Context"),
+(27, "Angel wants ProfitLane to support independent dispatchers, including people who are new to the work. Independent operators starting their own dispatching are a secondary audience.", "Return to the speaker. Place the primary audience first, with the secondary audience in smaller supporting text.", "Independent dispatchers first"),
+(39, "The proposed recommendation score is intended to support load review. AI system tracking is a separate proposed concept about AI use in broker–dispatcher communication.", "Show two concept cards with separate names and purposes. Keep the in-development label visible.", "Two proposed concepts • In development"),
+(51, "Working features and results have not been demonstrated here. We can explain the ideas honestly while keeping the limits clear and leaving the decision with the dispatcher.", "Put a human-review card beside the concepts; show no promised savings or automatic acceptance action.", "No verified product results claimed"),
+(62, "That is the message behind ProfitLane: Made for dispatchers by dispatchers. Practical explanations should help you ask better questions, not pressure you into an offer.", "Use the exact approved tagline with the existing logo. Hold it for reading.", "Made for dispatchers by dispatchers."),
+(72, "Follow ProfitLane at profitlane dot dispatch. What would you like Angel to explain next, in a conversation at the dispatch desk?", "Finish on the presenter and handle with one specific comment question.", "@profitlane.dispatch • Ask Angel")
 ]
-visuals = [
-('0–3s: Angel or identified team presenter at a desk. 3–25s: two labeled concept cards. 25–45s: approved logo, handle and a natural question.', 'In development | Independent dispatchers first | AI system tracking + proposed 1–100 recommendation | @profitlane.dispatch'),
-('0–3s: empty route arrow. 3–12s: write 100 + 500 = 600. 12–25s: show $1,200 ÷ 500 and $1,200 ÷ 600. 25–40s: cost checklist.','Fictional example | 100 deadhead + 500 loaded = 600 total | $2.40/loaded mile vs $2.00/total mile | Revenue ≠ profit'),
-('0–3s: $1,200 revenue card. 3–25s: subtract each labeled expense. 25–40s: show remaining review items.','Fictional inputs—not typical costs | $1,200 − $400 − $50 − $300 = $450 | Before other applicable costs and taxes'),
-('0–3s: approved founder introduction. 3–35s: Angel in a relaxed client-to-client desk interview, or an identified presenter introducing his concept. 35–50s: follow prompt. Ask Angel for an authentic explanation; do not invent an anecdote.', 'Angel • Founder | Approximately 8 years in trucking: confirm wording | AI system tracking: proposed concept | Method and availability unverified | @profitlane.dispatch'),
-('0–3s: calculator and total-mile card. 3–15s: 600 ÷ 6 = 100 gallons. 15–27s: 100 × $4 = $400. 27–40s: assumptions checklist.','Fictional example | 600 miles ÷ 6 MPG = 100 gal | 100 gal × $4 = $400 estimated fuel | Assumptions change results'),
-('0–3s: arbitrary 76 score card. 3–35s: reveal proposed inputs. 35–55s: questions for human review. Keep the concept label visible throughout.', 'Concept mockup • In development | Weight/distance • Pre-trip deadhead • Area diesel prices • Pallet count • Payment | 76/100: arbitrary, unvalidated illustration | No guaranteed outcome'),
-('0–3s: presenter with question cards. 3–26s: team member plays broker, no real company shown. 26–40s: three-question recap.','Fictional role-play | Confirm appointment times | Clarify accessorial terms | Verify other requirements | No guaranteed rate outcome'),
-('0–3s: two $1,200 cards. 3–20s: animate total-mile sums. 20–35s: show division side by side. 35–45s: costs/time prompt.','Fictional loads | A: $1,200 ÷ 600 = $2.00/mi | B: $1,200 ÷ 700 ≈ $1.71/mi | Revenue per total mile—not profit'),
-('0–3s: visible paper prototype. 3–25s: proposed score-input cards. 25–45s: separate AI system tracking concept card explained by Angel or an identified presenter. 45–60s: follow CTA and conditional future demo route. No fake detected-company flags, real company labels or live-system screens.', 'Concept mockup • In development | Proposed score: unvalidated | AI system tracking: method/accuracy/availability unverified | Human review stays central | Follow now • Demo invitation only when available'),
-('0–3s: Angel or identified presenter asks the question conversationally. 3–30s: original cards for context, relationships and judgment. 30–45s: approved tagline and follow prompt.', 'Independent dispatchers first | Proposed assistance • No verified product results | Made for dispatchers by dispatchers. | @profitlane.dispatch')
 ]
 posts=[x for x in calendar if x['activity']=='Publish']
 scripts=[]
 for i,p in enumerate(posts[:10]):
- scripts.append(dict(number=i+1,day=p['day'],date=p['date'],title=p['title'],hook=p['hook'],length='50–60 seconds' if i in (5,8) else ('40–50 seconds' if i in (0,3) else '35–45 seconds'),script=spoken[i],scenes=visuals[i][0],text=visuals[i][1],caption=p['caption'],hashtags=p['hashtags'],cta=p['cta']))
+ beats=[]
+ start=0
+ for end,words,visual,text in filming[i]:
+  beats.append(dict(start=start,end=end,spoken=words,visual=visual,text=text))
+  start=end
+ # Keep the calendar's hook synchronized with the spoken opening.
+ p['hook']=beats[0]['spoken']
+ scripts.append(dict(number=i+1,day=p['day'],date=p['date'],title=p['title'],hook=p['hook'],speaker=('Identified team presenter or voiceover introducing Angel' if i==3 else 'Angel or an identified team presenter'),length=f"About {start} seconds",duration=start,word_count=sum(len(b['spoken'].split()) for b in beats),script='\n\n'.join(b['spoken'] for b in beats),scenes='\n'.join(f"{b['start']}–{b['end']}s: {b['visual']}" for b in beats),text='\n'.join(f"{b['start']}–{b['end']}s: {b['text']}" for b in beats),beats=beats,caption=p['caption'],hashtags=p['hashtags'],cta=p['cta']))
 data=dict(calendar=calendar,scripts=scripts)
 (ROOT/'content.js').write_text('window.PROFITLANE_CONTENT = '+json.dumps(data,ensure_ascii=False,indent=2)+';\n')
 with (ROOT/'content-calendar.csv').open('w',newline='') as f:
@@ -84,8 +170,29 @@ for p in calendar:
  if p['activity']!='Publish': intro+='- **Work today:** Prepare this reserve concept, respond to relevant comments, or review equal-window results. Do not publish an extra video by default.\n'
  intro+='\n'
 (ROOT/'content-calendar.md').write_text(intro.rstrip()+'\n')
-s='# First ten scheduled TikTok videos\n\nRecord vertical 9:16, stationary and safely away from driving. Use fictional data only, approved brand assets, clear audio and checked captions. Lengths are targets; rehearse and adjust pauses. Opening hooks are the first 2–3 seconds and are included in the complete scripts below. Primary audience: independent dispatchers; secondary audience: independent operators starting their own dispatching. Support brand awareness and potential-customer interest with educational, professional, casual and relatable delivery. Speaker may be Angel, who is comfortable on camera and prefers client-to-client conversations, or an identified team presenter. Rehearse naturally; do not read draft production conditions as if an unavailable product/demo were available. Obtain Angel’s confirmation of founder details before filming video 4; do not present a team member as Angel. Product concepts are labeled throughout and do not demonstrate a live product.\n\n'
+s="""# First ten TikTok videos · timed filming scripts
+
+## How to use this guide
+
+Each numbered video contains a complete speaking script broken into short sections. **SAY** is the exact commentary to record. **SHOW** describes the visual to display during that commentary. **ON-SCREEN TEXT** is a short overlay, not an extra line to read aloud. No ad-libbing is required.
+
+Timecodes are elapsed video time in minutes:seconds. They are a recording/editing plan, not measured footage. Targets range from about 70 to 90 seconds, allowing pauses for calculations, concept cards and natural delivery. Most commentary sections are planned at roughly 100–150 words per minute; rehearse and adjust shot boundaries before filming. Keep the 2–3 second hook, and hold important figures briefly so viewers can read. Do not rush to force a take into the timeline.
+
+Record vertical 9:16 while stationary. Use the approved brand assets, clear audio and checked subtitles of the spoken lines. Overlays supplement subtitles. Keep concept labels visible for the entire concept video and fictional-example labels visible during calculations. Avoid customer data and real company labels in mockups. No working dispatch product, validated score or measured product result is demonstrated.
+
+Audience: independent dispatchers first; independent operators starting their own dispatching second. Tone: educational, professional, casual and relatable. Angel may appear, with an identified presenter or voiceover as an alternative. Confirm his experience wording and any real anecdote before recording; do not invent one. The exact stakeholder responses and four research entries remain intact. Follow CTAs assume the account is available; product exploration and demo requests wait for an approved real route.
+
+## Video index
+
+"""
 for p in scripts:
- s+=f"## {p['number']}. {p['title']}\n\n**Scheduled:** Day {p['day']} · {p['date']}\n\n**Length:** {p['length']}\n\n**Opening hook (2–3 seconds):** {p['hook']}\n\n**Full voiceover / speaking script:**\n\n{p['script']}\n\n**Scenes and visuals:** {p['scenes']}\n\n**On-screen text:** {p['text']}\n\n**Caption:** {p['caption']}\n\n**Hashtags:** {p['hashtags']}\n\n**CTA:** {p['cta']}\n\n"
+ s+=f"{p['number']}. **{p['title']}** — {p['length']}\n"
+s+='\n'
+def timestamp(seconds):return f"{seconds//60:02d}:{seconds%60:02d}"
+for p in scripts:
+ s+=f"## {p['number']}. {p['title']}\n\n**Draft slot:** Day {p['day']} · {p['date']}\n\n**Target length:** {p['length']} · {p['word_count']} spoken words, plus visual holds\n\n**Speaker:** {p['speaker']}\n\n**Opening hook:** {p['hook']}\n\n"
+ for b in p['beats']:
+  s+=f"### {timestamp(b['start'])}–{timestamp(b['end'])}\n\n**SAY**\n\n> {b['spoken']}\n\n**SHOW:** {b['visual']}\n\n**ON-SCREEN TEXT:** {b['text']}\n\n"
+ s+=f"**Caption:** {p['caption']}\n\n**Hashtags:** {p['hashtags']}\n\n**CTA / production instruction:** {p['cta']}\n\n---\n\n"
 (ROOT/'video-scripts.md').write_text(s.rstrip()+'\n')
-print('Created 30 calendar entries and 10 complete scripts.')
+print('Created 30 calendar entries and 10 complete, timed filming scripts.')

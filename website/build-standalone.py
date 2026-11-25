@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parent
 def asset(name, mime):
     return 'data:' + mime + ';base64,' + b64encode((ROOT.parent / 'brand' / name).read_bytes()).decode()
 
-html = (ROOT / 'index.html').read_text()
+html = (ROOT / 'tracker.html').read_text()
 html = html.replace('href="../brand/logo-icon.svg"', 'href="' + asset('logo-icon.svg', 'image/svg+xml') + '"')
 html = html.replace('src="../brand/logo.svg"', 'src="' + asset('logo.svg', 'image/svg+xml') + '"')
 css = (ROOT.parent / 'brand' / 'brand.css').read_text() + '\n' + (ROOT / 'tracker.css').read_text()
